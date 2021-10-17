@@ -1,0 +1,218 @@
+72f2f344ef43c1072c083fc14987651c|file:///Users/bytedance/.config/nvim/init.vim|36|9|v|vim
+	XDG_CONFIG_HOME
+0938797e3e169458b0c0734e55a5a806|file:///Users/bytedance/.config/nvim/init.vim|206|26|v|vim
+	G_HOME
+5f611233060e6d01f6697a0ae9f55d4a|file:///Users/bytedance/.config/nvim/init.vim|206|22|v|vim
+	nvim
+1bc1591db8f4a0a334e6e84f5da2b948|file:///Users/bytedance/.config/nvim/init.vim|134|1|V|vim
+	" Insert Key
+caaa8f32848c5379da2f649afa319118|file:///Users/bytedance/.config/nvim/init.vim|134|1|V|vim
+	"noremap k i
+3cf2f7f189fea073767bcea4f1328953|file:///Users/bytedance/.config/nvim/init.vim|134|1|V|vim
+	"noremap K I
+63bf8bc1c6e544e4992dfeaa5b275f62|file:///Users/bytedance/.config/nvim/init.vim|174|1|V|vim
+	"noremap <silent> e j
+dfd9515122819371bf9d3fb726972ca1|file:///Users/bytedance/.config/nvim/init.vim|173|1|V|vim
+	"noremap <silent> n h
+1bd89f920b05d0587999a054162cea41|file:///Users/bytedance/.config/nvim/init.vim|333|1|V|vim
+	noremap r :call CompileRunGcc()<CR>
+9109ae609f7a21113df7e7670e210855|file:///Users/bytedance/.config/nvim/init.vim|333|2|v|vim
+	oremap
+4627235f10fe0975e4d6cd7370b5f726|untitled:1|5|10|V|
+	| | | |  _
+0233c401b90a0d6b6725a4a4390df2d4|untitled:1|4|10|V|
+	| '_ \ / _ \ | |/ _ \ 
+52bc961ca7628b9a6e138271378fa33f|untitled:1|3|10|V|
+	| |__   ___| | | ___  
+9faed10ea4c4c7970170c4d6c1495968|untitled:1|2|10|V|
+	 _          _ _       
+5e0e83cb589b0156af387b4df084dcb6|untitled:1|21|1|V|
+	line  "noremap K I
+ed03c106d93311953359ecd60e944ed2|untitled:1|20|1|V|
+								
+de5ccc29979708a62677f748b1679d8e|file:///Users/bytedance/.zshrc|108|1|V|zsh
+	lg()
+	{
+	    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+	
+	    lazygit "$@"
+	
+	    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+	            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+	            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
+	    fi
+	}
+07cc694b9b3fc636710fa08b6922c42b|untitled:4|3|1|V|
+	time
+5d41402abc4b2a76b9719d911017c592|untitled:4|1|1|V|
+	hello
+cd44092e51f1c170469f6a4f36dc2f80|file:///Users/bytedance/.zshrc|111|1|V|zsh
+	helle
+a179a1f1df97d3de05b0e7cee9c828dd|file:///Users/bytedance/.config/nvim/init.vim|128|1|v|vim
+	noremap <LEADER>rc :e $HOME/.config/nvim/init.vim<CR>
+a678c0d5082e4c07b119c7fc6a9cff3b|file:///Users/bytedance/.config/nvim/init.vim|128|1|v|vim
+	noremap 
+5deaee1c1332199e5b5bc7c5e4f7f0c2|file:///Users/bytedance/.config/nvim/init.vim|143|1|V|vim
+	"hello"
+f91f715936f58e8aecda53c3991ad4a0|file:///Users/bytedance/.config/nvim/init.vim|237|1|V|vim
+	noremap <LEADER>j <C-w>j
+a352fe74509c7efa447ac293ea8537fe|file:///Users/bytedance/.config/nvim/init.vim|237|1|V|vim
+	noremap <LEADER>h <C-w>h
+a85925d5535c2334d1c134585851cce3|file:///Users/bytedance/.config/nvim/init.vim|217|1|v|vim
+	cnoremap <C-n> <Down>
+2f99c6cf0a259a6a3597c17e88f3aaa2|file:///Users/bytedance/.config/nvim/init.vim|216|1|v|vim
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+b26b00bfce2a10652a8787fb6ed54ccf|file:///Users/bytedance/.config/nvim/init.vim|215|1|v|vim
+	cnoremap <C-e> <End>
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+a73d6c8185627005bc9a2fcec5f7db18|file:///Users/bytedance/.config/nvim/init.vim|214|1|v|vim
+	cnoremap <C-a> <Home>
+	cnoremap <C-e> <End>
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+499c6cc6e087d5e1cf9e04d32ccde89b|file:///Users/bytedance/.config/nvim/init.vim|213|1|v|vim
+	" ===
+	cnoremap <C-a> <Home>
+	cnoremap <C-e> <End>
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+fe8a147a0b58788239a98ef480bee6a5|file:///Users/bytedance/.config/nvim/init.vim|212|1|v|vim
+	" === Command Mode Cursor Movement
+	" ===
+	cnoremap <C-a> <Home>
+	cnoremap <C-e> <End>
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+7c22f562044e81ad455d4aa18c21f7d7|file:///Users/bytedance/.config/nvim/init.vim|211|1|v|vim
+	" ===
+	" === Command Mode Cursor Movement
+	" ===
+	cnoremap <C-a> <Home>
+	cnoremap <C-e> <End>
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+ebddfd0247600e80a7508ff1e8a3dd60|file:///Users/bytedance/.config/nvim/init.vim|210|1|v|vim
+	
+	" ===
+	" === Command Mode Cursor Movement
+	" ===
+	cnoremap <C-a> <Home>
+	cnoremap <C-e> <End>
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+ce3f372a94d179db0a781f6d6df6f98c|file:///Users/bytedance/.config/nvim/init.vim|302|42|v|vim
+	<++>
+37e1e54f8094396b7d86d3e816aaa7d3|file:///Users/bytedance/.config/nvim/init.vim|323|1|V|vim
+	noremap <LEADER>sw :set wrap<CR>
+	
+15bff162778ae040242fec691503ade0|file:///Users/bytedance/.config/nvim/init.vim|889|3|v|vim
+	t g:VM_leader                     = {'default': ',', 'visual': ',', 'buffer': ','}
+	l
+9b146611c71067581a5648c030e01a4f|file:///Users/bytedance/.config/nvim/init.vim|891|90|v|vim
+	'$', 
+f2026d5e39d060ed29977341a2c50e48|file:///Users/bytedance/.config/nvim/init.vim|892|41|V|vim
+	let g:VM_maps['i']                  = 'i'
+9a37167fdb2b10519bd96146f79ba907|file:///Users/bytedance/.config/nvim/init.vim|892|41|V|vim
+	let g:VM_maps['I']                  = 'I'
+ff85ee0352545bf16a0c6003fdfcddd4|file:///Users/bytedance/.config/nvim/init.vim|1295|1|V|vim
+	" hello world 
+772d12d40f7edf3a03ad9e01771615a3|file:///Users/bytedance/.config/nvim/coc-settings.json|87|3|V|json
+			go
+68934a3e9455fa72420237eb05902327|file:///Users/bytedance/.config/ranger/rc.conf|60|15|v|conf
+	false
+5eb63bbbe01eeed093cb22bb8f5acdc3|file:///Users/bytedance/GitHub/6.828/note/homework/HW1.md|4|1|V|markdown
+	hello world
+618cde169ac3accb1c9db24c70a6a737|untitled:2|1|1|V|
+	hello wolrd
+2c164bced495c5a5bf29ef7085e040e1|untitled:2|1|1|V|
+	'
+	hello wolrd
+	'
+1feb0f41e666b6863982786c06cdab54|untitled:2|1|1|V|
+	"
+	hello wolrd
+	"
+9bdfab308006850655ac6929b5c955c0|untitled:2|1|1|V|
+	"
+	"
+	hello wolrd
+	"
+	"
+e3daeff07faa5d0a6f084b59644e43ec|untitled:2|1|1|V|
+	"hello world"
+c9708cb9a6b8d820eda83547a218f384|untitled:2|1|3|v|
+	 hello world 
+0632f7c2dcd5692672c273736906dc85|untitled:2|1|6|V|
+	"{{kjuello world}}"
+45df2c07efb8aa72c8a6e58c130c960a|file:///Users/bytedance/.config/nvim/init.vim|912|1|V|vim
+	" ===
+	" === vim-calc
+	" ===
+	"noremap <LEADER>a :call Calc()<CR>
+	" Testing
+	"if !empty(glob('~/Github/vim-calc/vim-calc.vim'))
+	"source ~/Github/vim-calc/vim-calc.vim
+	"endif
+e16ab2825f543f777814a3efc68b2869|file:///Users/bytedance/.config/nvim/init.vim|1049|1|V|vim
+	autocmd Filetype cs nnoremap <buffer> gd :OmniSharpPreviewDefinition<CR>
+	autocmd Filetype cs nnoremap <buffer> gr :OmniSharpFindUsages<CR>
+	autocmd Filetype cs nnoremap <buffer> gy :OmniSharpTypeLookup<CR>
+	autocmd Filetype cs nnoremap <buffer> ga :OmniSharpGetCodeActions<CR>
+	autocmd Filetype cs nnoremap <buffer> <LEADER>rn :OmniSharpRename<CR><C-N>:res +5<CR>
+ae0d7b84b5b0779a3846acc939c7011c|file:///Users/bytedance/.config/nvim/hello.md|1|2|V|markdown
+	 rc 
+7d663eadcfaaad86af5c05cf94a91064|file:///Users/bytedance/.config/nvim/hello.md|7|1|V|markdown
+	<!-- /TOC -->
+2938bcea5f5589f4664f5901a9870ef7|file:///Users/bytedance/.config/nvim/hello.md|4|1|V|markdown
+	<!-- TOC Marked -->
+110022e05e22e589c3a545337ccfd625|file:///Users/bytedance/.config/nvim/hello.md|2|1|V|markdown
+	<!-- TOC GitLab -->
+c11bb7eec8b60626961f63cda07648ac|file:///Users/bytedance/.config/nvim/hello.md|6|1|v|markdown
+	<!--
+8b8b66bd15314582e76060bc7fd49fa6|file:///Users/bytedance/.config/nvim/init.vim|912|1|V|vim
+	" ===
+	" === vim-calc
+	" ===
+	"noremap <LEADER>a :call Calc()<CR>
+	" Testing
+	"if !empty(glob('~/Github/vim-calc/vim-calc.vim'))
+	"source ~/Github/vim-calc/vim-calc.vim
+	"endif
+	
+ff1c5d78424f1fc890703f76eec3c9e1|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
+	1. hello
+c3557ca22ada1ccafcc43f8013ef0251|file:///Users/bytedance/.config/nvim/hello.md|1|3|v|markdown
+	helo
+7a024b72f7c73eea0eaa112dc3d7cbda|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
+	# hllo
+	hello
+f85440966ea7361e0eb30385d6c362e1|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
+	'
+	# hllo
+	hello
+	'
+5f0d5e6ca793c910f3ba653f1b83f2b6|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
+	'
+	hello
+	'
+	
+8b785bdc925a5acc775d0fb6111f914c|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
+	'
+	hello
+	'
+60c08e2b03b716a176aeb9c2a2fddb79|file:///Users/bytedance/.config/nvim/hello.md|2|1|V|markdown
+	hello world 
+7d793037a0760186574b0282f2f435e7|file:///Users/bytedance/.config/nvim/hello.md|912|1|v|markdown
+	world
+c21f969b5f03d33d43e04f8f136e7682|file:///Users/bytedance/.config/ranger/rc.conf|142|17|v|conf
+	default
+2b93fbdf27d43547bec8794054c28e00|file:///Users/bytedance/.config/ranger/rc.conf|142|17|v|conf
+	snow
+4698850447aa09571776addcb6a2911b|file:///Users/bytedance/.config/ranger/rifle.conf|90|78|v|cfg
+	EDITOR
+5558da9ed2057ce11db76293342526bc|file:///Users/bytedance/.config/nvim/init.vim|891|1|v|vim
+	let g:VM_leader                     = {'default': ',', 'visual': ',', 'buffer': ','}
+c91b2622bc9dd245c06f462e8b1b5208|file:///Users/bytedance/.config/nvim/init.vim|896|40|v|vim
+	<C-n>

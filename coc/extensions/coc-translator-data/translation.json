@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1e1684c8-850e-4fb0-b7ad-fc2624f547bc",
+    "content": [
+      "options",
+      "n. 选择；可选择的东西 "
+    ],
+    "path": "file:///Users/bytedance/.config/ranger/rc.conf\t20\t6"
+  },
+  {
+    "id": "7923dfd0-d9ae-4bf3-8bed-5e39904328d7",
+    "content": [
+      "function",
+      "n. 功能；函数；作用；职能 "
+    ],
+    "path": "file:///Users/bytedance/.config/nvim/init.vim\t716\t1"
+  },
+  {
+    "id": "38c00beb-2e0c-432f-8e83-ff6fdd9c706b",
+    "content": [
+      "nmap",
+      "web. 端口扫描工具；扫描网络端口；New Mark Adevertiasement Plan "
+    ],
+    "path": "file:///Users/bytedance/.config/nvim/init.vim\t714\t1"
+  },
+  {
+    "id": "81161294-bf6d-4330-88aa-27a8f125769c",
+    "content": [
+      "time",
+      "n. 时间；时候；次；时代 "
+    ],
+    "path": "untitled:4\t3\t1"
+  },
+  {
+    "id": "be3e6463-b01f-4101-92ac-87b7ac58bb6f",
+    "content": [
+      "hello",
+      "int. 你好；喂；您好；哈喽 "
+    ],
+    "path": "untitled:4\t1\t1"
+  }
+]
