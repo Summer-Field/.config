@@ -216,3 +216,64 @@ c21f969b5f03d33d43e04f8f136e7682|file:///Users/bytedance/.config/ranger/rc.conf|
 	let g:VM_leader                     = {'default': ',', 'visual': ',', 'buffer': ','}
 c91b2622bc9dd245c06f462e8b1b5208|file:///Users/bytedance/.config/nvim/init.vim|896|40|v|vim
 	<C-n>
+5918fb6c7028b91e3627b8b2f9fe748a|file:///Users/bytedance/.config/nvim/init.vim|1296|15|V|vim
+	nnoremap z :AnyJump<CR>
+	let g:any_jump_disable_default_keybindings = 1
+79e84fcd5cec270807ad46323a01c671|file:///Users/bytedance/.config/nvim/init.vim|1298|1|V|vim
+	nnoremap <leader>j :AnyJump<CR>
+67cf3c24a769cc3a93718a03abde2947|file:///Users/bytedance/.config/nvim/init.vim|1296|1|V|vim
+	nnoremap z :AnyJump<CR>
+c444858e0aaeb727da73d2eae62321ad|file:///Users/bytedance/.config/nvim/init.vim|1300|10|v|vim
+	leader
+2ec98e041f61f3448ed19e634cc2cbfa|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|25|19|^v|yaml
+	MONGO_INITDB_ROOT_PASSWORD 
+30f8ebd8d771fadba5f798e2bbda9c7b|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|25|19|V|yaml
+	          - name: 
+	            value:
+17b93b7388abc34e0ab2678ed25f2d9b|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|27|22|v|yaml
+	mongp
+d3709307439710668ec6474d476f4b2e|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|7|24|v|yaml
+	dXNlcm5hbWU
+f5898f1a41c21c0e27c80f7575f34be7|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|7|24|^v|yaml
+	dXNlcm5hbWU=  
+0207de6daf5a03f764f15b5de317ff7f|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|7|3|^v|yaml
+	monto-root-username
+040ceb7555ad21a9a20f1539f2ef7724|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|24|1|V|yaml
+	            valueFrom:
+	              secretKetRef:
+	                name: mongodb-secret
+	                key: monto-root-username
+33aa932f3da90ffb517cab1b42f080d8|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|29|13|V|yaml
+	            value:
+14c4b06b824ec593239362517f538b29|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|32|33|v|yaml
+	username
+427764120bb7975ab602e705f759ea14|file:///Users/bytedance/.config/nvim/init.vim|382|8|^v|vim
+	&filetype == 'yaml'
+101ae616f03d79747acb4d668b35cf74|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|15|3|v|yaml
+	      app: mongodb
+8252b9d1c4141baee23fe920067fbddd|file:///Users/bytedance/.config/nvim/init.vim|1304|1|V|vim
+	xnoremap z:AnyJumpVisual<CR>
+dccf9d002d2ef1ac6720a71a79bcb09a|file:///Users/bytedance/.config/nvim/init.vim|382|1|V|vim
+		" elseif &filetype == 'yaml'
+		" 	set splitbelow
+		" 	:sp
+		" 	:term kubectl apply -f %
+c0b867c96084a1eaefc04ec243fa09ec|file:///Users/bytedance/.config/nvim/init.vim|300|1|V|vim
+	" Opening a terminal window
+	noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+	:tnoremap <Esc> <C-\><C-n>
+5b621474327bab021a785402674c1155|file:///Users/bytedance/.config/nvim/init.vim|111|10|^v|vim
+	<C-N> 
+f2cdadb28a9ab09860359e2286d99cca|file:///Users/bytedance/.config/nvim/init.vim|115|15|V|vim
+	:tnoremap <Esc> <C-\><C-n>
+9c65c5c301abf6254aba3e8f3966d804|file:///Users/bytedance/.config/nvim/init.vim|114|1|V|vim
+	noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+06bac8cab80d6be44ba84f0dee27aaee|file:///Users/bytedance/.config/nvim/init.vim|113|1|V|vim
+	" Opening a terminal window
+	noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+464e07afc9e46359fb480839150595c5|file:///Users/bytedance/.config/nvim/init.vim|734|23|v|vim
+	David
+1227b7456a33b3c90498131745bccdfe|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|8|5|V|yaml
+	    d
+0f37c77a5d479718fdd9cbcb011d74f2|file:///Users/bytedance/.config/nvim/coc-settings.json|125|8|v|json
+	gotoParent

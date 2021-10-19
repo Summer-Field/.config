@@ -1,5 +1,13 @@
 [
   {
+    "id": "374c0c21-6c5e-44f3-9a84-9427b0e5b8f2",
+    "content": [
+      "noremap",
+      "地图"
+    ],
+    "path": "list:/tasks\t1\t1"
+  },
+  {
     "id": "1e1684c8-850e-4fb0-b7ad-fc2624f547bc",
     "content": [
       "options",
