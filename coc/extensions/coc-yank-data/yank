@@ -1,279 +1,1362 @@
-72f2f344ef43c1072c083fc14987651c|file:///Users/bytedance/.config/nvim/init.vim|36|9|v|vim
-	XDG_CONFIG_HOME
-0938797e3e169458b0c0734e55a5a806|file:///Users/bytedance/.config/nvim/init.vim|206|26|v|vim
-	G_HOME
-5f611233060e6d01f6697a0ae9f55d4a|file:///Users/bytedance/.config/nvim/init.vim|206|22|v|vim
-	nvim
-1bc1591db8f4a0a334e6e84f5da2b948|file:///Users/bytedance/.config/nvim/init.vim|134|1|V|vim
-	" Insert Key
-caaa8f32848c5379da2f649afa319118|file:///Users/bytedance/.config/nvim/init.vim|134|1|V|vim
-	"noremap k i
-3cf2f7f189fea073767bcea4f1328953|file:///Users/bytedance/.config/nvim/init.vim|134|1|V|vim
-	"noremap K I
-63bf8bc1c6e544e4992dfeaa5b275f62|file:///Users/bytedance/.config/nvim/init.vim|174|1|V|vim
-	"noremap <silent> e j
-dfd9515122819371bf9d3fb726972ca1|file:///Users/bytedance/.config/nvim/init.vim|173|1|V|vim
-	"noremap <silent> n h
-1bd89f920b05d0587999a054162cea41|file:///Users/bytedance/.config/nvim/init.vim|333|1|V|vim
-	noremap r :call CompileRunGcc()<CR>
-9109ae609f7a21113df7e7670e210855|file:///Users/bytedance/.config/nvim/init.vim|333|2|v|vim
-	oremap
-4627235f10fe0975e4d6cd7370b5f726|untitled:1|5|10|V|
-	| | | |  _
-0233c401b90a0d6b6725a4a4390df2d4|untitled:1|4|10|V|
-	| '_ \ / _ \ | |/ _ \ 
-52bc961ca7628b9a6e138271378fa33f|untitled:1|3|10|V|
-	| |__   ___| | | ___  
-9faed10ea4c4c7970170c4d6c1495968|untitled:1|2|10|V|
-	 _          _ _       
-5e0e83cb589b0156af387b4df084dcb6|untitled:1|21|1|V|
-	line  "noremap K I
-ed03c106d93311953359ecd60e944ed2|untitled:1|20|1|V|
-								
-de5ccc29979708a62677f748b1679d8e|file:///Users/bytedance/.zshrc|108|1|V|zsh
-	lg()
-	{
-	    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+3bd265a126f5493e26739c1a2b8f6855|file:///Users/bytedance/GitHub/augur/database-compose.yml|5|12|v|yaml
+	augurlabs/augur:${AUGUR_DB_TYPE}
+4ee78dcee18c85b6fb11912ecf352bba|file:///Users/bytedance/GitHub/augur/docker_env.txt|1|22|v|text
+	dockerkey
+a37efd288b35500e394240b3f86f3eba|file:///Users/bytedance/GitHub/grimoirelab/tests/projects.json|35|1|V|json
+	            "https://github.com/grimoirelab/perceval"
+78e279b667ae310d2f851bc15d9d55cb|file:///Users/bytedance/GitHub/grimoirelab/tests/projects.json|35|1|V|json
+	            https://github.com/grimoirelab/perceval,
+bf35584fdf0f4575ab05db7a2203d46e|file:///Users/bytedance/GitHub/grimoirelab/tests/projects.json|35|1|V|json
+	            https://https://github.com/kitex-contrib/resolver-dns
+4a475d3f334af8d8f584f400a8ee7e0a|file:///Users/bytedance/go/src/test_rest/test.go|1|8|v|go
+	package 
+efe90a8e604a7c840e88d03a67f6b7d8|file:///Users/bytedance/go/src/REST/test.go|4|3|v|go
+	package
+e449121a40efca0d8ea2558e9aeceb3e|file:///Users/bytedance/go/src/REST/test.go|6|1|V|go
+	go get github.com/google/go-github/v40
+93ee1f8b2f6ed77e77b1e205c1d305d6|file:///Users/bytedance/go/src/REST/test.go|1|1|V|go
+	package REST
+888b5b3a4b6f538fcb719ee2e5ef17d6|file:///Users/bytedance/go/src/REST/test.go|1|1|V|go
+	import (
+		"context"
 	
-	    lazygit "$@"
+		"github.com/google/go-github/v40/github"
+		"golang.org/x/oauth2"
+	)
 	
-	    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
-	            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
-	            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
-	    fi
+	func main() {
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: "... your access token ..."},
+		)
+	
+		client := github.NewClient(ctx, ts)
+	
+		repos, _, err = client.Repositories.List(ctx, "", nil)
 	}
-07cc694b9b3fc636710fa08b6922c42b|untitled:4|3|1|V|
-	time
-5d41402abc4b2a76b9719d911017c592|untitled:4|1|1|V|
-	hello
-cd44092e51f1c170469f6a4f36dc2f80|file:///Users/bytedance/.zshrc|111|1|V|zsh
-	helle
-a179a1f1df97d3de05b0e7cee9c828dd|file:///Users/bytedance/.config/nvim/init.vim|128|1|v|vim
-	noremap <LEADER>rc :e $HOME/.config/nvim/init.vim<CR>
-a678c0d5082e4c07b119c7fc6a9cff3b|file:///Users/bytedance/.config/nvim/init.vim|128|1|v|vim
-	noremap 
-5deaee1c1332199e5b5bc7c5e4f7f0c2|file:///Users/bytedance/.config/nvim/init.vim|143|1|V|vim
-	"hello"
-f91f715936f58e8aecda53c3991ad4a0|file:///Users/bytedance/.config/nvim/init.vim|237|1|V|vim
-	noremap <LEADER>j <C-w>j
-a352fe74509c7efa447ac293ea8537fe|file:///Users/bytedance/.config/nvim/init.vim|237|1|V|vim
-	noremap <LEADER>h <C-w>h
-a85925d5535c2334d1c134585851cce3|file:///Users/bytedance/.config/nvim/init.vim|217|1|v|vim
-	cnoremap <C-n> <Down>
-2f99c6cf0a259a6a3597c17e88f3aaa2|file:///Users/bytedance/.config/nvim/init.vim|216|1|v|vim
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-b26b00bfce2a10652a8787fb6ed54ccf|file:///Users/bytedance/.config/nvim/init.vim|215|1|v|vim
-	cnoremap <C-e> <End>
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-a73d6c8185627005bc9a2fcec5f7db18|file:///Users/bytedance/.config/nvim/init.vim|214|1|v|vim
-	cnoremap <C-a> <Home>
-	cnoremap <C-e> <End>
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-499c6cc6e087d5e1cf9e04d32ccde89b|file:///Users/bytedance/.config/nvim/init.vim|213|1|v|vim
-	" ===
-	cnoremap <C-a> <Home>
-	cnoremap <C-e> <End>
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-fe8a147a0b58788239a98ef480bee6a5|file:///Users/bytedance/.config/nvim/init.vim|212|1|v|vim
-	" === Command Mode Cursor Movement
-	" ===
-	cnoremap <C-a> <Home>
-	cnoremap <C-e> <End>
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-7c22f562044e81ad455d4aa18c21f7d7|file:///Users/bytedance/.config/nvim/init.vim|211|1|v|vim
-	" ===
-	" === Command Mode Cursor Movement
-	" ===
-	cnoremap <C-a> <Home>
-	cnoremap <C-e> <End>
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-ebddfd0247600e80a7508ff1e8a3dd60|file:///Users/bytedance/.config/nvim/init.vim|210|1|v|vim
+c5597aa51b9dde26ae6f5c5eda4e678f|file:///Users/bytedance/.config/nvim/coc-settings.json|213|1|V|json
+			"golang": {
+				"command": "gopls",
+				"rootPatterns": ["go.mod"],
+				"filetypes": ["go"],
+				"initializationOptions": {
+					"gocodeCompletionEnabled": true,
+					"diagnosticsEnabled": true,
+					"lintTool": "golint"
+				}
+			},
+203271e2dcdfa18c5ffa8a91d497801e|file:///Users/bytedance/go/src/REST/star.go|3|1|V|go
+	 func fetchStar(username string) ([]*Star, error) {
+		 client = NewClient(nil)
+		 stars, _, err := client. 
+	 }
+b3ed98a4a61c3df379b15d3e4f0f5c82|file:///Users/bytedance/go/src/REST/star.go|3|1|V|go
+		"buffio"
+		"con{xt"
+		"fmt"
+		"os"
+		"strings"
+		"syscall"
 	
-	" ===
-	" === Command Mode Cursor Movement
-	" ===
-	cnoremap <C-a> <Home>
-	cnoremap <C-e> <End>
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
-ce3f372a94d179db0a781f6d6df6f98c|file:///Users/bytedance/.config/nvim/init.vim|302|42|v|vim
-	<++>
-37e1e54f8094396b7d86d3e816aaa7d3|file:///Users/bytedance/.config/nvim/init.vim|323|1|V|vim
-	noremap <LEADER>sw :set wrap<CR>
+		"github.com/google/go-github/v40/github"
+		"golang.org/x/crypto/ssh/terminal"
+3e888690d700949f3756d29f75e6d13e|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|20|21|V|go
+			list = append(list, l...)
+1826a74a9ade4ce9da72607086e76572|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|26|4|V|go
+				d
+56b828c46d272e200a0ba4be4b38c346|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|51|28|v|go
+	Commits 
+05be88a29564b42ebc9d7a1ea8921b50|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|51|28|v|go
+	Made 
+8f9bfe9d1345237cb3b2b205864da075|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|51|28|v|go
+	User
+356b7712d419992665e9a6b08d2c778c|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|1|10|V|go
+	fasdiiiias
+2160b3454860845d43cd5996a6f9b73e|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|10|1|v|go
+	func GetRepoIssues(ctx context.Context, client *github.Client, orgName string, repoName string, repoOwner string, username string, yearAgo time.Time) ([]*github.Issue, error) {
+		var list []*github.Issue
+		opt := &github.IssueListByRepoOptions {
+			State: "all",
+			Creator: username,
+			Since: yearAgo,
+			ListOptions: github.ListOptions{PerPage: 30},
+		}
+		for {
+			l, resp, err := client.Issues.ListByRepo(ctx, repoOwner, opt)
+			if err != nil {
+				return nil, err
+			}
+			list = append(list, l...)
+			if resp.NextPage == 0 {
+				break
+			}
+			opt.Page = resp.NextPage
+		}
+		return list, nil
+	}
 	
-15bff162778ae040242fec691503ade0|file:///Users/bytedance/.config/nvim/init.vim|889|3|v|vim
-	t g:VM_leader                     = {'default': ',', 'visual': ',', 'buffer': ','}
-	l
-9b146611c71067581a5648c030e01a4f|file:///Users/bytedance/.config/nvim/init.vim|891|90|v|vim
-	'$', 
-f2026d5e39d060ed29977341a2c50e48|file:///Users/bytedance/.config/nvim/init.vim|892|41|V|vim
-	let g:VM_maps['i']                  = 'i'
-9a37167fdb2b10519bd96146f79ba907|file:///Users/bytedance/.config/nvim/init.vim|892|41|V|vim
-	let g:VM_maps['I']                  = 'I'
-ff85ee0352545bf16a0c6003fdfcddd4|file:///Users/bytedance/.config/nvim/init.vim|1295|1|V|vim
-	" hello world 
-772d12d40f7edf3a03ad9e01771615a3|file:///Users/bytedance/.config/nvim/coc-settings.json|87|3|V|json
-			go
-68934a3e9455fa72420237eb05902327|file:///Users/bytedance/.config/ranger/rc.conf|60|15|v|conf
-	false
-5eb63bbbe01eeed093cb22bb8f5acdc3|file:///Users/bytedance/GitHub/6.828/note/homework/HW1.md|4|1|V|markdown
-	hello world
-618cde169ac3accb1c9db24c70a6a737|untitled:2|1|1|V|
-	hello wolrd
-2c164bced495c5a5bf29ef7085e040e1|untitled:2|1|1|V|
-	'
-	hello wolrd
-	'
-1feb0f41e666b6863982786c06cdab54|untitled:2|1|1|V|
-	"
-	hello wolrd
-	"
-9bdfab308006850655ac6929b5c955c0|untitled:2|1|1|V|
-	"
-	"
-	hello wolrd
-	"
-	"
-e3daeff07faa5d0a6f084b59644e43ec|untitled:2|1|1|V|
-	"hello world"
-c9708cb9a6b8d820eda83547a218f384|untitled:2|1|3|v|
-	 hello world 
-0632f7c2dcd5692672c273736906dc85|untitled:2|1|6|V|
-	"{{kjuello world}}"
-45df2c07efb8aa72c8a6e58c130c960a|file:///Users/bytedance/.config/nvim/init.vim|912|1|V|vim
-	" ===
-	" === vim-calc
-	" ===
-	"noremap <LEADER>a :call Calc()<CR>
-	" Testing
-	"if !empty(glob('~/Github/vim-calc/vim-calc.vim'))
-	"source ~/Github/vim-calc/vim-calc.vim
-	"endif
-e16ab2825f543f777814a3efc68b2869|file:///Users/bytedance/.config/nvim/init.vim|1049|1|V|vim
-	autocmd Filetype cs nnoremap <buffer> gd :OmniSharpPreviewDefinition<CR>
-	autocmd Filetype cs nnoremap <buffer> gr :OmniSharpFindUsages<CR>
-	autocmd Filetype cs nnoremap <buffer> gy :OmniSharpTypeLookup<CR>
-	autocmd Filetype cs nnoremap <buffer> ga :OmniSharpGetCodeActions<CR>
-	autocmd Filetype cs nnoremap <buffer> <LEADER>rn :OmniSharpRename<CR><C-N>:res +5<CR>
-ae0d7b84b5b0779a3846acc939c7011c|file:///Users/bytedance/.config/nvim/hello.md|1|2|V|markdown
-	 rc 
-7d663eadcfaaad86af5c05cf94a91064|file:///Users/bytedance/.config/nvim/hello.md|7|1|V|markdown
-	<!-- /TOC -->
-2938bcea5f5589f4664f5901a9870ef7|file:///Users/bytedance/.config/nvim/hello.md|4|1|V|markdown
-	<!-- TOC Marked -->
-110022e05e22e589c3a545337ccfd625|file:///Users/bytedance/.config/nvim/hello.md|2|1|V|markdown
-	<!-- TOC GitLab -->
-c11bb7eec8b60626961f63cda07648ac|file:///Users/bytedance/.config/nvim/hello.md|6|1|v|markdown
-	<!--
-8b8b66bd15314582e76060bc7fd49fa6|file:///Users/bytedance/.config/nvim/init.vim|912|1|V|vim
-	" ===
-	" === vim-calc
-	" ===
-	"noremap <LEADER>a :call Calc()<CR>
-	" Testing
-	"if !empty(glob('~/Github/vim-calc/vim-calc.vim'))
-	"source ~/Github/vim-calc/vim-calc.vim
-	"endif
+10ae9fc7d453b0dd525d0edf2ede7961|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|20|24|v|go
+	list
+535309b452846a3fe564122e3753a60d|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|10|6|v|go
+	githubRepos
+e2a0488c39f6bba9aab716deaa9f5f71|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|14|14|V|go
+			Direction: ""
+78c99bde5a3ba9f3cad1e799a1de33b3|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|27|9|v|go
+	orgRepos
+d4109236aa036707a033fdde936c97e8|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|21|3|v|go
+	orgRepos = append
+f66ac23e071969282c413a2f3a105b1e|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|21|3|v|go
+	orgRepos = append(orgReposg, repos...)
+1cc1bc402f69f074b02b9cf403613550|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|16|1|v|go
+			repos, resp, err := client.Repositories.ListByOrg(context.Backgro
+cf093660a1e9d6b245359e1fd90d2f65|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|11|1|V|go
+		ctx 
+c5e571e8bc7e09e25ea6aa3f5cff09b5|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|10|1|V|go
+	func GetRepoIssues(ctx context.Context, client *github.Client, orgName string, repoName string, repoOwner string, username string, yearAgo time.Time) ([]*github.Issue, error) {
+		var list []*github.Issue
+		opt := &github.IssueListByRepoOptions {
+			State: "all",
+			Creator: username,
+			Since: yearAgo,
+			ListOptions: github.ListOptions{PerPage: 30},
+		}
+		for {
+			l, resp, err := client.Issues.ListByRepo(ctx, repoOwner, opt)
+			list = append(list, l...)
+			if err != nil {
+				return nil, err
+			}
+			list = append(list, l...)
+			if resp.NextPage == 0 {
+				break
+			}
+			opt.Page = resp.NextPage
+		}
+		return list, nil
+	}
+6479c880ff16bf77f68e9d3d7cd1b7cb|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|6|1|V|go
+		"log"
+		"time"
+8e8f425589813e7de8f3164fa90f83b2|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|3|1|V|go
+		"context"
+		"github.com/google/go-github/github"
+		"github.com/SummerField/repo"
+ce76d6c6288aee3433833403028bf582|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|9|1|V|go
+	func 
+9a87f01c75249987744f7eb99972208f|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|2|1|V|go
 	
-ff1c5d78424f1fc890703f76eec3c9e1|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
-	1. hello
-c3557ca22ada1ccafcc43f8013ef0251|file:///Users/bytedance/.config/nvim/hello.md|1|3|v|markdown
-	helo
-7a024b72f7c73eea0eaa112dc3d7cbda|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
-	# hllo
-	hello
-f85440966ea7361e0eb30385d6c362e1|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
-	'
-	# hllo
-	hello
-	'
-5f0d5e6ca793c910f3ba653f1b83f2b6|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
-	'
-	hello
-	'
+	import (
+2d55ecfa8617185c9136078ef476258c|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|4|3|V|go
+		"github.com/Summer-Field/ByteOpen"
+f8b389e454acfa0dbdb2afc74f7c2e60|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|8|1|V|go
+	type repoDetails struct {
+		Name        string
+		IssuesCount []int
+	}
+c1a402e292dbb0ba9bfde05c69b4feab|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|9|1|V|go
+	type repoDetails struct {
+		Name             string
+		StarsCount       []int
+		IssuesCount      []int
+		PullRequestCount []int
+		ContributorCount []int
+	}
+2e65a32404ce03874b4ce837f1a0fc83|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|27|2|v|go
+	}
+		return orgRepos, nil
+3ec365dd533ddb7ef3d1c111186ce872|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|9|10|v|go
+	Details
+0710fd93d0f779d4cbfd217b91ed628e|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|25|1|V|go
+		opt := &github.RepositoryListByOrgOptions{
+			Type:        "public",
+			Sort:        "updated",
+			ListOptions: github.ListOptions{PerPage: 30},
+		}
+5820cda796f8ab4fbf9b0e152e89f702|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|43|1|V|go
+		for _, repo := range orgRepos {
+			s := &repoStatics{
+				Name: *repo.Name
+				StarsCount: *repo.StarsCount
+				IssuesCount: *
+			}
+		}
+da6fdb703e7f26c851fc2191b145510c|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|19|35|v|go
+	repoStatics
+babb9fe745d96a0c53c0b1bcd415f617|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|21|1|V|go
+		var repos []*repoStatics
+80b768b15c3693e345a436b9dc0ea36f|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|46|27|v|go
+	Issues
+341db5c54c8e882c0a23ca92285bd6db|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|4|2|V|go
+		repos := getRepos(orgName)
+f6c9f7b0d68c0f8f040b95a025d5f40d|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|4|11|V|go
+		var list int[]
+b5a19d74a977fd08612e71ac7fe244cb|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|49|45|v|go
+	cleint
+d24b0433c3765923a461b6046bc2cd17|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|9|15|V|go
+			Filter: "all",
+0fda2560033bf1410d5316c94fe6e292|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|16|1|V|go
+		for {
+			l, resp, err := client.Issues.ListByRepo(context.Background(), *repo.Owner.Name, *repo.Name, opt)
+			if err != nil {
+				return nil, err
+			}
+			list = append(list, l...)
+			if resp.NextPage == 0 {
+				break
+			}
+			opt.Page = resp.NextPage
+		}
+aedf0913cf655789dc10a2ff614847b2|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|30|42|^v|go
+	(i+1) * 7)
+84c1fa584c510cf8a6e44690de1ca65f|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|8|1|V|go
+		"github.com/google/go-github/github"
+2aa6dd0060769d5c80ffa1aecfc6833c|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|1|1|V|go
+	package issues
 	
-8b785bdc925a5acc775d0fb6111f914c|file:///Users/bytedance/.config/nvim/hello.md|1|1|V|markdown
-	'
-	hello
-	'
-60c08e2b03b716a176aeb9c2a2fddb79|file:///Users/bytedance/.config/nvim/hello.md|2|1|V|markdown
-	hello world 
-7d793037a0760186574b0282f2f435e7|file:///Users/bytedance/.config/nvim/hello.md|912|1|v|markdown
-	world
-c21f969b5f03d33d43e04f8f136e7682|file:///Users/bytedance/.config/ranger/rc.conf|142|17|v|conf
-	default
-2b93fbdf27d43547bec8794054c28e00|file:///Users/bytedance/.config/ranger/rc.conf|142|17|v|conf
-	snow
-4698850447aa09571776addcb6a2911b|file:///Users/bytedance/.config/ranger/rifle.conf|90|78|v|cfg
-	EDITOR
-5558da9ed2057ce11db76293342526bc|file:///Users/bytedance/.config/nvim/init.vim|891|1|v|vim
-	let g:VM_leader                     = {'default': ',', 'visual': ',', 'buffer': ','}
-c91b2622bc9dd245c06f462e8b1b5208|file:///Users/bytedance/.config/nvim/init.vim|896|40|v|vim
-	<C-n>
-5918fb6c7028b91e3627b8b2f9fe748a|file:///Users/bytedance/.config/nvim/init.vim|1296|15|V|vim
-	nnoremap z :AnyJump<CR>
-	let g:any_jump_disable_default_keybindings = 1
-79e84fcd5cec270807ad46323a01c671|file:///Users/bytedance/.config/nvim/init.vim|1298|1|V|vim
-	nnoremap <leader>j :AnyJump<CR>
-67cf3c24a769cc3a93718a03abde2947|file:///Users/bytedance/.config/nvim/init.vim|1296|1|V|vim
-	nnoremap z :AnyJump<CR>
-c444858e0aaeb727da73d2eae62321ad|file:///Users/bytedance/.config/nvim/init.vim|1300|10|v|vim
-	leader
-2ec98e041f61f3448ed19e634cc2cbfa|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|25|19|^v|yaml
-	MONGO_INITDB_ROOT_PASSWORD 
-30f8ebd8d771fadba5f798e2bbda9c7b|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|25|19|V|yaml
-	          - name: 
-	            value:
-17b93b7388abc34e0ab2678ed25f2d9b|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|27|22|v|yaml
-	mongp
-d3709307439710668ec6474d476f4b2e|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|7|24|v|yaml
-	dXNlcm5hbWU
-f5898f1a41c21c0e27c80f7575f34be7|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|7|24|^v|yaml
-	dXNlcm5hbWU=  
-0207de6daf5a03f764f15b5de317ff7f|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|7|3|^v|yaml
-	monto-root-username
-040ceb7555ad21a9a20f1539f2ef7724|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|24|1|V|yaml
-	            valueFrom:
-	              secretKetRef:
-	                name: mongodb-secret
-	                key: monto-root-username
-33aa932f3da90ffb517cab1b42f080d8|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|29|13|V|yaml
-	            value:
-14c4b06b824ec593239362517f538b29|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|32|33|v|yaml
-	username
-427764120bb7975ab602e705f759ea14|file:///Users/bytedance/.config/nvim/init.vim|382|8|^v|vim
-	&filetype == 'yaml'
-101ae616f03d79747acb4d668b35cf74|file:///Users/bytedance/GitHub/mogodb-app/mongodb.yaml|15|3|v|yaml
-	      app: mongodb
-8252b9d1c4141baee23fe920067fbddd|file:///Users/bytedance/.config/nvim/init.vim|1304|1|V|vim
-	xnoremap z:AnyJumpVisual<CR>
-dccf9d002d2ef1ac6720a71a79bcb09a|file:///Users/bytedance/.config/nvim/init.vim|382|1|V|vim
-		" elseif &filetype == 'yaml'
-		" 	set splitbelow
-		" 	:sp
-		" 	:term kubectl apply -f %
-c0b867c96084a1eaefc04ec243fa09ec|file:///Users/bytedance/.config/nvim/init.vim|300|1|V|vim
-	" Opening a terminal window
-	noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
-	:tnoremap <Esc> <C-\><C-n>
-5b621474327bab021a785402674c1155|file:///Users/bytedance/.config/nvim/init.vim|111|10|^v|vim
-	<C-N> 
-f2cdadb28a9ab09860359e2286d99cca|file:///Users/bytedance/.config/nvim/init.vim|115|15|V|vim
-	:tnoremap <Esc> <C-\><C-n>
-9c65c5c301abf6254aba3e8f3966d804|file:///Users/bytedance/.config/nvim/init.vim|114|1|V|vim
-	noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
-06bac8cab80d6be44ba84f0dee27aaee|file:///Users/bytedance/.config/nvim/init.vim|113|1|V|vim
-	" Opening a terminal window
-	noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
-464e07afc9e46359fb480839150595c5|file:///Users/bytedance/.config/nvim/init.vim|734|23|v|vim
-	David
-1227b7456a33b3c90498131745bccdfe|file:///Users/bytedance/GitHub/mogodb-app/mongo-secret.yaml|8|5|V|yaml
-	    d
-0f37c77a5d479718fdd9cbcb011d74f2|file:///Users/bytedance/.config/nvim/coc-settings.json|125|8|v|json
-	gotoParent
+	import (
+		"context"
+		"time"
+	
+		"github.com/google/go-github/github"
+	)
+	
+	func getIssues(repo *github.Repository, n int, client *github.Client) []int {
+		var issuesCountList []int
+		var list []*github.Issue
+		opt := &github.IssueListByRepoOptions{
+			State: "open",
+			Since: time.Now().AddDate(0, 0, 0),
+		}
+	
+		for i := 0; i < n; i++ {
+			for {
+				l, resp, err := client.Issues.ListByRepo(context.Background(), *repo.Owner.Name, *repo.Name, opt)
+				if err != nil {
+					return nil, err
+				}
+				list = append(list, l...)
+				if resp.NextPage == 0 {
+					break
+				}
+				opt.Page = resp.NextPage
+			}
+			issuesCountList[i] = len(list)
+			list = nil
+			opt.Since = time.Now().AddDate(0, 0, -((i + 1) * 7))
+		}
+	
+		return issuesCountList
+	}
+fe5fe0415fc3e0ff4942d8454f363d2c|file:///Users/bytedance/GitHub/ByteOpen/stars/stars.go|1|9|v|go
+	issues
+642facf67e0ad311eee88b3ab8381590|file:///Users/bytedance/GitHub/ByteOpen/stars/stars.go|12|21|v|go
+	Issue
+40fdd2ae34e1bd670850c005ebae9eb1|file:///Users/bytedance/GitHub/ByteOpen/stars/stars.go|35|9|v|go
+	issuesCountList
+43ff9e5d49d01e509b1ec78879ef2bcb|file:///Users/bytedance/GitHub/ByteOpen/test.go|8|10|v|go
+	getIssuet
+cb9389ca5efdb018ea28d99c0c2dac61|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|18|44|^v|go
+	[]*repoStatics
+35568d3e63f73da7ab158bec5673db78|file:///Users/bytedance/go/src/ByteOpen/test.go|36|2|V|go
+			return
+8108fb10f40e01a674d2a93bba16512d|file:///Users/bytedance/go/src/ByteOpen/test.go|35|1|V|go
+		if _, ok := err.(*github.TwoFactorAuthError); ok {
+			fmt.Print("\nGitHub OTP: ")
+			otp, _ := r.ReadString('\n')
+			tp.OTP = strings.TrimSpace(otp)
+			user, _, err = client.Users.Get(ctx, "")
+		}
+285fb360678e56afbac9f41be8298f4b|file:///Users/bytedance/go/src/ByteOpen/test.go|34|1|V|go
+		// Is this a two-factor auth error? If so, prompt for OTP and try again.
+7063b142289864e78238d35c7e6d6377|file:///Users/bytedance/go/src/ByteOpen/test.go|32|1|V|go
+		user, _, err := client.Users.Get(ctx, "")
+3fdb3a804cae69fba3d55c3d04242779|file:///Users/bytedance/go/src/ByteOpen/test.go|31|1|V|go
+		ctx := context.Background()
+3911ebb466f15b69a888ab1a4bf5f8d4|file:///Users/bytedance/go/src/ByteOpen/test.go|30|1|V|go
+		client := github.NewClient(tp.Client())
+c2a4b5d6d39aa75f8f979c3525e21870|file:///Users/bytedance/go/src/ByteOpen/test.go|25|1|V|go
+		tp := github.BasicAuthTransport{
+			Username: strings.TrimSpace(username),
+			Password: strings.TrimSpace(password),
+		}
+f9ccb57c095c54cddce927784a76ac87|file:///Users/bytedance/go/src/ByteOpen/test.go|17|1|V|go
+		r := bufio.NewReader(os.Stdin)
+		fmt.Print("GitHub Username: ")
+		username, _ := r.ReadString('\n')
+	
+		fmt.Print("GitHub Password: ")
+		bytePassword, _ := terminal.ReadPassword(int(syscall.Stdin))
+		password := string(bytePassword)
+	
+17a22f90a8c6f4d3e9186cbadc1fdcdf|file:///Users/bytedance/go/src/ByteOpen/test.go|17|1|V|go
+	
+	
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+		}
+202506756fc2470218b9d52300ddc191|file:///Users/bytedance/go/src/ByteOpen/test.go|17|1|v|go
+		r := bufio.NewReader(os.Stdin)
+		fmt.Print("GitHub Username: ")
+		username, _ := r.ReadString('\n')
+	
+		fmt.Print("GitHub Password: ")
+		bytePassword, _ := terminal.ReadPassword(int(syscall.Stdin))
+		password := string(bytePassword)
+	
+		tp := github.BasicAuthTransport{
+			Username: strings.TrimSpace(username),
+			Password: strings.TrimSpace(password),
+		}
+	
+		client := github.NewClient(tp.Client())
+		ctx := context.Background()
+		user, _, err := client.Users.Get(ctx, "")
+	
+		// Is this a two-factor auth error? If so, prompt for OTP and try again.
+		if _, ok := err.(*github.TwoFactorAuthError); ok {
+			fmt.Print("\nGitHub OTP: ")
+			otp, _ := r.ReadString('\n')
+			tp.OTP = strings.TrimSpace(otp)
+			user, _, err = client.Users.Get(ctx, "")
+		}
+	
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+e5febecfa5dab94aefa2f2ed185b37bf|file:///Users/bytedance/go/src/ByteOpen/test.go|19|1|v|go
+		fmt.Printf("\n%v\n", github.Stringify(user))
+ee11cbb19052e40b07aac0ca060c23ee|file:///Users/bytedance/go/src/ByteOpen/test.go|29|2|v|go
+	user
+2f963fb445303b16f2ac9486b1814c94|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|28|2|V|go
+		client := github.NewClient(nil)
+a3629a9c4a32233a487ccae8d3614f49|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|30|32|^v|go
+	len(list) 
+004066f9d911a006b7a8296e396a4b13|file:///Users/bytedance/go/src/ByteOpen/test.go|43|30|v|go
+	ByteOpen
+b669789cc866d18d0e2d7826a6c5a1e3|file:///Users/bytedance/go/src/ByteOpen/test.go|1|1|V|go
+	package main
+	
+	import (
+		"ByteOpen/repos"
+		"context"
+		"fmt"
+		"log"
+		"syscall"
+	
+		"github.com/google/go-github/github"
+		"golang.org/x/crypto/ssh/terminal"
+		"golang.org/x/oauth2"
+	)
+	
+	func main() {
+		fmt.Print("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+		token := string(byteToken)
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+	
+		client := github.NewClient(tc)
+	
+		_, resp, err := client.Users.Get(ctx, "")
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+	
+		// Rate.Limit should most likely be 5000 when authorized.
+		// log.Printf("Rate: %#v\n", resp.Rate)
+	
+		// If a Token Expiration has been set, it will be displayed.
+		if !resp.TokenExpiration.IsZero() {
+			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		}
+	
+		res, err := repos.GetRepos("kitex-contrib", client, 10)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+		for _, obj := range res {
+			fmt.Printf("%s:\t", obj.Name)
+			for _, num := range obj.IssuesCount {
+				fmt.Printf("%d\t", num)
+			}
+			fmt.Printf("\n")
+	
+		}
+		return
+	}
+08e85ae0ace5fd24756581521fca1cc2|file:///Users/bytedance/go/src/ByteOpen/tools/fetch.go|35|1|V|go
+		// Rate.Limit should most likely be 5000 when authorized.
+		// log.Printf("Rate: %#v\n", resp.Rate)
+	
+		// If a Token Expiration has been set, it will be displayed.
+426b167a07e080f62e3e20355124f802|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|41|2|V|go
+			issuesCount, _ := issues.GetIssues(repo, n, client)
+5362501201d804f1e15e5d319adb1eb3|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|43|28|v|go
+	GetOpenIssuesCount
+ad611f705dc3b601327ef163b91c5874|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|43|28|v|go
+	GetOpenIssuesCount
+				PullRequestCoun
+3ffacda479ad528a42b1627f53937787|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|43|28|v|go
+	GetOpenIssuesCount
+				PullRequestCount: getPr(repo, n, client),
+f5a9f807311cc237fb8674d57b94f370|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|44|28|v|go
+	PullRequestCount
+abdcadde49c9bb2536145c709dbb1f2a|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|4|9|V|go
+		"package"
+e210989f80ecb3cb8a1bb6bd826567ec|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|10|16|^v|go
+	repo *github.Repository, n int, client *github.Client)
+b599b0b68b3c821891d31495075d37b8|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|6|14|V|go
+		var count int
+76f48a7ffdc0687d5308c51fbee4af53|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|1|1|V|go
+	package prs
+	
+	import (
+		"context"
+	
+		"github.com/google/go-github/github"
+	)
+	
+	func GetPrCount(repo *github.Repository, client *github.Client) int {
+		prs, _, _ := client.PullRequests.List(context.TODO(), *repo.Owner.Login, *repo.Name, &github.PullRequestListOptions{})
+		return len(prs)
+	}
+c9727b6e637227f779868ea74ddd4f3b|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|6|v|go
+	GetContributorsCount
+5cc36d56708da773c6f59aa0f4dd027f|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|6|v|go
+	GetContributorsCount(r
+227c715f2814c52cdaa3ed3f61262679|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|6|v|go
+	GetContributorsCount(repo *github.Repository, client *github.Client) int {
+70f697229eede4c1762a859e0e42aa19|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|10|40|v|go
+	  .List(context.TODO(), *repo.Owner.Login, *repo.Name, &github.PullRequestListOptions{})
+a6b477f9d23c2711c5eae450d479d1f4|file:///Users/bytedance/go/src/ByteOpen/test.go|45|1|V|go
+			for _, num := range obj.IssuesCount {
+				fmt.Printf("%d\t", num)
+			}
+295e012a34ee655aff7bdd817d92df70|file:///Users/bytedance/go/src/ByteOpen/test.go|46|18|V|go
+			fmt.Printf("StarsCount: %d")
+442e3589da42a86f24e4cbda719cca76|file:///Users/bytedance/go/src/ByteOpen/test.go|46|18|V|go
+			fmt.Printf("\n")
+db69c0d42a7d9dbfc87e484dccfae393|file:///Users/bytedance/GitLab/byteopen/test.go|1|1|V|go
+	package main
+	
+	import (
+		"ByteOpen/repos"
+		"context"
+		"fmt"
+		"log"
+		"syscall"
+	
+		"github.com/google/go-github/github"
+		"golang.org/x/crypto/ssh/terminal"
+		"golang.org/x/oauth2"
+	)
+	
+	func main() {
+		fmt.Print("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+		token := string(byteToken)
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+	
+		client := github.NewClient(tc)
+	
+		_, resp, err := client.Users.Get(ctx, "")
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+	
+		if !resp.TokenExpiration.IsZero() {
+			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		}
+	
+		res, err := repos.GetRepos("kitex-contrib", client, 10)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+		fmt.Printf("\t\t\tStarsCount\tIssueCount\tPRCount\tContributorCount\n")
+		for _, obj := range res {
+			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.IssuesCount, obj.PullRequestCount, obj.ContributorCount)
+		}
+		return
+	}
+137dd7d0079d99195c2cbadc42fe1bb8|file:///Users/bytedance/GitLab/byteopen/tools/fetch.go|1|1|V|go
+	package tools
+	
+	import (
+		"ByteOpen/repos"
+		"context"
+		"fmt"
+		"log"
+		"syscall"
+	
+		"github.com/google/go-github/github"
+		"golang.org/x/crypto/ssh/terminal"
+		"golang.org/x/oauth2"
+	)
+	
+	func main() {
+		fmt.Print("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+		token := string(byteToken)
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+	
+		client := github.NewClient(tc)
+	
+		_, resp, err := client.Users.Get(ctx, "")
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+	
+		if !resp.TokenExpiration.IsZero() {
+			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		}
+	
+		res, err := repos.GetRepos("kitex-contrib", client, 10)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+		for _, obj := range res {
+			fmt.Printf("%s:\t", obj.Name)
+			for _, num := range obj.IssuesCount {
+				fmt.Printf("%d\t", num)
+			}
+			fmt.Printf("\n")
+	
+		}
+		return
+	}
+bd8b8359a493d198e3e01621c763ac07|file:///Users/bytedance/GitLab/byteopen/main.go|16|1|V|go
+		fmt.Print("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+		token := string(byteToken)
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+	
+		client := github.NewClient(tc)
+	
+		_, resp, err := client.Users.Get(ctx, "")
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+	
+		if !resp.TokenExpiration.IsZero() {
+			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		}
+	
+		res, err := repos.GetRepos("kitex-contrib", client, 10)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+		fmt.Printf("\t\t\tStarsCount\tIssueCount\tPRCount\tContributorCount\n")
+		for _, obj := range res {
+			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.IssuesCount, obj.PullRequestCount, obj.ContributorCount)
+		}
+26b7721ed7ef776f9c62594b5b615231|file:///Users/bytedance/GitLab/byteopen/main.go|9|7|V|go
+		"tools"
+3b96bc980b38659497cfe2c7ab8b343f|file:///Users/bytedance/GitLab/byteopen/main.go|4|1|V|go
+		"ByteOpen/repos"
+5374034a40c8d6800cb4f449c2ea00a0|file:///Users/bytedance/GitLab/byteopen/tools/fetch.go|1|9|v|go
+	fetch
+84ce128b8e1f29ff383c77c2d51087f0|file:///Users/bytedance/GitLab/byteopen/main.go|5|1|V|go
+		"context"
+		"fmt"
+		"log"
+		"syscall"
+	
+		"github.com/google/go-github/github"
+		"golang.org/x/crypto/ssh/terminal"
+		"golang.org/x/oauth2"
+b9385e30190274f95e6222fbfeb88382|file:///Users/bytedance/GitLab/byteopen/main.go|1|1|v|go
+	packag
+fad58de7366495db4650cfefac2fcd61|file:///Users/bytedance/go/src/ByteOpen/main.go|15|6|v|go
+	main
+c846ac92817bd70aa9e2814e5f2317c7|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|16|1|V|go
+		fmt.Print("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+		token := string(byteToken)
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+	
+		client := github.NewClient(tc)
+	
+		_, resp, err := client.Users.Get(ctx, "")
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+	
+		if !resp.TokenExpiration.IsZero() {
+			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		}
+	
+7076a103910280c64fe1ccf431334a89|file:///Users/bytedance/go/src/ByteOpen/main.go|16|1|V|go
+		fmt.Print("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+		token := string(byteToken)
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+	
+		client := github.NewClient(tc)
+	
+		_, resp, err := client.Users.Get(ctx, "")
+		if err != nil {
+			fmt.Printf("\nerror: %v\n", err)
+			return
+		}
+	
+		if !resp.TokenExpiration.IsZero() {
+			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		}
+23b30bbf7e72c68942a51cf1dd84bada|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|14|15|^v|go
+	client *github.Client 
+a008bda736d5c0dd7ba1d6d23a20552f|file:///Users/bytedance/go/src/ByteOpen/main.go|9|13|V|go
+		client := auth.auth()
+43d2b585d40ac507119d0e19f98688b6|file:///Users/bytedance/go/src/ByteOpen/main.go|6|1|v|go
+		"fmt
+a6c7573b1af0b0430fa76c3cc39349bd|file:///Users/bytedance/go/src/ByteOpen/main.go|6|2|V|go
+		"fmt"
+d7193f42c9ffc62642b6204a7fe899fa|file:///Users/bytedance/go/src/ByteOpen/main.go|10|2|V|go
+		auth()
+c86cf25edd6d60514d97388398fd96d8|file:///Users/bytedance/go/src/ByteOpen/main.go|9|1|V|go
+	func main() {
+		res, err := repos.GetRepos("kitex-contrib", client, 10)
+11a963b01517fc6c8f8bc7b3b2a6ad56|file:///Users/bytedance/go/src/ByteOpen/main.go|5|1|V|go
+		"ByteOpen/auth"
+efda3de48b3b68cf551562c2f873a6a0|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|15|1|V|go
+		fmt.Print("Enter Your GitHub Token: ")
+4bf264e973d16018c4bf1bca62c4b940|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|17|1|V|go
+		r := bufio.NewReader(os.Stdin)
+		fmt.Print("GitHub org Name: ")
+		orgname, _ := r.ReadString('\n')
+383394a254cff11c6398ce00e40c5731|file:///Users/bytedance/go/src/ByteOpen/main.go|14|1|V|go
+		r := bufio.NewReader(os.Stdin)
+		fmt.Print("GitHub org Name: ")
+		orgname, _ := r.ReadString('\n')
+	
+79a88a90a423468fb96155778a902bbe|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|11|2|V|go
+		fmt.Printf("Enter the org name: ")
+2166dc15c873ecb1f04b1e32793dea1a|file:///Users/bytedance/go/src/ByteOpen/main.go|14|1|V|go
+		res, err := repos.GetRepos("kitex-contrib", client, 10)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+		fmt.Printf("\t\t\tStarsCount\tIssueCount\tPRCount\tContributorCount\n")
+		for _, obj := range res {
+			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.IssuesCount, obj.PullRequestCount, obj.ContributorCount)
+		}
+9bb6927932da53d7bb2b922f70c7d0c1|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|17|1|V|go
+		r := bufio.NewReader(os.Stdin)
+		fmt.Print("GitHub org Name: ")
+		orgname, _ := r.ReadString('\n')
+		
+b9987a246a537f4fe86f1f2e3d10dbdb|file:///Users/bytedance/go/src/ByteOpen/main.go|11|8|v|go
+	Display
+116eeab897648ad4bff7548df3780ffa|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|15|1|V|go
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println()
+9fb4a73fe3e63807299d0ce95390203f|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|16|1|V|go
+		println()
+91ae3bb81fa4d1fc13d901bda28ee392|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|27|^v|go
+	repo *github.Repository, client *github.Client)
+3dddb2454a6fff780410c41a57bd80f5|file:///Users/bytedance/go/src/ByteOpen/stars/stars.go|1|1|V|go
+	package stars
+	
+	import "github.com/google/go-github/github"
+	
+	func GetStarsCount(repo *github.Repository, client *github.Client) int {
+		count, _, _ := client.Repositories.ListStargazers()
+	}
+216ebc90aebe932755c3c40d779ac4e8|file:///Users/bytedance/GitLab/byteopen/tools/display.go|15|1|V|go
+		orgName, _ := r.ReadString('\n')
+32cd0667557d4b5b89a759337febaaf6|file:///Users/bytedance/GitLab/byteopen/tools/display.go|13|7|^v|go
+	bufio.NewReader(os.Stdin) 
+486bc198a365e8fa5e809dd64e2ec6f9|file:///Users/bytedance/GitLab/byteopen/auth/auth.go|19|43|V|go
+		bufio.NewReader(os.Stdin).ReadString('\n')
+991f45e8cffc67aefd990c1f43bdb025|file:///Users/bytedance/GitLab/byteopen/tools/display.go|13|1|V|go
+		r := bufio.NewReader(os.Stdin)
+c414f122c3a2a29d936eae549a4ce949|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|15|1|V|go
+		fmt.Printf("GitHub Token: ")
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println("\nAuthorizing...")
+		token := string(byteToken)
+f4440c388e4ff220a8a3f8c0aa087d15|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|16|1|V|go
+		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
+		println("\nAuthorizing...")
+		token := string(byteToken)
+f41912b4ef4dcaec8bf2c372e964100f|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|15|1|V|go
+		fmt.Printf("GitHub Token: ")
+94a08da1fecbb6e8b46990538c7b50b2|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|18|30|v|go
+	token
+6326b488d7f595ec2580bbb086b2709b|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|26|11|V|go
+			return nil
+d10bc1b27fb96625a7566e865f716a2a|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|26|10|V|go
+			os.Exit()
+e00412961d133cde5f54792fbc4d137d|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|25|34|V|go
+			fmt.Printf("\nerror: %v\n", err)
+c6bcd965011936f3f69dff199fd70281|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|15|2|v|go
+	AllIssuesCount
+69900aa003770bec483e769fde90e15e|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|15|17|v|go
+	int
+		
+e62de8ad3ed3ccbc14c4f13c3819d3cd|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|15|1|v|go
+		AllIssuesCount int
+		ForkCount       
+8cb3d1e7cf88ee048a7586fc88f59e32|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|15|17|v|go
+	int
+		ForkCount        i
+56d9714c7bc7de1c54ed45409c3a5775|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|17|1|V|go
+		PullRequestCount int
+f4691c8f3377fad5e74c0f596d63910c|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|11|1|V|go
+		var issuesCountList []int
+		var list []*github.Issue
+		opt := &github.IssueListByRepoOptions{
+			State:       "open",
+			Since:       time.Now(),
+			ListOptions: github.ListOptions{PerPage: 1, Page: 1},
+		}
+	
+		for i := 0; i < n; i++ {
+			for {
+				l, resp, err := client.Issues.ListByRepo(context.Background(), *repo.Owner.Login, *repo.Name, opt)
+				if err != nil {
+					return nil, err
+				}
+				list = append(list, l...)
+				if resp.NextPage == 0 {
+					break
+				}
+				opt.Page = resp.NextPage
+			}
+			issuesCountList = append(issuesCountList, len(list))
+			list = nil
+			var offset = -((i + 1) * 7)
+			opt.Since = time.Now().AddDate(0, 0, offset)
+71d2fa96d3c72cb507ed51686e86e52d|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|11|1|V|go
+		}
+	
+		return issuesCountList, nil
+e989b9ecc2d56129bd85b29b2b557970|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|8|1|V|go
+		}
+		u
+	
+		return issuesCountList, nil
+ebed9dde270e7d87d29e08516a104495|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|15|1|V|go
+			Since:       time.Now(),
+			ListOptions: github.ListOptions{PerPage: 1, Page: 1},
+45125eef8453f6e3edcca28a42c7eb3b|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|14|16|v|go
+	lllopen
+a10a0cd8b562392ad86b7ae43baebb13|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|17|1|V|go
+		for i := 0; i < n; i++ {
+			for {
+553dcb0933a8ce0e4070397302e3a031|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|18|1|V|go
+				if err != nil {
+					return nil, err
+				}
+				list = append(list, l...)
+				if resp.NextPage == 0 {
+					break
+				}
+				opt.Page = resp.NextPage
+			}
+			issuesCountList = append(issuesCountList, len(list))
+			list = nil
+			var offset = -((i + 1) * 7)
+			opt.Since = time.Now().AddDate(0, 0, offset)
+		}
+33490edfebf6cfe5fc5523e22a24e9c5|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|11|1|V|go
+		var issuesCountList []int
+		var list []*github.Issue
+37ef0a0176b28920761ff2af0f05faf4|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|10|44|V|go
+		 &github.IssueListByRepoOptions{State: opt,}
+cf39306f1cab98684f0c75bbf01a3ae4|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|51|9|V|go
+				ForksCount:        *repo.ForksCount,
+8267b05ef7bcc6216b2b6a71780b9f0e|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|49|4|V|go
+				OpenIssuesCount:   *repo.OpenIssuesCount,
+05b6ac29a4a5f9d32b1441204beb95bf|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|53|4|V|go
+				OpenPRsCount:      prs.GetPRsCount(repo, client, "open"),
+12308827142f1e06ce3be2eec0feef9d|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|13|1|V|go
+		Name              string
+		StarsCount        int
+		OpenIssuesCount   int
+		AllIssuesCount    int
+		OpenPRsCount      int
+		AllPRsCount       int
+		ForksCount        int
+		ContributorsCount int
+302ae8ab9d74c581dd9daf31daf3a6e9|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|31|1|V|go
+		StarsCount        int
+fb6688e03677ff3e40519f79026e5cf7|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|35|1|V|go
+		ForksCount        int
+906b016bc992b8c4aaabbfc434474bee|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|22|1|V|go
+		fmt.Printf("%v\t\tStarsCount\tForksCount\tAllPRCount\t\tContributorCount\n", time.Now().Format("2006-01-02"))
+0658382552d877dd2cdd3b7446f7ef90|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|22|44|v|go
+	AllPRCount
+258592d61023f6081023d282f01e0cde|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|33|1|V|go
+		OpenPRsCount      int
+		AllPRsCount       int
+426eab689e5ccaeaadf10637c89c8432|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|30|1|V|go
+		Name              string
+		OpenIssuesCount   int
+		AllIssuesCount    int
+		ContributorsCount int
+9f325b7e9c2d379cc6e521cf64fb96ac|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|14|1|V|go
+		StarsCount        int
+		OpenIssuesCount   int
+		AllIssuesCount    int
+		OpenPRsCount      int
+		AllPRsCount       int
+		ForksCount        int
+		ContributorsCount int
+41de5eb620a0dab486a89e256f233691|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|25|78|v|go
+	ForksCount
+62bdfdc2a627fa8265778b4e072d239d|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|25|78|v|go
+	ForksCount, 
+2206f6925ccf53349551ca05879ea1d8|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|25|78|v|go
+	ForksCount, obj.PullRequestCount, obj.ContributorCount)
+60f266869f761bab314e639b6bcfaa60|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|25|1|v|go
+			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.F
+f25c426e2db67e171a0cf4e7bf009957|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|25|112|v|go
+	ContributorCount
+01e170a06698fca46bcc7f7a14c574a3|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|25|149|v|go
+	OpenIssuesCount
+29d75e938ab54752d3ccd889e1e64cb2|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|10|1|V|go
+		option := &github.PullRequestListOptions{
+			ListOptions: github.ListOptions{PerPage: 100},
+			State:       opt,
+		}
+4bc374dcd571633a1799405a285ca5af|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|10|100|^v|go
+	 &github.ListContributorsOptions{})
+b5b0f5c3d25b8dad92fe55611488da7b|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|10|100|^v|go
+	 &github.ListContributorsOptions{}
+eb6713326ea15518cc5e965a22f93097|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|14|12|V|go
+				Page:    20,
+8ffebc49a84e5b30beaef8b5ff1df2c4|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|20|2|V|go
+		prs, resp, err := client.PullRequests.List(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+f6001ffe40918f28aabe8bd552bbcbc8|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|19|1|V|go
+		for {
+			l, resp, err := client.PullRequests.List(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+			if err != nil {
+				return count, errors.New(fmt.Sprintf("Problem in getting PR info %v", err))
+			}
+			count += len(l)
+			if resp.NextPageToken == "" {
+				break
+			}
+		}
+37ca87e64d8f19af864854e74d65f897|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|23|2|V|go
+		count, _, _ := client.Repositories.ListContributors(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+659dd5d470030c0914eff5f9aa53dcb9|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|14|2|V|go
+			l, resp, err := client.PullRequests.List(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+3a490c7a8e23104ea8a85b7461403a6d|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|12|1|V|go
+		var count int
+		option := &github.ListContributorsOptions{
+			ListOptions: github.ListOptions{PerPage: 100},
+		}
+		for {
+			l, resp, err := client.Repositories.ListContributors(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+			if err != nil {
+				return count, errors.New(fmt.Sprintf("Problem in getting Contributor info %v", err))
+			}
+			count += len(l)
+			if resp.NextPageToken == "" {
+				break
+			}
+		}
+		return count, nil
+83a939599cc316dd7598e0f91c315315|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|25|1|V|go
+		option := &github.IssueListByRepoOptions{
+			ListOptions: github.ListOptions{PerPage: 500},
+			State:       opt,
+		}
+634f32534c49272e321e6f7c3535dc05|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|13|1|V|go
+		option := &github.ListContributorsOptions{
+			ListOptions: github.ListOptions{PerPage: 100},
+		}
+4f985fa8c132f34e0f7eeb694cb2b880|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|32|2|V|go
+		l, _, _ := client.Issues.ListByRepo(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+b1b5f84271c0d08c8ca8a84fbe4c4fb1|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|18|2|V|go
+			l, resp, err := client.Repositories.ListContributors(context.TODO(), *repo.Owner.Login, *repo.Name, option)
+86ee2ba55aa03b06900298d3c1884440|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|11|93|v|go
+	int 
+23d21ad4dea7aadf907e5e601b1905e6|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|20|61|v|go
+	Contributor
+8a2030e6826efbac577767ceea069b0f|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|28|1|V|go
+		option := &github.IssueListByRepoOptions{
+			ListOptions: github.ListOptions{PerPage: 500},
+			State:       opt,
+		}
+	
+		return len(l)
+e4683a9122aed95a75b8b367d4e10428|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|22|28|^v|go
+	 errors.New(fmt.Sprintf("Problem in getting PR info %v", err)) 
+d94454c01677cbffd7b5fa12aa1d9e47|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|19|2|V|go
+				return count, errors.New(fmt.Sprintf("Problem in getting Contributor info %v", err))
+52962854e40c73a5950e6b9d1e623395|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|20|2|V|go
+				return count, errors.New(fmt.Sprintf("Problem in getting Issues info %v", err))
+727f237ca142597d8141c816383fe2e8|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|26|1|V|go
+			option.Page = resp.NextPage
+e5bdea4153f0019717ac66cf05050b32|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|20|3|V|go
+			if resp.NextPage == 0 {
+f1db6541c7bc84e4845d152878695cbe|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|38|12|v|go
+	.StargazersCount == 0 {
+427c5149d7fc59187eb9fee77ae16e07|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|38|1|V|go
+			if *repos.StargazersCount == 0 {
+				continue
+			}
+0dd5b7a2879c44b7b425d6f9dc8345b6|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|12|6|v|go
+	repoMetrics 
+774279bf144ce0ecdb391d182fb8e67a|file:///Users/bytedance/go/src/ByteOpen/main.go|13|18|V|go
+		files.WriteToCsv()
+4c22529eecab6443756974846e1bff69|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|16|1|V|go
+		var orgName string
+		fmt.Print("GitHub org Name: ")
+		fmt.Scanf("%s", &orgName)
+		fmt.Printf("Searching...\n")
+		res, err := repos.GetRepos(orgName, client, 10)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+0ecdf70053d9e1ee1d651e0b0bc724d7|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|11|49|^v|go
+	[]*repos.RepoMetrics 
+732f3ec1c1e5b2c3ad9d0b208bd48efc|file:///Users/bytedance/go/src/ByteOpen/files/files.go|10|1|V|go
+	func WriteToCsv(repo []*repos.RepoMetrics) error {
+		repoFile, err := os.OpenFile("devstats.cs", os.O_RDWR|os.O_CREATE, os.ModePerm)
+		if err != nil {
+			panic(err)
+		}
+		defer repoFile.Close()
+	
+		if _, err := repoFile.Seek(0, 0); err != nil {
+			panic(err)
+		}
+	
+		err = gocsv.MarshalFile(&repo, repoFile)
+		if err != nil {
+			panic(err)
+		}
+		return nil
+	}
+55125d308ecd26b1497469a1f1bf231f|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|14|1|v|go
+	
+	}
+	f
+b8244ad0506ce0af50a9e9f6ec4c3e35|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|15|1|v|go
+		DisplayCurrentMetrics(repo)
+182a84dfd63d8780a4ea00fbb87df2e1|file:///Users/bytedance/go/src/ByteOpen/main.go|11|1|V|go
+		tools.tMetrics(client)
+d735b793a12faac1b98d974802223a76|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|35|126|^v|go
+	time.Now().Format("2006-01-02"))
+fd091e1e7e4d105adebfd648fbbc06a4|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|34|1|V|go
+		fmt.Printf("-------------------------\n")
+f2e12cca95fcb576f894827310f71363|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|9|1|v|go
+		"github.com/gocarina/gocsv"
+db82f4583480c4ef1283619b30ef8a40|file:///Users/bytedance/Desktop/test.csv|1|1|V|
+	2021-09-06, 
+3948ead63a9f2944218de038d8934305|file:///Users/bytedance/Desktop/test.csv|3|1|v|
+	1216
+7855d4d73df4c4959d4b61d7738b36f5|file:///Users/bytedance/Desktop/test.csv|2|16|^v|
+	2021-08-23, 
+2cbb00d4b2eb066244b933102643ea51|file:///Users/bytedance/Desktop/test.csv|2|16|^v|
+	2021-08-30, 
+0e55666a4ad822e0e34299df3591d979|file:///Users/bytedance/Desktop/test.csv|3|17|v|
+	1347
+602d1305678a8d5fdb372271e980da6a|file:///Users/bytedance/Desktop/test.csv|3|17|v|
+	1399
+0240b13dd8c7f5ad0622d63059da8b47|file:///Users/bytedance/Desktop/test.csv|2|16|^v|
+	2021-09-13, 
+dcf6070a4ab7f3afbfd2809173e0824b|file:///Users/bytedance/Desktop/test.csv|3|18|v|
+	2396
+3d37466c7e7e8ae22be8acac5df20380|file:///Users/bytedance/Desktop/test.csv|2|16|^v|
+	2021-09-22,
+06c284d3f757b15c02f47f3ff06dc275|file:///Users/bytedance/Desktop/test.csv|3|19|v|
+	2638
+3fc8bc015933fedcc2fa517f48ef60df|file:///Users/bytedance/Desktop/test.csv|2|17|^v|
+	2021-09-27, 
+5a99158e0c52f9e7d290906c9d08268d|file:///Users/bytedance/Desktop/test.csv|3|20|v|
+	2709
+3a86c0e1a4e8d0c09a810d21c1cb8afb|file:///Users/bytedance/Desktop/test.csv|2|17|^v|
+	2021-10-11, 2
+ae0b507d5d59867f1d7dc1f2d5c30cf6|file:///Users/bytedance/Desktop/test.csv|2|17|^v|
+	2021-10-11,
+a3788c8c64fd65c470e23e7534c3ebc8|file:///Users/bytedance/Desktop/test.csv|3|21|v|
+	2801
+e853b0b43aebb9685507074f61d9ea9d|file:///Users/bytedance/Desktop/test.csv|2|18|^v|
+	2021-10-18,
+7e0a0209b929d097bd3e8ef30567a5c1|file:///Users/bytedance/Desktop/test.csv|3|22|v|
+	2872
+b82c484fd7e95d5d7164892ff5c77ef7|file:///Users/bytedance/Desktop/test.csv|2|19|^v|
+	2021-10-25,
+a57e8915461b83adefb011530b711704|file:///Users/bytedance/Desktop/test.csv|3|23|v|
+	2901
+7bcd3864fbd6e6923a87f6837a3d47a9|file:///Users/bytedance/Desktop/test.csv|2|20|^v|
+	2021-11-01,
+5dc126b503e374b0e08231344a7f493f|file:///Users/bytedance/Desktop/test.csv|3|24|v|
+	2934
+142f11d878cb01e530cf747cecad9744|file:///Users/bytedance/Desktop/test.csv|2|21|^v|
+	2021-11-08,
+9edcc1391c208ba0b503fe9a22574251|file:///Users/bytedance/Desktop/test.csv|3|25|v|
+	2978
+2afe7bd6294492a9c805c53cf2e4d223|file:///Users/bytedance/Desktop/test.csv|2|22|^v|
+	2021-11-15, 
+b8af7d0fbf094517781e0382102d7b27|file:///Users/bytedance/Desktop/test.csv|3|26|v|
+	3044
+34849452a17fa37a01420275bcb853d6|file:///Users/bytedance/Desktop/test.csv|2|22|^v|
+	2021-11-22 
+cdb85466edb1d88709f8d9d1b5ff7290|file:///Users/bytedance/Desktop/test.csv|3|26|^v|
+	,3228 
+5fc732311905cb27e82d67f4f6511f7f|file:///Users/bytedance/Desktop/test.csv|1|1|v|
+	date
+29cffe791513d202bea7f2ee07f94c27|file:///Users/bytedance/Desktop/test.csv|16|1|V|
+	
+	
+	8/16/21	1216	767
+	8/23/21	1281	804
+	8/30/21	1347	845
+	9/6/21	1399	871
+	9/13/21	2396	1503
+	9/22/21	2638	1709
+	9/27/21	2709	1771
+	10/11/21	2801	1870
+	10/18/21	2872	1921
+	10/25/21	2901	1948
+	11/1/21	2934	1973
+	11/8/21	2978	1995
+	11/15/21	3044	2021
+	11/22/21	3228	2063
+86f23519571eb918e8812e1979d55409|file:///Users/bytedance/GitHub/test-infra-1/README.md|4|12|v|markdown
+	configurations
+a157dcee6c5905f55be44372ec695190|file:///Users/bytedance/GitHub/test-infra-1/README.md|3|1|v|markdown
+	test-infra is a project aimming at ByteDance's Open Source Project Management
+0b3dc961cba5850e2969864342e2e322|file:///Users/bytedance/GitHub/test-infra-1/README.md|3|79|v|markdown
+	which is based on kubernetes prow project.
+6af8e6549c05fc31b89a1d78ced71fa4|file:///Users/bytedance/GitHub/test-infra-1/README.md|5|20|v|markdown
+	e Project can configure thier own:
+85c81c8e34d0391193bb0503b177b5c6|file:///Users/bytedance/GitHub/test-infra-1/README.md|5|1|V|markdown
+	In this repository, 
+	1. member privilege
+	2. 
+697d4cc8797b7e3483d7ff2e1fa3da88|file:///Users/bytedance/GitHub/test-infra-1/README.md|5|1|V|markdown
+	Jobs can be triggered by various types of events and report their status to many different services. 
+c5dffef0bd3fab9aa2c2479ce9ed9229|file:///Users/bytedance/GitHub/test-infra-1/README.md|13|4|v|markdown
+	Open 
+6748a52c4730ab7255cfdcff4c8827fc|file:///Users/bytedance/GitHub/test-infra-1/README.md|13|4|v|markdown
+	Source 
+c738df08e2d64d8066aeff48d2674e59|file:///Users/bytedance/GitHub/test-infra-1/README.md|3|41|v|markdown
+	ByteDance
+4941a317494f942fdb7d0ffc3b4ca6d4|file:///Users/bytedance/GitHub/test-infra-1/README.md|14|4|v|markdown
+	Project's Label Management.
+f0d93177d35f81fbaeed6a061daa794a|file:///Users/bytedance/GitHub/test-infra-1/config/member.yaml|12|1|v|yaml
+	    default_repository_permission: read
+b139b218c56dba0442d5570319a5db2a|file:///Users/bytedance/GitHub/test-infra-1/config/member.yaml|27|1|V|yaml
+	    admins:
+	    - GuangmingLuo
+	    - Jeffwan
+	    - dyxushuai
+	    - Hchenn
+	    - joway
+	    - lsjbd
+	    - PureWhiteWu
+	    - simon0-o
+	    - SinnerA
+	    - YangruiEmma
+	
+8ffd853a31b9ab1754fa83d183b7b08e|file:///Users/bytedance/GitHub/test-infra-1/config/member.yaml|50|1|V|yaml
+	      other_tem:
+	        description: jsadfasdf
+	        privacy: sdjfasdf
+	
+dc762a98349dd8584c3c2a2a90450ec8|file:///Users/bytedance/GitHub/test-infra-1/job/member_sync_job.yaml|22|1|V|yaml
+	        - --fix-team-members
+	        ##- --confirm
+	        volumeMounts:
+	        - name: oauth
+	          mountPath: /etc/github
+	          readOnly: true
+	        - name: test-config
+44ba2180e85221a29bf120bef4311180|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|41|1|V|yaml
+	        config/labels.yaml:
+	          name: label-config
+	        config/member.yaml:
+	          name: member-config
+1b03888683dedc7f302bc80265752897|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|45|17|^v|go
+	repo []*repos.RepoMetrics
+b83a6c75645eb0ce1adffd5c8976a68c|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|66|17|V|go
+	func WriteToMySQL()
+2819ef5f71375bad9f454b6b4feff470|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|4|1|V|go
+	"ByteOpen/repos"
+	"github.com/jmoiron/sqlx"
+88d4701cfc29543f2d54cd063ad63b0e|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|4|1|v|go
+	"ByteOpen/repos"
+d6ac4cfcd92c0d77394b5cfdb07daf73|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|12|13|v|go
+	error 
+5d5bccff54585552ef720554e78b9a29|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|22|20|V|go
+		value := [12]string
+c9b58da35a6a89335fd806d40678dd52|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|23|1|V|go
+		r, err := db.Exec(sql, *repo.FetchTime, *repo.)
+953feeff1e20f40677fb7f77c073b3be|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|24|6|v|go
+	Exec
+e38f79fd16417f1f2a90bc1a98075a22|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|24|6|v|go
+	Exec
+		
+926e35b868f13c5d9a8404f38bb539fa|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|24|6|v|go
+	Exec
+		}
+c005a5005fe7aac6dbaadbedb9e7d49d|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|24|2|v|go
+		db.Exec
+		}
+681c0888da1e363d5974dbbed07e54ed|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|26|1|V|go
+		if err != nil {
+			fmt.Println("Exec Failed,", err)
+		}
+49ee3087348e8d44e1feda1917443987|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|39|78|v|go
+	Name
+e0231a3d91b06c22312faac3c7fa56fe|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|14|1|V|go
+	func Run(client *github.Client) {
+		repo := FetchCurrentMetrics(client)
+	
+		DisplayCurrentMetrics(repo)
+	
+		WriteToCsv(repo)
+	}
+396f9f8a0bef183c6582d761810cf40d|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|15|1|V|go
+		WriteToCsv(repo)
+f5ddaf0ca7929578b408c909429f68f2|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|22|79|v|go
+	local
+411d2151b1af612d23ead78e496705fd|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|23|1|V|go
+		var orgName string
+		fmt.Print("GitHub org Name: ")
+		fmt.Scanf("%s", &orgName)
+		fmt.Printf("Searching...\n")
+485418c25cb4b863dcc52dc543330649|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|33|1|V|go
+		stat, err := file.Stat()
+		if err != nil {
+			panic(err)
+		}
+e3759b439fb0bde19e27ccfae8383402|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|42|19|V|go
+					fmt.Println("Re")
+6438c669e0d0de98e6929c2cc0fac474|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|39|31|v|go
+	line
+6a5be589f330d712c2d993e888c2c054|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|27|1|V|go
+	func GetOrgName() {
+		filePath := "../organizations.txt"
+		file, err := os.OpenFile(filePath, os.O_RDWR, 0666)
+		if err != nil {
+			fmt.Println("Open File Error!", err)
+			return
+		}
+		defer file.Close()
+	
+		buf := bufio.NewReader(file)
+		for {
+			orgName, err := buf.ReadString('\n')
+			orgName = strings.TrimSpace(orgName)
+			org_list.append(orgName, orgName...)
+			if err != nil {
+				if err == io.EOF {
+					break
+				} else {
+					fmt.Println("Read file error!", err)
+					return
+				}
+			}
+		}
+	}
+cb9d01d6e762eaeb727a103c8355d27e|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|14|1|V|go
+	var org_list []string
+6a2a431fe8b621037ea949531c28551d|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|15|23|v|go
+	filepath
+730e11c4816a043616aaf3d3c0861741|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|29|2|V|go
+		repo := FetchCurrentMetrics(client)
+b05fe46d929e6ac0524bf9cfae41053f|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|32|1|V|go
+		Init()
+ba6cd3a5d04dd1ca31bcf3d916184023|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|17|1|V|go
+		filePath := "../organizations.txt"
+		file, err := os.Open(filePath)
+9306dc0a9a422f922732b741465991f1|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|36|1|V|go
+		WriteToMySQL(repo)
+ab190f2275ad9ff0037843cd6af1ff34|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|19|1|V|go
+		filePath := "../organizations.txt"
+		file, err := os.Open(filePath)
+	
+		if err != nil {
+			panic(err)
+		}
+	
+		buf := bufio.NewReader(file)
+	
+		for {
+			orgName, _, eof := buf.ReadLine()
+			if eof == io.EOF {
+				break
+			}
+			repo := FetchCurrentMetrics(client, orgName)
+	
+			WriteToMySQL(repo)
+		}
+53291da88a287bad5f7e1af0ffe6578e|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|31|2|V|go
+			WriteToMySQL(repo)
+4a544dc35d9942737e316e94864d3d01|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|36|1|V|go
+		repo := FetchCurrentMetrics(client)
+	
+		DisplayCurrentMetrics(repo)
+	
+b068931cc450442b63f5b3d276ea4297|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|28|18|v|go
+	name
+13755190caa353353f4137f01b71084f|file:///Users/bytedance/GitLab/byteopen/tools/metrics.go|27|1|V|go
+			line, _, eof := buf.ReadLine()
+			name := string(line)
+aca03c931768ea4b0244531aca9a19ee|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|35|39|v|go
+	orgName
+d8e3ee9c1186a1d230a688af973886f7|file:///Users/bytedance/GitLab/byteopen/tools/sql.go|29|3|V|go
+			orgName, _, eof := buf.ReadLine()
+a8b2e39951bba535f313f563f6abaef6|file:///Users/bytedance/GitLab/byteopen/metrics/contributors.go|1|9|v|go
+	contributors
+ea739a94841934e539f9698503ec3b55|file:///Users/bytedance/GitLab/byteopen/main.go|15|1|V|go
+	
+		tools.RunSQL(client)
+887d78ec8c9532cbe39ae8c0c6a425ca|file:///Users/bytedance/GitLab/byteopen/main.go|21|1|V|go
+		tools.RunSQL(client)
+7b1d473c3bb88eabf60905b4db05e8d1|file:///Users/bytedance/GitLab/byteopen/main.go|16|17|v|go
+	csv 
+a799e4640e885c147c724b9c3c8379c7|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|5|1|V|go
+		"ByteOpen/issues"
+716070a31ea21df8c21db3b8edc902c9|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|5|1|V|go
+		"ByteOpen/prs"
+78f0ed11abcfc3a96b5e127a8ffc8a52|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|58|20|V|go
+		fmt.Printf("WriteToCsv...\n")
+d9811f03b461a380c0d6b4a497dbac37|file:///Users/bytedance/go/src/ByteOpen/README.md|15|15|v|markdown
+	organizations
+e2d5a00791bce9a01f99bc6fd613a39d|file:///Users/bytedance/go/src/ByteOpen/README.md|16|12|v|markdown
+	configure
+15d71fe8b3583578ed3b1027a34d9c0d|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|42|2|V|go
+		database, err := sqlx.Open("mysql", "root:123456@tcp(localhost:3306)/DevStat")
+b181adb3f9013771b6798a7c17a77fe2|file:///Users/bytedance/go/src/ByteOpen/README.md|51|13|V|markdown
+	`cd byteopen`
+2c1e054f583b7dfc83eaf390c910be82|file:///Users/bytedance/go/src/ByteOpen/README.md|54|1|V|markdown
+	`go run main.go`
+63a9f0ea7bb98050796b649e85481845|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|42|39|v|go
+	root
+e10adc3949ba59abbe56e057f20f883e|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|42|39|v|go
+	123456
+421aa90e079fa326b6494f812ad13e79|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|42|39|v|go
+	localhost
+16fc18d787294ad5171100e33d05d4e2|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|42|39|v|go
+	3306
+fbee3fab77ecd4c1911328f31277e981|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|14|1|V|go
+	func RunDisplay(client *github.Client) {
+		repo := FetchCurrentMetrics(client)
+	
+		DisplayCurrentMetrics(repo)
+	
+		WriteToCsv(repo)
+	}
+3d9cd597132bfec5f6855f414cde4229|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|24|4|V|go
+		file, err :=
+63c91fbc539235bebc5377bd4c6b448d|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|37|3|V|go
+			fmt.Println(line)
+c6febf4e0a8388bd4c7e45ac08b2fbef|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|39|4|V|go
+					fmt.Println("File read ok!")
+d6ef61851255394d545afc1712d608f6|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|46|1|V|go
+		repo := FetchCurrentMetrics(client, name)
+b04b59cda4badbf97d7756f442704664|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|26|1|V|go
+		filePath := "./organizations.txt"
+		file, err := os.OpenFile(filePath, os.O_RDWR, 0666)
+		if err != nil {
+			fmt.Println("Open File Error!", err)
+			return
+		}
+		defer file.Close()
+		buf := bufio.NewReader(file)
+		for {
+			name, err := buf.ReadString('\n')
+			name = strings.TrimSpace(name)
+			if err != nil {
+				if err == io.EOF {
+					break
+				} else {
+					fmt.Println("Read File Error!", err)
+					return
+				}
+			}
+			repo := FetchCurrentMetrics(client, name)
+	
+			WriteToCsv(repo)
+		}
+9a8ed903776152cdb8d36c0b1f2871f4|file:///Users/bytedance/go/src/ByteOpen/tools/metrics.go|26|1|V|go
+		filePath := "./organizations.txt"
+		file, err := os.OpenFile(filePath, os.O_RDWR, 0666)
+	
+		if err != nil {
+			fmt.Println("Open File Error!", err)
+			return
+		}
+	
+		defer file.Close()
+		buf := bufio.NewReader(file)
+	
+		for {
+			name, err := buf.ReadString('\n')
+			name = strings.TrimSpace(name)
+	
+			if err != nil {
+				if err == io.EOF {
+					break
+				} else {
+					fmt.Println("Read File Error!", err)
+					return
+				}
+			}
+	
+			repo := FetchCurrentMetrics(client, name)
+	
+			WriteToCsv(repo)
+		}
+c903b5388ba0e0808d658e1e4e644ae0|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|42|2|V|go
+			repo := FetchCurrentMetrics(client, name)
+ebb2a3247db46de6ac97aecd3b709b2c|file:///Users/bytedance/go/src/ByteOpen/tools/sql.go|45|2|V|go
+			WriteToCsv(repo)
+85489c61be930cbf0af9bfc7d537ccf8|file:///Users/bytedance/go/src/ByteOpen/main.go|22|1|V|go
+			fmt.Println("Wrong flat.")
+		}
+f1b558df90330321370d47cc2641854e|file:///Users/bytedance/go/src/ByteOpen/.git/COMMIT_EDITMSG|1|1|V|gitcommit
+	Merge pull request #3 from Summer-Field/sql_dev
+c549653e0d7f8fbc02a8dfec2aee0ca0|file:///Users/bytedance/GitLab/byteopen/auth/auth.go|27|1|V|go
+		//if !resp.TokenExpiration.IsZero() {
+		//	log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		//}
