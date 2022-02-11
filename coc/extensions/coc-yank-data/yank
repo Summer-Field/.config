@@ -1,709 +1,3 @@
-3bd265a126f5493e26739c1a2b8f6855|file:///Users/bytedance/GitHub/augur/database-compose.yml|5|12|v|yaml
-	augurlabs/augur:${AUGUR_DB_TYPE}
-4ee78dcee18c85b6fb11912ecf352bba|file:///Users/bytedance/GitHub/augur/docker_env.txt|1|22|v|text
-	dockerkey
-a37efd288b35500e394240b3f86f3eba|file:///Users/bytedance/GitHub/grimoirelab/tests/projects.json|35|1|V|json
-	            "https://github.com/grimoirelab/perceval"
-78e279b667ae310d2f851bc15d9d55cb|file:///Users/bytedance/GitHub/grimoirelab/tests/projects.json|35|1|V|json
-	            https://github.com/grimoirelab/perceval,
-bf35584fdf0f4575ab05db7a2203d46e|file:///Users/bytedance/GitHub/grimoirelab/tests/projects.json|35|1|V|json
-	            https://https://github.com/kitex-contrib/resolver-dns
-4a475d3f334af8d8f584f400a8ee7e0a|file:///Users/bytedance/go/src/test_rest/test.go|1|8|v|go
-	package 
-efe90a8e604a7c840e88d03a67f6b7d8|file:///Users/bytedance/go/src/REST/test.go|4|3|v|go
-	package
-e449121a40efca0d8ea2558e9aeceb3e|file:///Users/bytedance/go/src/REST/test.go|6|1|V|go
-	go get github.com/google/go-github/v40
-93ee1f8b2f6ed77e77b1e205c1d305d6|file:///Users/bytedance/go/src/REST/test.go|1|1|V|go
-	package REST
-888b5b3a4b6f538fcb719ee2e5ef17d6|file:///Users/bytedance/go/src/REST/test.go|1|1|V|go
-	import (
-		"context"
-	
-		"github.com/google/go-github/v40/github"
-		"golang.org/x/oauth2"
-	)
-	
-	func main() {
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: "... your access token ..."},
-		)
-	
-		client := github.NewClient(ctx, ts)
-	
-		repos, _, err = client.Repositories.List(ctx, "", nil)
-	}
-c5597aa51b9dde26ae6f5c5eda4e678f|file:///Users/bytedance/.config/nvim/coc-settings.json|213|1|V|json
-			"golang": {
-				"command": "gopls",
-				"rootPatterns": ["go.mod"],
-				"filetypes": ["go"],
-				"initializationOptions": {
-					"gocodeCompletionEnabled": true,
-					"diagnosticsEnabled": true,
-					"lintTool": "golint"
-				}
-			},
-203271e2dcdfa18c5ffa8a91d497801e|file:///Users/bytedance/go/src/REST/star.go|3|1|V|go
-	 func fetchStar(username string) ([]*Star, error) {
-		 client = NewClient(nil)
-		 stars, _, err := client. 
-	 }
-b3ed98a4a61c3df379b15d3e4f0f5c82|file:///Users/bytedance/go/src/REST/star.go|3|1|V|go
-		"buffio"
-		"con{xt"
-		"fmt"
-		"os"
-		"strings"
-		"syscall"
-	
-		"github.com/google/go-github/v40/github"
-		"golang.org/x/crypto/ssh/terminal"
-3e888690d700949f3756d29f75e6d13e|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|20|21|V|go
-			list = append(list, l...)
-1826a74a9ade4ce9da72607086e76572|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|26|4|V|go
-				d
-56b828c46d272e200a0ba4be4b38c346|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|51|28|v|go
-	Commits 
-05be88a29564b42ebc9d7a1ea8921b50|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|51|28|v|go
-	Made 
-8f9bfe9d1345237cb3b2b205864da075|file:///Users/bytedance/GitHub/ByteOpen/commits/commits.go|51|28|v|go
-	User
-356b7712d419992665e9a6b08d2c778c|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|1|10|V|go
-	fasdiiiias
-2160b3454860845d43cd5996a6f9b73e|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|10|1|v|go
-	func GetRepoIssues(ctx context.Context, client *github.Client, orgName string, repoName string, repoOwner string, username string, yearAgo time.Time) ([]*github.Issue, error) {
-		var list []*github.Issue
-		opt := &github.IssueListByRepoOptions {
-			State: "all",
-			Creator: username,
-			Since: yearAgo,
-			ListOptions: github.ListOptions{PerPage: 30},
-		}
-		for {
-			l, resp, err := client.Issues.ListByRepo(ctx, repoOwner, opt)
-			if err != nil {
-				return nil, err
-			}
-			list = append(list, l...)
-			if resp.NextPage == 0 {
-				break
-			}
-			opt.Page = resp.NextPage
-		}
-		return list, nil
-	}
-	
-10ae9fc7d453b0dd525d0edf2ede7961|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|20|24|v|go
-	list
-535309b452846a3fe564122e3753a60d|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|10|6|v|go
-	githubRepos
-e2a0488c39f6bba9aab716deaa9f5f71|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|14|14|V|go
-			Direction: ""
-78c99bde5a3ba9f3cad1e799a1de33b3|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|27|9|v|go
-	orgRepos
-d4109236aa036707a033fdde936c97e8|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|21|3|v|go
-	orgRepos = append
-f66ac23e071969282c413a2f3a105b1e|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|21|3|v|go
-	orgRepos = append(orgReposg, repos...)
-1cc1bc402f69f074b02b9cf403613550|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|16|1|v|go
-			repos, resp, err := client.Repositories.ListByOrg(context.Backgro
-cf093660a1e9d6b245359e1fd90d2f65|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|11|1|V|go
-		ctx 
-c5e571e8bc7e09e25ea6aa3f5cff09b5|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|10|1|V|go
-	func GetRepoIssues(ctx context.Context, client *github.Client, orgName string, repoName string, repoOwner string, username string, yearAgo time.Time) ([]*github.Issue, error) {
-		var list []*github.Issue
-		opt := &github.IssueListByRepoOptions {
-			State: "all",
-			Creator: username,
-			Since: yearAgo,
-			ListOptions: github.ListOptions{PerPage: 30},
-		}
-		for {
-			l, resp, err := client.Issues.ListByRepo(ctx, repoOwner, opt)
-			list = append(list, l...)
-			if err != nil {
-				return nil, err
-			}
-			list = append(list, l...)
-			if resp.NextPage == 0 {
-				break
-			}
-			opt.Page = resp.NextPage
-		}
-		return list, nil
-	}
-6479c880ff16bf77f68e9d3d7cd1b7cb|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|6|1|V|go
-		"log"
-		"time"
-8e8f425589813e7de8f3164fa90f83b2|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|3|1|V|go
-		"context"
-		"github.com/google/go-github/github"
-		"github.com/SummerField/repo"
-ce76d6c6288aee3433833403028bf582|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|9|1|V|go
-	func 
-9a87f01c75249987744f7eb99972208f|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|2|1|V|go
-	
-	import (
-2d55ecfa8617185c9136078ef476258c|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|4|3|V|go
-		"github.com/Summer-Field/ByteOpen"
-f8b389e454acfa0dbdb2afc74f7c2e60|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|8|1|V|go
-	type repoDetails struct {
-		Name        string
-		IssuesCount []int
-	}
-c1a402e292dbb0ba9bfde05c69b4feab|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|9|1|V|go
-	type repoDetails struct {
-		Name             string
-		StarsCount       []int
-		IssuesCount      []int
-		PullRequestCount []int
-		ContributorCount []int
-	}
-2e65a32404ce03874b4ce837f1a0fc83|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|27|2|v|go
-	}
-		return orgRepos, nil
-3ec365dd533ddb7ef3d1c111186ce872|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|9|10|v|go
-	Details
-0710fd93d0f779d4cbfd217b91ed628e|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|25|1|V|go
-		opt := &github.RepositoryListByOrgOptions{
-			Type:        "public",
-			Sort:        "updated",
-			ListOptions: github.ListOptions{PerPage: 30},
-		}
-5820cda796f8ab4fbf9b0e152e89f702|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|43|1|V|go
-		for _, repo := range orgRepos {
-			s := &repoStatics{
-				Name: *repo.Name
-				StarsCount: *repo.StarsCount
-				IssuesCount: *
-			}
-		}
-da6fdb703e7f26c851fc2191b145510c|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|19|35|v|go
-	repoStatics
-babb9fe745d96a0c53c0b1bcd415f617|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|21|1|V|go
-		var repos []*repoStatics
-80b768b15c3693e345a436b9dc0ea36f|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|46|27|v|go
-	Issues
-341db5c54c8e882c0a23ca92285bd6db|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|4|2|V|go
-		repos := getRepos(orgName)
-f6c9f7b0d68c0f8f040b95a025d5f40d|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|4|11|V|go
-		var list int[]
-b5a19d74a977fd08612e71ac7fe244cb|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|49|45|v|go
-	cleint
-d24b0433c3765923a461b6046bc2cd17|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|9|15|V|go
-			Filter: "all",
-0fda2560033bf1410d5316c94fe6e292|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|16|1|V|go
-		for {
-			l, resp, err := client.Issues.ListByRepo(context.Background(), *repo.Owner.Name, *repo.Name, opt)
-			if err != nil {
-				return nil, err
-			}
-			list = append(list, l...)
-			if resp.NextPage == 0 {
-				break
-			}
-			opt.Page = resp.NextPage
-		}
-aedf0913cf655789dc10a2ff614847b2|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|30|42|^v|go
-	(i+1) * 7)
-84c1fa584c510cf8a6e44690de1ca65f|file:///Users/bytedance/GitHub/ByteOpen/repos/repos.go|8|1|V|go
-		"github.com/google/go-github/github"
-2aa6dd0060769d5c80ffa1aecfc6833c|file:///Users/bytedance/GitHub/ByteOpen/issues/issues.go|1|1|V|go
-	package issues
-	
-	import (
-		"context"
-		"time"
-	
-		"github.com/google/go-github/github"
-	)
-	
-	func getIssues(repo *github.Repository, n int, client *github.Client) []int {
-		var issuesCountList []int
-		var list []*github.Issue
-		opt := &github.IssueListByRepoOptions{
-			State: "open",
-			Since: time.Now().AddDate(0, 0, 0),
-		}
-	
-		for i := 0; i < n; i++ {
-			for {
-				l, resp, err := client.Issues.ListByRepo(context.Background(), *repo.Owner.Name, *repo.Name, opt)
-				if err != nil {
-					return nil, err
-				}
-				list = append(list, l...)
-				if resp.NextPage == 0 {
-					break
-				}
-				opt.Page = resp.NextPage
-			}
-			issuesCountList[i] = len(list)
-			list = nil
-			opt.Since = time.Now().AddDate(0, 0, -((i + 1) * 7))
-		}
-	
-		return issuesCountList
-	}
-fe5fe0415fc3e0ff4942d8454f363d2c|file:///Users/bytedance/GitHub/ByteOpen/stars/stars.go|1|9|v|go
-	issues
-642facf67e0ad311eee88b3ab8381590|file:///Users/bytedance/GitHub/ByteOpen/stars/stars.go|12|21|v|go
-	Issue
-40fdd2ae34e1bd670850c005ebae9eb1|file:///Users/bytedance/GitHub/ByteOpen/stars/stars.go|35|9|v|go
-	issuesCountList
-43ff9e5d49d01e509b1ec78879ef2bcb|file:///Users/bytedance/GitHub/ByteOpen/test.go|8|10|v|go
-	getIssuet
-cb9389ca5efdb018ea28d99c0c2dac61|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|18|44|^v|go
-	[]*repoStatics
-35568d3e63f73da7ab158bec5673db78|file:///Users/bytedance/go/src/ByteOpen/test.go|36|2|V|go
-			return
-8108fb10f40e01a674d2a93bba16512d|file:///Users/bytedance/go/src/ByteOpen/test.go|35|1|V|go
-		if _, ok := err.(*github.TwoFactorAuthError); ok {
-			fmt.Print("\nGitHub OTP: ")
-			otp, _ := r.ReadString('\n')
-			tp.OTP = strings.TrimSpace(otp)
-			user, _, err = client.Users.Get(ctx, "")
-		}
-285fb360678e56afbac9f41be8298f4b|file:///Users/bytedance/go/src/ByteOpen/test.go|34|1|V|go
-		// Is this a two-factor auth error? If so, prompt for OTP and try again.
-7063b142289864e78238d35c7e6d6377|file:///Users/bytedance/go/src/ByteOpen/test.go|32|1|V|go
-		user, _, err := client.Users.Get(ctx, "")
-3fdb3a804cae69fba3d55c3d04242779|file:///Users/bytedance/go/src/ByteOpen/test.go|31|1|V|go
-		ctx := context.Background()
-3911ebb466f15b69a888ab1a4bf5f8d4|file:///Users/bytedance/go/src/ByteOpen/test.go|30|1|V|go
-		client := github.NewClient(tp.Client())
-c2a4b5d6d39aa75f8f979c3525e21870|file:///Users/bytedance/go/src/ByteOpen/test.go|25|1|V|go
-		tp := github.BasicAuthTransport{
-			Username: strings.TrimSpace(username),
-			Password: strings.TrimSpace(password),
-		}
-f9ccb57c095c54cddce927784a76ac87|file:///Users/bytedance/go/src/ByteOpen/test.go|17|1|V|go
-		r := bufio.NewReader(os.Stdin)
-		fmt.Print("GitHub Username: ")
-		username, _ := r.ReadString('\n')
-	
-		fmt.Print("GitHub Password: ")
-		bytePassword, _ := terminal.ReadPassword(int(syscall.Stdin))
-		password := string(bytePassword)
-	
-17a22f90a8c6f4d3e9186cbadc1fdcdf|file:///Users/bytedance/go/src/ByteOpen/test.go|17|1|V|go
-	
-	
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-		}
-202506756fc2470218b9d52300ddc191|file:///Users/bytedance/go/src/ByteOpen/test.go|17|1|v|go
-		r := bufio.NewReader(os.Stdin)
-		fmt.Print("GitHub Username: ")
-		username, _ := r.ReadString('\n')
-	
-		fmt.Print("GitHub Password: ")
-		bytePassword, _ := terminal.ReadPassword(int(syscall.Stdin))
-		password := string(bytePassword)
-	
-		tp := github.BasicAuthTransport{
-			Username: strings.TrimSpace(username),
-			Password: strings.TrimSpace(password),
-		}
-	
-		client := github.NewClient(tp.Client())
-		ctx := context.Background()
-		user, _, err := client.Users.Get(ctx, "")
-	
-		// Is this a two-factor auth error? If so, prompt for OTP and try again.
-		if _, ok := err.(*github.TwoFactorAuthError); ok {
-			fmt.Print("\nGitHub OTP: ")
-			otp, _ := r.ReadString('\n')
-			tp.OTP = strings.TrimSpace(otp)
-			user, _, err = client.Users.Get(ctx, "")
-		}
-	
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-e5febecfa5dab94aefa2f2ed185b37bf|file:///Users/bytedance/go/src/ByteOpen/test.go|19|1|v|go
-		fmt.Printf("\n%v\n", github.Stringify(user))
-ee11cbb19052e40b07aac0ca060c23ee|file:///Users/bytedance/go/src/ByteOpen/test.go|29|2|v|go
-	user
-2f963fb445303b16f2ac9486b1814c94|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|28|2|V|go
-		client := github.NewClient(nil)
-a3629a9c4a32233a487ccae8d3614f49|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|30|32|^v|go
-	len(list) 
-004066f9d911a006b7a8296e396a4b13|file:///Users/bytedance/go/src/ByteOpen/test.go|43|30|v|go
-	ByteOpen
-b669789cc866d18d0e2d7826a6c5a1e3|file:///Users/bytedance/go/src/ByteOpen/test.go|1|1|V|go
-	package main
-	
-	import (
-		"ByteOpen/repos"
-		"context"
-		"fmt"
-		"log"
-		"syscall"
-	
-		"github.com/google/go-github/github"
-		"golang.org/x/crypto/ssh/terminal"
-		"golang.org/x/oauth2"
-	)
-	
-	func main() {
-		fmt.Print("GitHub Token: ")
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-		token := string(byteToken)
-	
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-	
-		client := github.NewClient(tc)
-	
-		_, resp, err := client.Users.Get(ctx, "")
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-	
-		// Rate.Limit should most likely be 5000 when authorized.
-		// log.Printf("Rate: %#v\n", resp.Rate)
-	
-		// If a Token Expiration has been set, it will be displayed.
-		if !resp.TokenExpiration.IsZero() {
-			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
-		}
-	
-		res, err := repos.GetRepos("kitex-contrib", client, 10)
-		if err != nil {
-			fmt.Printf("Error: %v\n", err)
-		}
-		for _, obj := range res {
-			fmt.Printf("%s:\t", obj.Name)
-			for _, num := range obj.IssuesCount {
-				fmt.Printf("%d\t", num)
-			}
-			fmt.Printf("\n")
-	
-		}
-		return
-	}
-08e85ae0ace5fd24756581521fca1cc2|file:///Users/bytedance/go/src/ByteOpen/tools/fetch.go|35|1|V|go
-		// Rate.Limit should most likely be 5000 when authorized.
-		// log.Printf("Rate: %#v\n", resp.Rate)
-	
-		// If a Token Expiration has been set, it will be displayed.
-426b167a07e080f62e3e20355124f802|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|41|2|V|go
-			issuesCount, _ := issues.GetIssues(repo, n, client)
-5362501201d804f1e15e5d319adb1eb3|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|43|28|v|go
-	GetOpenIssuesCount
-ad611f705dc3b601327ef163b91c5874|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|43|28|v|go
-	GetOpenIssuesCount
-				PullRequestCoun
-3ffacda479ad528a42b1627f53937787|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|43|28|v|go
-	GetOpenIssuesCount
-				PullRequestCount: getPr(repo, n, client),
-f5a9f807311cc237fb8674d57b94f370|file:///Users/bytedance/go/src/ByteOpen/repos/repos.go|44|28|v|go
-	PullRequestCount
-abdcadde49c9bb2536145c709dbb1f2a|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|4|9|V|go
-		"package"
-e210989f80ecb3cb8a1bb6bd826567ec|file:///Users/bytedance/go/src/ByteOpen/issues/issues.go|10|16|^v|go
-	repo *github.Repository, n int, client *github.Client)
-b599b0b68b3c821891d31495075d37b8|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|6|14|V|go
-		var count int
-76f48a7ffdc0687d5308c51fbee4af53|file:///Users/bytedance/go/src/ByteOpen/prs/prs.go|1|1|V|go
-	package prs
-	
-	import (
-		"context"
-	
-		"github.com/google/go-github/github"
-	)
-	
-	func GetPrCount(repo *github.Repository, client *github.Client) int {
-		prs, _, _ := client.PullRequests.List(context.TODO(), *repo.Owner.Login, *repo.Name, &github.PullRequestListOptions{})
-		return len(prs)
-	}
-c9727b6e637227f779868ea74ddd4f3b|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|6|v|go
-	GetContributorsCount
-5cc36d56708da773c6f59aa0f4dd027f|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|6|v|go
-	GetContributorsCount(r
-227c715f2814c52cdaa3ed3f61262679|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|6|v|go
-	GetContributorsCount(repo *github.Repository, client *github.Client) int {
-70f697229eede4c1762a859e0e42aa19|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|10|40|v|go
-	  .List(context.TODO(), *repo.Owner.Login, *repo.Name, &github.PullRequestListOptions{})
-a6b477f9d23c2711c5eae450d479d1f4|file:///Users/bytedance/go/src/ByteOpen/test.go|45|1|V|go
-			for _, num := range obj.IssuesCount {
-				fmt.Printf("%d\t", num)
-			}
-295e012a34ee655aff7bdd817d92df70|file:///Users/bytedance/go/src/ByteOpen/test.go|46|18|V|go
-			fmt.Printf("StarsCount: %d")
-442e3589da42a86f24e4cbda719cca76|file:///Users/bytedance/go/src/ByteOpen/test.go|46|18|V|go
-			fmt.Printf("\n")
-db69c0d42a7d9dbfc87e484dccfae393|file:///Users/bytedance/GitLab/byteopen/test.go|1|1|V|go
-	package main
-	
-	import (
-		"ByteOpen/repos"
-		"context"
-		"fmt"
-		"log"
-		"syscall"
-	
-		"github.com/google/go-github/github"
-		"golang.org/x/crypto/ssh/terminal"
-		"golang.org/x/oauth2"
-	)
-	
-	func main() {
-		fmt.Print("GitHub Token: ")
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-		token := string(byteToken)
-	
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-	
-		client := github.NewClient(tc)
-	
-		_, resp, err := client.Users.Get(ctx, "")
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-	
-		if !resp.TokenExpiration.IsZero() {
-			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
-		}
-	
-		res, err := repos.GetRepos("kitex-contrib", client, 10)
-		if err != nil {
-			fmt.Printf("Error: %v\n", err)
-		}
-		fmt.Printf("\t\t\tStarsCount\tIssueCount\tPRCount\tContributorCount\n")
-		for _, obj := range res {
-			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.IssuesCount, obj.PullRequestCount, obj.ContributorCount)
-		}
-		return
-	}
-137dd7d0079d99195c2cbadc42fe1bb8|file:///Users/bytedance/GitLab/byteopen/tools/fetch.go|1|1|V|go
-	package tools
-	
-	import (
-		"ByteOpen/repos"
-		"context"
-		"fmt"
-		"log"
-		"syscall"
-	
-		"github.com/google/go-github/github"
-		"golang.org/x/crypto/ssh/terminal"
-		"golang.org/x/oauth2"
-	)
-	
-	func main() {
-		fmt.Print("GitHub Token: ")
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-		token := string(byteToken)
-	
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-	
-		client := github.NewClient(tc)
-	
-		_, resp, err := client.Users.Get(ctx, "")
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-	
-		if !resp.TokenExpiration.IsZero() {
-			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
-		}
-	
-		res, err := repos.GetRepos("kitex-contrib", client, 10)
-		if err != nil {
-			fmt.Printf("Error: %v\n", err)
-		}
-		for _, obj := range res {
-			fmt.Printf("%s:\t", obj.Name)
-			for _, num := range obj.IssuesCount {
-				fmt.Printf("%d\t", num)
-			}
-			fmt.Printf("\n")
-	
-		}
-		return
-	}
-bd8b8359a493d198e3e01621c763ac07|file:///Users/bytedance/GitLab/byteopen/main.go|16|1|V|go
-		fmt.Print("GitHub Token: ")
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-		token := string(byteToken)
-	
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-	
-		client := github.NewClient(tc)
-	
-		_, resp, err := client.Users.Get(ctx, "")
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-	
-		if !resp.TokenExpiration.IsZero() {
-			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
-		}
-	
-		res, err := repos.GetRepos("kitex-contrib", client, 10)
-		if err != nil {
-			fmt.Printf("Error: %v\n", err)
-		}
-		fmt.Printf("\t\t\tStarsCount\tIssueCount\tPRCount\tContributorCount\n")
-		for _, obj := range res {
-			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.IssuesCount, obj.PullRequestCount, obj.ContributorCount)
-		}
-26b7721ed7ef776f9c62594b5b615231|file:///Users/bytedance/GitLab/byteopen/main.go|9|7|V|go
-		"tools"
-3b96bc980b38659497cfe2c7ab8b343f|file:///Users/bytedance/GitLab/byteopen/main.go|4|1|V|go
-		"ByteOpen/repos"
-5374034a40c8d6800cb4f449c2ea00a0|file:///Users/bytedance/GitLab/byteopen/tools/fetch.go|1|9|v|go
-	fetch
-84ce128b8e1f29ff383c77c2d51087f0|file:///Users/bytedance/GitLab/byteopen/main.go|5|1|V|go
-		"context"
-		"fmt"
-		"log"
-		"syscall"
-	
-		"github.com/google/go-github/github"
-		"golang.org/x/crypto/ssh/terminal"
-		"golang.org/x/oauth2"
-b9385e30190274f95e6222fbfeb88382|file:///Users/bytedance/GitLab/byteopen/main.go|1|1|v|go
-	packag
-fad58de7366495db4650cfefac2fcd61|file:///Users/bytedance/go/src/ByteOpen/main.go|15|6|v|go
-	main
-c846ac92817bd70aa9e2814e5f2317c7|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|16|1|V|go
-		fmt.Print("GitHub Token: ")
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-		token := string(byteToken)
-	
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-	
-		client := github.NewClient(tc)
-	
-		_, resp, err := client.Users.Get(ctx, "")
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-	
-		if !resp.TokenExpiration.IsZero() {
-			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
-		}
-	
-7076a103910280c64fe1ccf431334a89|file:///Users/bytedance/go/src/ByteOpen/main.go|16|1|V|go
-		fmt.Print("GitHub Token: ")
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-		token := string(byteToken)
-	
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: token},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-	
-		client := github.NewClient(tc)
-	
-		_, resp, err := client.Users.Get(ctx, "")
-		if err != nil {
-			fmt.Printf("\nerror: %v\n", err)
-			return
-		}
-	
-		if !resp.TokenExpiration.IsZero() {
-			log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
-		}
-23b30bbf7e72c68942a51cf1dd84bada|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|14|15|^v|go
-	client *github.Client 
-a008bda736d5c0dd7ba1d6d23a20552f|file:///Users/bytedance/go/src/ByteOpen/main.go|9|13|V|go
-		client := auth.auth()
-43d2b585d40ac507119d0e19f98688b6|file:///Users/bytedance/go/src/ByteOpen/main.go|6|1|v|go
-		"fmt
-a6c7573b1af0b0430fa76c3cc39349bd|file:///Users/bytedance/go/src/ByteOpen/main.go|6|2|V|go
-		"fmt"
-d7193f42c9ffc62642b6204a7fe899fa|file:///Users/bytedance/go/src/ByteOpen/main.go|10|2|V|go
-		auth()
-c86cf25edd6d60514d97388398fd96d8|file:///Users/bytedance/go/src/ByteOpen/main.go|9|1|V|go
-	func main() {
-		res, err := repos.GetRepos("kitex-contrib", client, 10)
-11a963b01517fc6c8f8bc7b3b2a6ad56|file:///Users/bytedance/go/src/ByteOpen/main.go|5|1|V|go
-		"ByteOpen/auth"
-efda3de48b3b68cf551562c2f873a6a0|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|15|1|V|go
-		fmt.Print("Enter Your GitHub Token: ")
-4bf264e973d16018c4bf1bca62c4b940|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|17|1|V|go
-		r := bufio.NewReader(os.Stdin)
-		fmt.Print("GitHub org Name: ")
-		orgname, _ := r.ReadString('\n')
-383394a254cff11c6398ce00e40c5731|file:///Users/bytedance/go/src/ByteOpen/main.go|14|1|V|go
-		r := bufio.NewReader(os.Stdin)
-		fmt.Print("GitHub org Name: ")
-		orgname, _ := r.ReadString('\n')
-	
-79a88a90a423468fb96155778a902bbe|file:///Users/bytedance/go/src/ByteOpen/tools/display.go|11|2|V|go
-		fmt.Printf("Enter the org name: ")
-2166dc15c873ecb1f04b1e32793dea1a|file:///Users/bytedance/go/src/ByteOpen/main.go|14|1|V|go
-		res, err := repos.GetRepos("kitex-contrib", client, 10)
-		if err != nil {
-			fmt.Printf("Error: %v\n", err)
-		}
-		fmt.Printf("\t\t\tStarsCount\tIssueCount\tPRCount\tContributorCount\n")
-		for _, obj := range res {
-			fmt.Printf("%-20s:\t%d\t\t%d\t\t%d\t\t%d\n", obj.Name, obj.StarsCount, obj.IssuesCount, obj.PullRequestCount, obj.ContributorCount)
-		}
-9bb6927932da53d7bb2b922f70c7d0c1|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|17|1|V|go
-		r := bufio.NewReader(os.Stdin)
-		fmt.Print("GitHub org Name: ")
-		orgname, _ := r.ReadString('\n')
-		
-b9987a246a537f4fe86f1f2e3d10dbdb|file:///Users/bytedance/go/src/ByteOpen/main.go|11|8|v|go
-	Display
-116eeab897648ad4bff7548df3780ffa|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|15|1|V|go
-		byteToken, _ := terminal.ReadPassword(int(syscall.Stdin))
-		println()
-9fb4a73fe3e63807299d0ce95390203f|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|16|1|V|go
-		println()
-91ae3bb81fa4d1fc13d901bda28ee392|file:///Users/bytedance/go/src/ByteOpen/contributors/contributors.go|9|27|^v|go
-	repo *github.Repository, client *github.Client)
-3dddb2454a6fff780410c41a57bd80f5|file:///Users/bytedance/go/src/ByteOpen/stars/stars.go|1|1|V|go
-	package stars
-	
-	import "github.com/google/go-github/github"
-	
-	func GetStarsCount(repo *github.Repository, client *github.Client) int {
-		count, _, _ := client.Repositories.ListStargazers()
-	}
-216ebc90aebe932755c3c40d779ac4e8|file:///Users/bytedance/GitLab/byteopen/tools/display.go|15|1|V|go
-		orgName, _ := r.ReadString('\n')
 32cd0667557d4b5b89a759337febaaf6|file:///Users/bytedance/GitLab/byteopen/tools/display.go|13|7|^v|go
 	bufio.NewReader(os.Stdin) 
 486bc198a365e8fa5e809dd64e2ec6f9|file:///Users/bytedance/GitLab/byteopen/auth/auth.go|19|43|V|go
@@ -1360,3 +654,657 @@ c549653e0d7f8fbc02a8dfec2aee0ca0|file:///Users/bytedance/GitLab/byteopen/auth/au
 		//if !resp.TokenExpiration.IsZero() {
 		//	log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
 		//}
+0ec62e70d42a5d57143c4d86c223743b|file:///Users/bytedance/.zshrc|144|1|V|zsh
+	/Applications/Typora.app
+c1b52632f4c2dff830c30e1a0b040791|file:///Users/bytedance/.zshrc|143|1|V|zsh
+	alias typora=""
+	
+09fb0e45b27c853249e6a3544ccec505|file:///Users/bytedance/.zshrc|143|14|V|zsh
+	alias typora="/Applications/Typora.app"
+28441edfe005d6b9723bbf78acdc6927|file:///Users/bytedance/.zshrc|142|8|V|zsh
+	# typora
+9d8646823d2a436f94eb3ce67317b238|file:///Users/bytedance/.zshrc|143|15|v|zsh
+	ents
+0a5b7edb55b772c60bfa8af868b679cf|file:///Users/bytedance/.zshrc|143|15|v|zsh
+	MacOS
+ba587e0617f576a7701c8ec6cc84d175|file:///Users/bytedance/.zshrc|143|15|v|zsh
+	Typora
+0de74e6782b62b5d35c4fdc12a30019e|file:///Users/bytedance/.config/ranger/rc.conf|142|19|V|conf
+	set colorscheme dracula
+6a8cdf35e2af9ec51b9eab0f57e85a1f|file:///Users/bytedance/.config/ranger/rc.conf|26|14|V|conf
+	                to each other
+b25512d0f9e4c9e8af072cb0b05a8f93|file:///Users/bytedance/AI/lab/lab4/4.py|50|22|v|python
+	'accuracy'
+d71fe65d03e25998b71aaa2ed00888b2|file:///Users/bytedance/AI/lab/lab4/4.py|48|1|v|python
+	val_
+d9bd037fea1a75fa26cabafa329eb1d2|file:///Users/bytedance/AI/lab/lab4/4.py|53|27|v|python
+	Validation 
+d78f1fb7e69f7cddcf3e168f2663db20|file:///Users/bytedance/AI/lab/lab4/4.py|53|27|v|python
+	Accuracy
+43ff2cbe7d62ed4604268f4c01acbc11|file:///Users/bytedance/AI/lab/report/report1/dataProcess.py|26|13|V|python
+	    # print(test_X.shape)
+0f42385182c6437979d2f95651e2e021|file:///Users/bytedance/.kube/config|1|1|V|
+	apiVersion: v1
+	clusters:
+	- cluster:
+	    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1UQXlNREl6TlRFeE1sb1hEVE14TVRBeE9ESXpOVFl4TWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTU5UCmEwcnVuRFVCOGdreHJ6VkFzUEQxTnYxeE1ycGlsdUM1Sm5uUFAzT1I4dEJvSkF1NGFla0s2cHlkeEZXL3BHSE0KSkFMQVYva1ZzUFpKbEJtck9aY2JKdjdqV2FMSkUrbmxyNVV2c1VHMUdrT1A2WGtJSDBSRG1zNDFGLzBmVVlYRwpVUkszSUZaYXYxU1o4RUdwWi9kNmFLWjBiZHR0STZqR2lHMUtiZ3dCZ2N3VkR5MnQ4QjNuNlh4NjE0L1BCaHBGCkZFWmNUSkR5cWtLTyt6Z2h6ZUdwaHhwTjhVTTl6SEpwd2p2RlU4TnlWNWs0Vm9nNm1uWlhxZFNtRlJySWsveG0KQm9sOTB2TURVczl2WkNRSlVyU1NsMTN2U0gvbkVKL3BML3c0WmMyY2c4MEI1dXdPeUpjT2tEMlBxb044WUhPbwpPdE51eGxkYlRKUkdneGErRk5FQ0F3RUFBYU5GTUVNd0RnWURWUjBQQVFIL0JBUURBZ0trTUJJR0ExVWRFd0VCCi93UUlNQVlCQWY4Q0FRQXdIUVlEVlIwT0JCWUVGRktFTUZqTUJnQU01Slk1MW1NUTcwMVdCcTJqTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQkpjcFhpOGNncjFEV3B3RUQ5ZFVlSUxrVWJnOVlIMEZId0JJeTB3YWtMWVhxVwpST0dXMEF1YmtqTFVMM2F4RHY4RlRXbGR0Z2JxTDI3dnFQVUhJbGppZE54Sml2d2JqMURWNk1pTm40Zmo1QlpoClorYUlWNVFCSG9URDMyOHhiV2hLNHRUV0QwQWhIYUVxTlFzMkJHYmhWMnhJV0JIVXVnT3poMXZXdE1jL2R6WTMKcG5EOVdVa2lScE1HZ25FeXJ0YSthZ3ozdjlwNUNwQ3RWRmI1aEc0U2NIZjJhSnBHUTYzcUFBSEpMbmZJRDQ2bwo5OUpFaEdjZUVVNXR3NTlFN0E4M05mV082RTlVR1NuUkZqeWxncEtXckQyWTlWRjN5SFpkSldaaUQvem5KTFVECmMxRWgzY0JTOE5GZ1NRazhMNlJ1ZFFBTEFMTkRkazFaSndVQzYwRUEKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    server: https://221.194.189.166:6443
+	  name: cc5oamf6rsfehifumqojg
+	contexts:
+	- context:
+	    cluster: cc5oamf6rsfehifumqojg
+	    user: "1006384"
+	  name: cc5oamf6rsfehifumqojg@1006384
+	current-context: cc5oamf6rsfehifumqojg@1006384
+	kind: Config
+	preferences: {}
+	users:
+	- name: "1006384"
+	  user:
+	    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4VENDQWRtZ0F3SUJBZ0lJT0ZRNFlQbytoMzR3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TVRFd01qQXlNelV4TVRKYUZ3MDBNVEV3TVRZd01ESXdORGhhTUJJeApFREFPQmdOVkJBTVRCekV3TURZek9EUXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRRFJjK0c1OFROQmc2YXlLMWpYMmZkNkRSY1BLYVE0LzBDMmh3RG44UmxtWmdSZnQ3bkg1aTk1T2dCcXFWUkgKRG85VDJoTmRjREVJdG9wTVNHZ00wbEI5S1FJNHRFb0ZFSWpMZUFJTG9HZ3hDTVdQMmNzSlpRWTBnYXlKS3NzVwpOaVlsU00yVFRQam5vTVVjTmVyNmFwRUVhbnRyN095UjNnL2dra1RYWS8rSFdhNG1Mb2VoTDNhdHRRaEpPRVBGCmN2Y0pnMnhMYy9BcEZWUkpWM2xmYXRpdWhJY2U3MnVUd0JjWjBIMExlNVJDc25IZUlFQklEQ3JIb1duaGZhNVIKa1g3OVNSSDlaMEFVSUY3MlJtU0JKeVVrWFJWUFhXblVFZmhUZitQZHBtV3FPdGZDSlZQRW1uMkgrRjk4OFBDaApkNmN2c3dvcm5IckdwcjVuY0l3M283RWJBZ01CQUFHalNEQkdNQTRHQTFVZER3RUIvd1FFQXdJRm9EQVRCZ05WCkhTVUVEREFLQmdnckJnRUZCUWNEQWpBZkJnTlZIU01FR0RBV2dCUlNoREJZekFZQURPU1dPZFpqRU85TlZnYXQKb3pBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQUtlTGsyQ1c1Ris1ckZuWU5zaXdpbnJsV0dTcXlIOU9INDMvcQpwdFh0cktSWkk0K0w5REZUZGxrUFJEYWJuZWMyVGx6T3ZUYXFKUThJU1hwdFRtZEdNcjBZNWx2OS9vS0tUdUR0CnNmMnd2OGhCenlWaFJkQitDaC82ckJwUExHZ0xYUTB1bHhMQkRKMFBTcDBFcTR5N1ZGN3FIZktiSjhKdDJEbUEKSGhqK1JmSXEwUlk1MWdqVkdybDFBNWJjWXhvbUtEek82cVpuMWYyU3k5NzNobDJSczRjekFmNUhzQVFVZnhoWgpRVmhMMURGSnpRdTVzaldLTmxYSHhoZFdIOUNQOHlxdWt2MFg5MHU0b3QzZk9TQlZheDBJYWNMWUJaaVBRekM3CnkwQ3l1ZFN2aG5SNUhlek1jaEZiUFZKenA3SXVFYWprck80K1hnQXNOQzZBTmZ2cHpnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBMFhQaHVmRXpRWU9tc2l0WTE5bjNlZzBYRHlta09QOUF0b2NBNS9FWlptWUVYN2U1CngrWXZlVG9BYXFsVVJ3NlBVOW9UWFhBeENMYUtURWhvRE5KUWZTa0NPTFJLQlJDSXkzZ0NDNkJvTVFqRmo5bkwKQ1dVR05JR3NpU3JMRmpZbUpVak5rMHo0NTZERkhEWHErbXFSQkdwN2ErenNrZDRQNEpKRTEyUC9oMW11Smk2SApvUzkycmJVSVNUaER4WEwzQ1lOc1MzUHdLUlZVU1ZkNVgycllyb1NISHU5cms4QVhHZEI5QzN1VVFySngzaUJBClNBd3F4NkZwNFgydVVaRisvVWtSL1dkQUZDQmU5a1prZ1NjbEpGMFZUMTFwMUJINFUzL2ozYVpscWpyWHdpVlQKeEpwOWgvaGZmUER3b1hlbkw3TUtLNXg2eHFhK1ozQ01ONk94R3dJREFRQUJBb0lCQUFnMUNqdEhBRU1vN1hjOQp5NVZwclJEVFFud05uYW0rRnNNUU56RGZlYWRSaUFwWUlLZDhsWStpZmpHdndPV241R1hjdmJXRGwraEhmdFBPCllvVmVHRmxQS2c4ZXdXZkJaaHJTOFFHVG40R01YbkZzajFBbTdUOVJkWGxLZS9xNjFIUFJqbnlmSDRHMEF3VS8KOTUwb1g5WlVkZEdjendoSU0wY1JkREVjY2Y3VHFwNHpQbE1FUVJnOFJXVFhraTJ6bjMyMW5tc1FvM0g0Z1ZlZQpnaU0wU3A5MlFtWWk0dTFLNVFMMlo0RjdEcGpyK0hZN1drdzY3clhqNnVFY0g4SHV3c3lVeG9nSjFsYTJQbEJwCnhhb2hwemcxdDdLVFVmbm1sQTNwUDhnVkJTU3pXWWNZd2l3cUFrRGVqa2R1ZHk2Ym1MUnB5Y3IvdUxuVkZXNksKbHlPOTlvRUNnWUVBOEpkbEVkK3l2bjlXZzRneVZGRHdEWW5mSEk2ZkozdTRyNm9Hc1dVMURLcmxEdEM0WHJVUApSeURHUlZza0k1YlFhcml1aTdpWXhSMWgwR3dPK3ZNTVplM1hrSnJJYmd3SWc3RTZrcWRBSUF1Y1ZkV1FpUHBCClEyR2Y2YUczTm1BWkt2UG5lM2ZhdE56a1Nwc002WUpUK3g0aE1ZcXc0QVVncXJFWkFnS1BsR01DZ1lFQTN0MzAKRXduTnA4aU5BcVkxNGl0Y0hUUXFyY1orelRPL05DbE1ubFlVaEtscXBoOXV4Uk9MR1k2aGYzbmJCV2lpNHdueQoyVW1MMDZPYlBISlhmSWp2ZmdLNXhMR0pjeExOTC9DQWNvOEJNL2JEOG55d2d3V2ZkeGJVUHEva1M5UU5IYzdQCnFZMjZXK3VZallHM2dXNmM5anhpK05sa2RGSVhTL2xVbEwyOXdla0NnWUVBb0lEUGUyb1o2NzQxc0JBSFMzcW4KZXRDMG1HK0pPNlR0STd1eE5WMUlVOGdhZ1pTNnV1dmRZbDA2Q0lEeURoQUp3SGl1Y1NYWVBRQUtCaXBnb0FmUApDSnp3UjFjTFNXY2Jzd2RrQlB3dzZtLzBmc3EzM3JuZEdoK2h1Qklia05ueFVGZGc0VnltK2l1MjNSS3RQWWFsCmtneWFwbHRZL2twTmJiSXg5Y1pSbFBNQ2dZQWxSSG8vQU1HcUQrZzhqQ3l3Z0UycitJQTJoTjNKVktEaGlSSnQKMjdrY29mUGFpYUVOUllKYUtMYXF5V2F0bGR5L0dIZktpL2pjMEJ2eVZMQjZlNitJbzg0S3JTRnQ0N1A2RXo1MwphYUJxM3hYUEk3aWtnRGsxUWRVR0VvV2JoSDhZLys5THpBNWd0cG5ROStNR3VzZDJpWXlIVGxyMDlKRSt2QmUvCnM2YmFtUUtCZ0ZmUHhtMkRUVDdtZXMrYTF3dElhbWVpTkdEanR1QUkrc3FVMmlySlJpMURTWlFqdzhjR0Z6RGIKcFhYMjlLckNFOG44blZVeDZ6M2JkRERZMjdPblBIVi91YytNV2xsZGJJQ1VOZlhwUW8xZHMwT0pyNTNjL0dyeApobW9FVjIvZ3BQcXdOZThaT0U0ck4zck0rcUU2MW5YbEo2RDlXODFZQUlKUHExblk3RTN1Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
+	
+0a274cd9dace4ffbb98a3cec6b0712af|file:///Users/bytedance/.kube/config|1|1|V|
+	apiVersion: v1
+	clusters:
+	- cluster:
+	    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXhOekF6TlRVd00xb1hEVE15TURFeE5UQTBNREF3TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS3FhCkQ5eXMzN1gzazhlbEhLQUhiOGJ0OHVJVDhaTUZiNEhrMC91bnJOUG0wVVkxQlp6MkM2TWpPM2tjOWYwaFMwOTIKUExuNHh3a1h3N1hiRk02S0piRDRkaXBmbkQ5a2pGOXBKWHk3ZDhnYlNNclJOa2loeEc4Z1MxdzQ0bTE0SkpnRAppZS8xNzI1QVV5YlFmUUp5SVhkdmx1MGJjVUo5M0IxcXJuRVVuekhUZGF5bjV2QTNXc25zM2I5dkU5OXdIM1UyCkQwQzB3b0ZKVitBcGV4RDhWQ1c5SG5NeUxvYmJkOG11bzdPMGRsdkZRaENwVGsrNkJmOHQzWHlHZlNOdkNDdm4KVHh6RjZ5UzBpZDJDeTltL1o5dW9WcVZLTjFXOFMwQmNTTmFhe55N0d3bjFWOTdpV3dzc2lhRUZOM2RZYnlsNQp2alAwMS9sZ2pwbkk3SWVma29jQ0F3RUFBYU5GTUVNd0RnWURWUjBQQVFIL0JBUURBZ0trTUJJR0ExVWRFd0VCCi93UUlNQVlCQWY4Q0FRQXdIUVlEVlIwT0JCWUVGQmxkYWV4Wkk2eHZseXNwakVuSDJ2Y3NYWjdBTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQk1OUnBKWDVtNzRobHViTXptREdJQThXbjV0RTllaFBhZktDaVI5cGEyRWxXaQo4QnZLRVZBQnRGSjRDMFhrWE9wRXBra0xVdkZpeitGYnNRT2tUdlpScG1rY2pSNEt4Q21nVmdKcENEdE1zWU5BClFqM2dxejc4MHFjOGcyQWt2N1o2c2w3dUpicWFxbzNGcXFkNkxzVGVHYjRDV0JJQnBYMktHWFljMWRFcy9md20KWVdQdHg0UVptdGhURUg4YkFHM2M4ZmNwNU1EVFZkUVF0UFFJQ1ArZU56ME9uRUJhbjY4MWxQaGdZajRTRjlDSgpweU5wVjhpdy9IeXFNSDVMSDZFS2t4Rnh0cnplTzhNazh0c1VNcHFIM3pKdVlRWXBTUGx1djNKTHg3MjVabWh0CjlKN01vMGF6ZlROWmdCcXFVWC93NElCZ3Q3dmlXOWZWdjVhMld6U2IKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    server: https://221.194.188.224:6443
+	  name: cc7ieilursfeg52comvvg
+	contexts:
+	- context:
+	    cluster: cc7ieilursfeg52comvvg
+	    user: "1006384"
+	  name: cc7ieilursfeg52comvvg@1006384
+	current-context: cc7ieilursfeg52comvvg@1006384
+	kind: Config
+	preferences: {}
+	users:
+	- name: "1006384"
+	  user:
+	    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4VENDQWRtZ0F3SUJBZ0lJUndSNzdOcE82VlV3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TWpBeE1UY3dNelUxTUROYUZ3MDBNakF4TVRJd05qQTVORFphTUJJeApFREFPQmdOVkJBTVRCekV3TURZek9EUXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRRFk3blMrT3RjbS9DaElXb2U3TlBJVCtVTjFIQUMzVXFSbmY4OFA4eUpJL0FPVldpTDFWWjNlc29Wa01IVkIKbm5YckQ4aTZVeFB4Mk90ZmJUeEFnMXRhNUJuRFpjays5RHRUcmM5aXJKdCtCNEYybW9rYTJQcHZpMWlkUjVoawpONzdISCswUXVRYjJLUnU2aGozMDI1eFVzbDlNSXkwV0l1SmRXeVhKeUdrSnduREIyazhsZ1ovNU8xRGtDcG9aCnhxV3l2QnJhaXNNaGMrWkxZdjU1V0wwdVg2VTI2UmxtVmd3em0wVTJHOFltNHU5S25ZNEVOK3U2S1YvZjJYZGMKNDlJVTZPeVhnZkk5MTB1SXdRbE5WeDVyK2JSN3FsOUpDQjdabCtoUUlEcjFDV29TaUx1ZFdhYWFZT3k3Vk56bApYSFVNNTU5UTZFa2xxQ1NkYm1ITlp1ejNBZ01CQUFHalNEQkdNQTRHQTFVZER3RUIvd1FFQXdJRm9EQVRCZ05WCkhTVUVEREFLQmdnckJnRUZCUWNEQWpBZkJnTlZIU01FR0RBV2dCUVpYV25zV1NPc2I1Y3JLWXhKeDlyM0xGMmUKd0RBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQVJZRVFiN0JaY1YvS1BXSU9XWU1FWUFKZURCeUtCTUYrZlpZcgpUS0pvVnhrN0JEeVMwOS9qSHdzR1RCY2hNb0lENzBCVCtIOGFYRjM2ZVRoWW95NlJVNUlLcTlHYnRzVU0rNlhJClU4Z3ljaU94UGhYNDlMcXcxMGlEKytGYmowV0NkY1BzWXJwTG11VTd4bVlyOXVmajEzUDYvejdaNk1xM3lGMlkKL1VLeFVaYlBKUk9XaDJNSGdkWWJvYmdJNlNrM2U1NHZsMlMvYmVsOC9MdjlmcFk4SmM3YXU1TEx2Z2FMOXRPSQpyMDVJelJ4RExmUExkK3Z2Y0t2a09lZUZqWC81bVd4aGJZSHNKYm4yOHdXKy9mUHlaMkp3Um5HeDFjOVNzcitXCkNHUmRYK2NQYlUvZGdZaUZZOEVvNHBsYmhuMytKYVE5NXRQM1RWUVRFWUhLdDU3VitnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBMk81MHZqclhKdndvU0ZxSHV6VHlFL2xEZFJ3QXQxS2taMy9QRC9NaVNQd0RsVm9pCjlWV2QzcktGWkRCMVFaNTE2dy9JdWxNVDhkanJYMjA4UUlOYld1UVp3MlhKUHZRN1U2M1BZcXliZmdlQmRwcUoKR3RqNmI0dFluVWVZWkRlK3h4L3RFTGtHOWlrYnVvWTk5TnVjVkxKZlRDTXRGaUxpWFZzbHljaHBDY0p3d2RwUApKWUdmK1R0UTVBcWFHY2Fsc3J3YTJvckRJWFBtUzJMK2VWaTlMbCtsTnVrWlpsWU1NNXRGTmh2R0p1THZTcDJPCkJEZnJ1aWxmMzlsM1hPUFNGT2pzbDRIeVBkZExpTUVKVFZjZWEvbTBlNnBmU1FnZTJaZm9VQ0E2OVFscUVvaTcKblZtbW1tRHN1MVRjNVZ4MURPZWZVT2hKSmFna25XNWh6V2JzOXdJREFRQUJBb0lCQVFEV0xKZVdPUUd5dThJSgpyVmZVdkxGRWh4VFN5cExxYSsxbFFncHM5TjhrcjZ2YUNPUDYxRXpKVWZmZ3N2Y1JraUZac251N2VjcDNQSE1tCkEvTTR2bmV6aFFEcXFkUEhFOXAvQTF0OVVHMDBRTFRSSkVHNUFBQkJvSkljdGxMK253cjhEY2xBZVcwbUcvQUUKZUFVemVwOGQvLzJXYmlSVmRwdUhFRFord2g3eVFmU3pxNVIzZFdBS09xMDFLMk5jZTNpcDZscHFMYmNaQ2lSQwpES1BhU0FxcWpSaVRIKytXVmJ5OTZzZHRySlFhYUJ1TGp2R0hTMUJaS3RlMjlOc0JMSnNKWEZ2dTlwRnhyaHZsCmkzT2d4bEd4UFVSS3dsdWNqUXVLclRSZXpoRWJqbVpPUU5oSDVubk44YTJUWGl2QlVQRmVWanQ4L01BWVppTWMKTVVZbnh4UUJBb0dCQU9DZ2pncHQ2dERjNFIxT3NwSnBMZjk2VlFIem9PTG9WTEpUSEJYV2RqUFB4eE9DdHhrMgpYU2xFZ0k2MUFxQmpGNVZibmY1WG1OVW5QQ0ZNTzhTUFdlVzl2WEN4Yks4VExnYTNibTVrb1JyMFlZS0FQVHNSCkdSOHpHRWdzUEJyYWs5dGVxd0dGK3ljSFgzenhTRTluS0xteTRUWnA3YlVWcCtTRC9GaloyV25KQW9HQkFQYzYKdnJCeXJQKzZ3azU4OEIxdlpldzJmZDZVMXdHZTZNWEY4bkEwa0JoOUpCUDdZTld2a2tKUmNzOTV6VzNuUW1ibApkaFBEclN5MlpWUDNWVFUvZElxanJMcW10TWsyRHNFUmU4ZU5rK0lUZy9xLzVRTnVkNU52RXI4ODh5RHpsN3ZxCkp3RzNaOXhMN3ZoQWdjdG43cWdzYXBTaDRjWmVXS1BiVThRN0tRQy9Bb0dBYzc4SHNpUVZmVzV6cVZCbC83K20KN2lBeE1ZSkNndW5JeXVLOGRCeEFhRTVHZkswOGdBZGRWZWh3ZmhpVHMrV2J2MkNvTnVrWVhhMkw5SFI5ejdrMgpUNFhIMmd2eXZ2d1pHV2pueElhaDVXdkwyeDBOY0NSTlY2QlNnTTRhWXBRQzRHVVZwUUZPK3p0M1hzQk56R3lSCnRhNlJFaUxmVkJKR294L0hwbGtMQ05FQ2dZRUFsN0szRVNPOFhVb21NZXpkbE9JbXd4TUlsc3Z6UmE1UkhCR0MKMmpDV2ZrQkRJL09xRGxRbHhZV2VrZ29sOEJybmxxV1RsenNKQnBlQWcwNFBQWllMRjRxbzBQcTdrWDhXL0lhUwowZlpnV0djckkzQWR3TVpHbnZPWHFEcG80TDQzUzNtNHA0ZjNOYWh1SUd2TWVKZjBTOEs5UHlnNWxmT01KamJOCkptbzZsWmNDZ1lFQWgrWnNTN3dXQUMxMWhLWmZ0MWp3WUdkaC96Zmh1QXIyVW5xVjF6MWY3Rkl4WXd2bHhYSjUKOVRvZVE0UThvWGdiZk1KZUdyRnY1emxEb3QxajFWU3ZXT3cwNHVKRGhzS3FMSnV3bUFxdDVta2d0TWlyV3hKaQpIZE9RSHRrSTlYSC95QWhGNUVaU2JQczFjaEM1T3Iwa2t4ZmJxMjVVNUNkWCt4NTk3YzQ0UEs0PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+8a59e20a9cc06bbff8cee6bc961b015b|file:///Users/bytedance/.kube/config|1|1|V|
+	apiVersion: v1
+	clusters:
+	- cluster:
+	    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXhOekF6TlRVd00xb1hEVE15TURFeE5UQTBNREF3TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS3FhCkQ5eXMzN1gzazhlbEhLQUhiOGJ0OHVJVDhaTUZiNEhrMC91bnJOUG0wVVkxQlp6MkM2TWpPM2tjOWYwaFMwOTIKUExuNHh3a1h3N1hiRk02S0piRDRkaXBmbkQ5a2pGOXBKWHk3ZDhnYlNNclJOa2loeEc4Z1MxdzQ0bTE0SkpnRAppZS8xNzI1QVV5YlFmUUp5SVhkdmx1MGJjVUo5M0IxcXJuRVVuekhUZGF5bjV2QTNXc25zM2I5dkU5OXdIM1UyCkQwQzB3b0ZKVitBcGV4RDhWQ1c5SG5NeUxvYmJkOG11bzdPMGRsdkZRaENwVGsrNkJmOHQzWHlHZlNOdkNDdm4KVHh6RjZ5UzBpZDJDeTltL1o5dW9WcVZLTjFXOFMwQmNTTmFhe55N0d3bjFWOTdpV3dzc2lhRUZOM2RZYnlsNQp2alAwMS9sZ2pwbkk3SWVma29jQ0F3RUFBYU5GTUVNd0RnWURWUjBQQVFIL0JBUURBZ0trTUJJR0ExVWRFd0VCCi93UUlNQVlCQWY4Q0FRQXdIUVlEVlIwT0JCWUVGQmxkYWV4Wkk2eHZseXNwakVuSDJ2Y3NYWjdBTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQk1OUnBKWDVtNzRobHViTXptREdJQThXbjV0RTllaFBhZktDaVI5cGEyRWxXaQo4QnZLRVZBQnRGSjRDMFhrWE9wRXBra0xVdkZpeitGYnNRT2tUdlpScG1rY2pSNEt4Q21nVmdKcENEdE1zWU5BClFqM2dxejc4MHFjOGcyQWt2N1o2c2w3dUpicWFxbzNGcXFkNkxzVGVHYjRDV0JJQnBYMktHWFljMWRFcy9md20KWVdQdHg0UVptdGhURUg4YkFHM2M4ZmNwNU1EVFZkUVF0UFFJQ1ArZU56ME9uRUJhbjY4MWxQaGdZajRTRjlDSgpweU5wVjhpdy9IeXFNSDVMSDZFS2t4Rnh0cnplTzhNazh0c1VNcHFIM3pKdVlRWXBTUGx1djNKTHg3MjVabWh0CjlKN01vMGF6ZlROWmdCcXFVWC93NElCZ3Q3dmlXOWZWdjVhMld6U2IKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    server: https://221.194.188.224:6443
+	  name: cc7ieilursfeg52comvvg
+	contexts:
+	- context:
+	    cluster: cc7ieilursfeg52comvvg
+	    user: "1006384"
+	  name: cc7ieilursfeg52comvvg@1006384
+	current-context: cc7ieilursfeg52comvvg@1006384
+	kind: Config
+	preferences: {}
+	users:
+	- name: "1006384"
+	  user:
+	    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4VENDQWRtZ0F3SUJBZ0lJUndSNzdOcE82VlV3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TWpBeE1UY3dNelUxTUROYUZ3MDBNakF4TVRJd05qQTVORFphTUJJeApFREFPQmdOVkJBTVRCekV3TURZek9EUXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRRFk3blMrT3RjbS9DaElXb2U3TlBJVCtVTjFIQUMzVXFSbmY4OFA4eUpJL0FPVldpTDFWWjNlc29Wa01IVkIKbm5YckQ4aTZVeFB4Mk90ZmJUeEFnMXRhNUJuRFpjays5RHRUcmM5aXJKdCtCNEYybW9rYTJQcHZpMWlkUjVoawpONzdISCswUXVRYjJLUnU2aGozMDI1eFVzbDlNSXkwV0l1SmRXeVhKeUdrSnduREIyazhsZ1ovNU8xRGtDcG9aCnhxV3l2QnJhaXNNaGMrWkxZdjU1V0wwdVg2VTI2UmxtVmd3em0wVTJHOFltNHU5S25ZNEVOK3U2S1YvZjJYZGMKNDlJVTZPeVhnZkk5MTB1SXdRbE5WeDVyK2JSN3FsOUpDQjdabCtoUUlEcjFDV29TaUx1ZFdhYWFZT3k3Vk56bApYSFVNNTU5UTZFa2xxQ1NkYm1ITlp1ejNBZ01CQUFHalNEQkdNQTRHQTFVZER3RUIvd1FFQXdJRm9EQVRCZ05WCkhTVUVEREFLQmdnckJnRUZCUWNEQWpBZkJnTlZIU01FR0RBV2dCUVpYV25zV1NPc2I1Y3JLWXhKeDlyM0xGMmUKd0RBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQVJZRVFiN0JaY1YvS1BXSU9XWU1FWUFKZURCeUtCTUYrZlpZcgpUS0pvVnhrN0JEeVMwOS9qSHdzR1RCY2hNb0lENzBCVCtIOGFYRjM2ZVRoWW95NlJVNUlLcTlHYnRzVU0rNlhJClU4Z3ljaU94UGhYNDlMcXcxMGlEKytGYmowV0NkY1BzWXJwTG11VTd4bVlyOXVmajEzUDYvejdaNk1xM3lGMlkKL1VLeFVaYlBKUk9XaDJNSGdkWWJvYmdJNlNrM2U1NHZsMlMvYmVsOC9MdjlmcFk4SmM3YXU1TEx2Z2FMOXRPSQpyMDVJelJ4RExmUExkK3Z2Y0t2a09lZUZqWC81bVd4aGJZSHNKYm4yOHdXKy9mUHlaMkp3Um5HeDFjOVNzcitXCkNHUmRYK2NQYlUvZGdZaUZZOEVvNHBsYmhuMytKYVE5NXRQM1RWUVRFWUhLdDU3VitnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBMk81MHZqclhKdndvU0ZxSHV6VHlFL2xEZFJ3QXQxS2taMy9QRC9NaVNQd0RsVm9pCjlWV2QzcktGWkRCMVFaNTE2dy9JdWxNVDhkanJYMjA4UUlOYld1UVp3MlhKUHZRN1U2M1BZcXliZmdlQmRwcUoKR3RqNmI0dFluVWVZWkRlK3h4L3RFTGtHOWlrYnVvWTk5TnVjVkxKZlRDTXRGaUxpWFZzbHljaHBDY0p3d2RwUApKWUdmK1R0UTVBcWFHY2Fsc3J3YTJvckRJWFBtUzJMK2VWaTlMbCtsTnVrWlpsWU1NNXRGTmh2R0p1THZTcDJPCkJEZnJ1aWxmMzlsM1hPUFNGT2pzbDRIeVBkZExpTUVKVFZjZWEvbTBlNnBmU1FnZTJaZm9VQ0E2OVFscUVvaTcKblZtbW1tRHN1MVRjNVZ4MURPZWZVT2hKSmFna25XNWh6V2JzOXdJREFRQUJBb0lCQVFEV0xKZVdPUUd5dThJSgpyVmZVdkxGRWh4VFN5cExxYSsxbFFncHM5TjhrcjZ2YUNPUDYxRXpKVWZmZ3N2Y1JraUZac251N2VjcDNQSE1tCkEvTTR2bmV6aFFEcXFkUEhFOXAvQTF0OVVHMDBRTFRSSkVHNUFBQkJvSkljdGxMK253cjhEY2xBZVcwbUcvQUUKZUFVemVwOGQvLzJXYmlSVmRwdUhFRFord2g3eVFmU3pxNVIzZFdBS09xMDFLMk5jZTNpcDZscHFMYmNaQ2lSQwpES1BhU0FxcWpSaVRIKytXVmJ5OTZzZHRySlFhYUJ1TGp2R0hTMUJaS3RlMjlOc0JMSnNKWEZ2dTlwRnhyaHZsCmkzT2d4bEd4UFVSS3dsdWNqUXVLclRSZXpoRWJqbVpPUU5oSDVubk44YTJUWGl2QlVQRmVWanQ4L01BWVppTWMKTVVZbnh4UUJBb0dCQU9DZ2pncHQ2dERjNFIxT3NwSnBMZjk2VlFIem9PTG9WTEpUSEJYV2RqUFB4eE9DdHhrMgpYU2xFZ0k2MUFxQmpGNVZibmY1WG1OVW5QQ0ZNTzhTUFdlVzl2WEN4Yks4VExnYTNibTVrb1JyMFlZS0FQVHNSCkdSOHpHRWdzUEJyYWs5dGVxd0dGK3ljSFgzenhTRTluS0xteTRUWnA3YlVWcCtTRC9GaloyV25KQW9HQkFQYzYKdnJCeXJQKzZ3azU4OEIxdlpldzJmZDZVMXdHZTZNWEY4bkEwa0JoOUpCUDdZTld2a2tKUmNzOTV6VzNuUW1ibApkaFBEclN5MlpWUDNWVFUvZElxanJMcW10TWsyRHNFUmU4ZU5rK0lUZy9xLzVRTnVkNU52RXI4ODh5RHpsN3ZxCkp3RzNaOXhMN3ZoQWdjdG43cWdzYXBTaDRjWmVXS1BiVThRN0tRQy9Bb0dBYzc4SHNpUVZmVzV6cVZCbC83K20KN2lBeE1ZSkNndW5JeXVLOGRCeEFhRTVHZkswOGdBZGRWZWh3ZmhpVHMrV2J2MkNvTnVrWVhhMkw5SFI5ejdrMgpUNFhIMmd2eXZ2d1pHV2pueElhaDVXdkwyeDBOY0NSTlY2QlNnTTRhWXBRQzRHVVZwUUZPK3p0M1hzQk56R3lSCnRhNlJFaUxmVkJKR294L0hwbGtMQ05FQ2dZRUFsN0szRVNPOFhVb21NZXpkbE9JbXd4TUlsc3Z6UmE1UkhCR0MKMmpDV2ZrQkRJL09xRGxRbHhZV2VrZ29sOEJybmxxV1RsenNKQnBlQWcwNFBQWllMRjRxbzBQcTdrWDhXL0lhUwowZlpnV0djckkzQWR3TVpHbnZPWHFEcG80TDQzUzNtNHA0ZjNOYWh1SUd2TWVKZjBTOEs5UHlnNWxmT01KamJOCkptbzZsWmNDZ1lFQWgrWnNTN3dXQUMxMWhLWmZ0MWp3WUdkaC96Zmh1QXIyVW5xVjF6MWY3Rkl4WXd2bHhYSjUKOVRvZVE0UThvWGdiZk1KZUdyRnY1emxEb3QxajFWU3ZXT3cwNHVKRGhzS3FMSnV3bUFxdDVta2d0TWlyV3hKaQpIZE9RSHRrSTlYSC95QWhGNUVaU2JQczFjaEM1T3Iwa2t4ZmJxMjVVNUNkWCt4NTk3YzQ0UEs0PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+			m
+0892fd9164b2442ae620f3f747b2aab1|file:///private/var/folders/92/nd94m7953dndfldyqfgz5w7m0000gp/T/kubectl-edit-5r0cl.yaml|5|1|V|yaml
+	apiVersion: storage.k8s.io/v1
+	kind: StorageClass
+	metadata:
+	  annotations:
+	    storageclass.kubernetes.io/is-default-class: "true"
+	  creationTimestamp: "2022-01-17T07:23:12Z"
+	  name: default
+	  resourceVersion: "47879"
+	  uid: b3307d94-b8f2-4e9f-a3a9-cad111358d9b
+	parameters:
+	  ChargeType: PostPaid
+	  type: PTSSD
+	  zone: ""
+	provisioner: ebs.csi.volcengine.com
+	reclaimPolicy: Delete
+	volumeBindingMode: Immediate
+20fdb06f608241764b11e644e85435e8|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|134|7|V|yaml
+	      #
+627d20cf596f17e24718d0f52359b6c9|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|133|7|V|yaml
+	    presubmits:
+	    periodics:
+42641962c2edf182d13884d845bfc1d3|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|134|1|V|yaml
+	      kitex-contrib/resolver-dns:
+	      - name: resolver-dns-presubmit  # convention: (job type)-(repo name)-(suite name)-(test type)
+	        branches:
+	        - main
+	        decorate: true
+	        always_run: true
+	        spec:
+	          containers:
+	          - image: alpine
+	            command: ["/bin/date"]
+0164db7eb73f88afce1eafc6f09e37b7|file:///private/var/folders/92/nd94m7953dndfldyqfgz5w7m0000gp/T/kubectl-edit-s2bmm.yaml|1|1|V|yaml
+	# Please edit the object below. Lines beginning with a '#' will be ignored,
+	# and an empty file will abort the edit. If an error occurs while saving this file will be
+	# reopened with the relevant failures.
+	#
+	apiVersion: storage.k8s.io/v1
+	kind: StorageClass
+	metadata:
+	  annotations:
+	    storageclass.kubernetes.io/is-default-class: "true"
+	  creationTimestamp: "2022-01-17T07:23:12Z"
+	  name: default
+	  resourceVersion: "47879"
+	  uid: b3307d94-b8f2-4e9f-a3a9-cad111358d9b
+	parameters:
+	  ChargeType: PostPaid
+	  type: PTSSD
+	  zone: ""
+	provisioner: ebs.csi.volcengine.com
+	reclaimPolicy: Delete
+	volumeBindingMode: Immediate
+900d2e7b3c179f9e5ff0cf388a83f906|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|2|1|V|yaml
+	Error detected while processing /Users/bytedance/.vimrc:
+	  1 # Please edit the object below. Lines beginning with a '#' will be ignored,
+bc7f7a46fadfd4525d07e0b90e1e90d1|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|2|1|V|yaml
+	➜ test-infra-1 (storageclass) ✗ k edit sc default
+	Error detected while processing /Users/bytedance/.vimrc:
+	  1 # Please edit the object below. Lines beginning with a '#' will be ignored,
+fa0726b0380f1824d6ef59b234bf4282|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|19|1|V|yaml
+	NORMAL   1:kubectl-edit-s2bmm.yaml    Prettier                                                       yaml  utf-8[unix]  5% ㏑:1/20☰℅:1  E:1(L5)
+0a72073ddaa2f932a5e3a8fd6f888780|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|10|1|V|yaml
+	  creationTimestamp: "2022-01-17T07:23:12Z"
+2a1daeb3291ad8f1c6eb26730cec9cd8|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|11|1|V|yaml
+	  resourceVersion: "47879"
+b731193711439ce685574e32cdd21d41|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|11|1|V|yaml
+	  uid: b3307d94-b8f2-4e9f-a3a9-cad111358d9b
+8cc977809f12ad083155fa8719cea09a|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|1|1|V|yaml
+	# Please edit the object below. Lines beginning with a '#' will be ignored,
+	# and an empty file will abort the edit. If an error occurs while saving this file will be
+	# reopened with the relevant failures.
+	#
+c21f969b5f03d33d43e04f8f136e7682|file:///Users/bytedance/GitHub/test-infra-1/storage.yaml|8|9|v|yaml
+	default
+584b269c77fc2a732e9c076f242db41d|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|129|9|v|yaml
+	orgs
+5e4e90fee692220f8be93ea48ce97844|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|125|1|V|yaml
+	        - needs-rebase
+b7ec772bb098316781254b46bcd9f86b|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|137|1|V|yaml
+	        - do-not-merge
+	        - do-not-merge/hold
+	        - do-not-merge/work-in-progress
+	        - needs-rebase
+be1846c85a69f3c7b9554b943f14d60d|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|125|1|V|yaml
+	        - needs-rebase
+	        - do-not-merge/hold
+	        - do-not-merge/work-in-progress
+	        - do-not-merge/invalid-owners-file
+f221c0a4268ca858fbc9c683727dcdfc|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|129|1|V|yaml
+	        orgs:
+	        - kitex-contrib
+31eec0b21052af59539507efb42034ca|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|121|1|V|yaml
+	      - labels:
+	        - lgtm
+	        - approved
+	        missingLabels:
+	        - needs-rebase
+	        - do-not-merge/hold
+	        - do-not-merge/work-in-progress
+	        - do-not-merge/invalid-owners-file
+	        repos:
+	        - kitex-contrib
+a127fd1f86e4ab650f2216f09992afa4|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|131|1|V|yaml
+	      
+c61676a5aa9329449a0578c702e5fbf1|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|119|1|V|yaml
+	    tide:
+	      queries:
+	      - labels:
+	        - lgtm
+	        - approved
+	        missingLabels:
+	        - needs-rebase
+	        - do-not-merge/hold
+	        - do-not-merge/work-in-progress
+	        - do-not-merge/invalid-owners-file
+	        repos:
+	        - kitex-contrib/test-infra
+b20462a25a1e0348c84fddae03a37e87|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|129|1|V|yaml
+	        repos:
+	        - kitex-contrib/test-infra
+f8609e719e58d9fd43255f51f3b48e8e|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|144|21|v|yaml
+	resolver
+6cdd87db1a05fc3f5a86b66f7a44c0b2|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|143|1|V|yaml
+	
+	    presubmits:
+b566981ee9d754dbf5d75c244bef2c96|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|142|1|V|yaml
+	      merge_method:
+	        kitex-contrib/test-infra: squash
+83023f0ac228fb20e9dd59db249e5be2|file:///Users/bytedance/GitHub/test-infra/prow/tide/tide.go|718|1|V|go
+		mergeMethod, err := prMergeMethod(m.config().Tide, pr)
+e02c446f9329e7e145f5436460c34ceb|file:///Users/bytedance/go/src/tide_test/main.go|2|4|V|go
+		mckergeMethod, err := prMergeMethod(m.config().Tide, pr)
+ad39596eafe45c862a19d5ce3e9644aa|file:///Users/bytedance/go/src/tide_test/main.go|9|8|V|go
+		fag.Par
+9ad5e8889efed31b3747506fe4e7275c|file:///Users/bytedance/go/src/tide_test/main.go|7|1|V|go
+		client := auth.Auth()
+	
+86741563fad42d42423a8d131542fd25|file:///Users/bytedance/go/src/ByteOpen/auth/auth.go|1|1|V|go
+	package auth
+	
+	import (
+		"context"
+		"github.com/google/go-github/github"
+		"golang.org/x/oauth2"
+	)
+	
+	func Auth() *github.Client {
+		//var TOKEN string
+		//TOKEN = os.Getenv("GITHUB_TOKEN")
+	
+		ctx := context.Background()
+		ts := oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: "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"},
+		)
+		tc := oauth2.NewClient(ctx, ts)
+		client := github.NewClient(tc)
+		_, _, err := client.Users.Get(ctx, "")
+	
+		if err != nil {
+			panic("Bad credential.Please Set Your GITHUB_TOKEN Env Var")
+		}
+	
+		//if !resp.TokenExpiration.IsZero() {
+		//	log.Printf("Token Expiration: %v\n", resp.TokenExpiration)
+		//}
+	
+		return client
+	}
+8a08d542b4d257a4e95bc04e2d48f812|file:///Users/bytedance/go/src/tide_test/main.go|1|1|V|go
+	package main
+	
+	import
+	
+	
+	func main() { 
+fa53b91ccc1b78668d5af58e1ed3a485|file:///Users/bytedance/go/src/tide_test/main.go|4|8|v|go
+	auth
+3899bba9c387dee784391bdee58c11c9|file:///Users/bytedance/GitHub/test-infra/prow/config/tide.go|227|4|v|go
+	MergeMe
+b45a1c7d37963c9c2471c371394c7b00|file:///Users/bytedance/GitHub/test-infra/prow/config/tide.go|1|2|V|go
+	/*
+	Copyright 2017 The Kubernetes Authors.
+a241a792bb40cdbff39a2a3572e1aa09|file:///Users/bytedance/go/src/code.byted.org/inf/byteopen/cmd/ghapi/main.go|33|1|V|go
+		//getData
+ba5f173395c2efa0531e649a255c0cd8|file:///Users/bytedance/GitHub/test-infra/prow/github/client.go|693|28|V|go
+			options.GetToken = func() []byte { return nil }
+9f3c0ea606c36b2175c6af38984d283d|file:///Users/bytedance/GitHub/test-infra/prow/github/client.go|697|12|v|go
+	GetToken
+650369bedfa243dd604677017f536785|file:///Users/bytedance/GitHub/test-infra/prow/github/client.go|697|1|v|go
+				options.GetToken = func() []byte {return []byte(personalAccessToken) 
+7bf63056d636304b82ca0e8cc011a673|file:///Users/bytedance/GitHub/test-infra/prow/github/client.go|697|2|v|go
+			options.GetToken = func() []byte {return []byte(personalAccessToken) 
+80fa3186ac6dfe09f1346ca84df7588d|file:///private/var/folders/92/nd94m7953dndfldyqfgz5w7m0000gp/T/kubectl-edit-c9ff4.yaml|12|23|V|yaml
+	  token: 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
+7da45754ddc82db1bbd4c189a89868e3|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|453|1|V|yaml
+	        - name: GITHUB_APP_ID
+	          valueFrom:
+	            secretKeyRef:
+	              name: github-token
+	              key: appid
+b793aa6513565ae09f01a55779ac88b2|file:///private/var/folders/92/nd94m7953dndfldyqfgz5w7m0000gp/T/kubectl-edit-ujy53.yaml|9|1|V|yaml
+	  token: Z2hwX3c5aTdJWWJVcGZRNnhscDZLMDJVSzQ0dTI4Um40YjJwYUxMaAo=
+a3326f28ca2a9fc5acddebbfd79419ce|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|483|1|V|yaml
+	      - name: s3-credentials
+	        secret:
+	          secretName: s3-credentials
+27cf1e36682fb645e2f4943bbe54f7be|file:///Users/bytedance/GitHub/test-infra-1/.git/rebase-merge/git-rebase-todo|2|1|v|gitrebase
+	pick
+a41973e20900af0444d1dbbb8e524e0b|file:///Users/bytedance/GitHub/test-infra-1/.git/COMMIT_EDITMSG|4|1|V|gitcommit
+	DO NOT MERGE! - TEST PR
+61b4c167906797bd0f16cba1f01fa42b|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|440|55|v|yaml
+	v20211022-effa07f2d2-update
+31409efa9219e806027fb12982c761c1|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/main.go|73|45|V|go
+		for _, group := range []flagutil.OptionGroup{&o.kubernetes, &o.github, &o.storage, &o.config} {
+			if err := group.Validate(o.dryRun); err != nil {
+2fbb689c6dea010ba861be2b0e004d86|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/main.go|52|27|V|go
+		github                 prowflagutil.GitHubOptions
+		storage                prowflagutil.StorageClientOptions
+00c419c19e7732244bbd25bf6e84c37c|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|47|7|v|markdown
+	excludedRepos
+4dc4ec7091509ce4cb8d0265922bbe2e|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|157|148|v|markdown
+	and 
+5273a7cbeddfd3d64a5271e5c630349c|file:///private/var/folders/92/nd94m7953dndfldyqfgz5w7m0000gp/T/kubectl-edit-knife.yaml|7|10|v|yaml
+	WjJod1gzYzVhVGRKV1dKVmNHWlJObmhzY0RaTE1ESlZTelEwZFRJNFVtNDBZakp3WVV4TWFBbz0=
+	kind: Secret
+	metadata:
+	  creationTimestamp: "2022-01-20T06:08:05Z"
+	  name: github-token-robot
+	  namespace: prow
+	  resourceVersion: "1564164"
+	  uid: 6e9ad54a-eb7e-4924-8d01-dde4922bc9b4
+	type: Opaque
+5cd390db232d869a544a6b634b31d0c7|file:///private/var/folders/92/nd94m7953dndfldyqfgz5w7m0000gp/T/kubectl-edit-i5y7p.yaml|7|10|v|yaml
+	DExFzkrNbhw5g42V9EhZRxThcAlisTYak//Vf5swBwE=
+1a3f6261d022b5e24861ffc82c73ffd2|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|73|16|V|yaml
+	    log_level: debug
+a4900fb071af9927a6a84cfaef77300e|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|559|68|^v|yaml
+	v20211022-effa07f2d2  
+0e682f39ecffab18df2f1f7fbb9cf5f5|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|559|68|^v|yaml
+	v20211022-effa07f2d2
+9111150798e1b0986453dfa02b0366e6|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|486|1|V|yaml
+	      - name: github-token-robot
+	        secret:
+	          secretName: github-token-robot
+86213297e5e0167a1922789479df3558|file:///Users/bytedance/GitHub/test-infra-1/starter-s3.yaml|458|1|V|yaml
+	        - name: GITHUB_TOKEN
+	          valueFrom:
+	            secretKeyRef:
+	              name: github-token-robot
+	              key: token
+fcc89faf6ae9f9170b455113cbc061d3|file:///private/etc/hosts|13|1|v|conf
+	# Test for github
+de5c13431fbe554d4a7c8d709f259695|file:///private/etc/hosts|13|1|V|conf
+	jjj
+	151.101.185.194 github.global.ssl.fastly.net
+	192.30.253.112 github.com
+	151.101.184.133 assets-cdn.github.com
+	151.101.184.133 avatars0.githubusercontent.com
+	151.101.112.133 avatars1.githubusercontent.com
+b4324dcb2207f6562c1b92920b7b365a|file:///private/etc/hosts|15|1|V|conf
+	#Test for ping github.com
+	10.68.68.128 github.com git
+	20.205.243.16 github.global.ssl.fastly.net
+27dbba0e7d6b509b75b967908024f614|file:///usr/local/etc/v2ray/config.json|1|1|v|json
+	// Config file of V2Ray. This file follows standard JSON format, with comments support.
+f6122b3c366fde1e40f564cbb721bf96|file:///usr/local/etc/v2ray/config.json|1|1|V|json
+	jjj
+	// Uncomment entries below to satisfy your needs. Also read our manual for more detail at
+	// https://www.v2fly.org/
+65bae571d97a7d39808f36c3105b20f2|file:///usr/local/etc/v2ray/config.json|3|1|V|json
+			// By default, V2Ray writes access log to stdout.
+			// "access": "/path/to/access/log/file",
+	
+			// By default, V2Ray write error log to stdout.
+			// "error": "/path/to/error/log/file",
+	
+			// Log level, one of "debug", "info", "warning", "error", "none"
+5696b0308fae88063c658b7731e07ef6|file:///usr/local/etc/v2ray/config.json|5|1|V|json
+		// List of inbound proxy configurations.
+7322a91e2003f0f3980fdd60630a0271|file:///usr/local/etc/v2ray/config.json|7|1|V|json
+				// Port to listen on. You may need root access if the value is less than 1024.
+85384bdb89696fcc962a7f615f606ff1|file:///usr/local/etc/v2ray/config.json|9|1|V|json
+				// IP address to listen on. Change to "0.0.0.0" to listen on all network interfaces.
+2f1c00371fdae787f508a1c47398724a|file:///usr/local/etc/v2ray/config.json|11|1|V|json
+				// Tag of the inbound proxy. May be used for routing.
+03a5c8d163a32acf87027a593cecf7a4|file:///usr/local/etc/v2ray/config.json|13|1|V|json
+				// Protocol name of inbound proxy.
+8de998cdf9bc3e750cf963bfcee88f0f|file:///usr/local/etc/v2ray/config.json|15|1|V|json
+				// Settings of the protocol. Varies based on protocol.
+731c83db8d2ff01bdc000083fd3c3740|file:///usr/local/etc/v2ray/config.json|18|13|v|json
+	1080
+9bcf014bc30a34dd43c1071ed698e3b3|file:///usr/local/etc/v2ray/config.json|28|16|v|json
+	vsocks
+cb67000ab1fc9d37fcab9ef35c276012|file:///usr/local/etc/v2ray/config.json|1|1|V|json
+	// Config file of V2Ray. This file follows standard JSON format, with comments support.
+	// Uncomment entries below to satisfy your needs. Also read our manual for more detail at
+	// https://www.v2fly.org/
+	{
+		"log": {
+			// By default, V2Ray writes access log to stdout.
+			// "access": "/path/to/access/log/file",
+	
+			// By default, V2Ray write error log to stdout.
+			// "error": "/path/to/error/log/file",
+	
+			// Log level, one of "debug", "info", "warning", "error", "none"
+			"loglevel": "warning"
+		},
+		// List of inbound proxy configurations.
+		"inbounds": [
+			{
+				// Port to listen on. You may need root access if the value is less than 1024.
+				"port": 10086,
+	
+				// IP address to listen on. Change to "0.0.0.0" to listen on all network interfaces.
+				"listen": "127.0.0.1",
+	
+				// Tag of the inbound proxy. May be used for routing.
+				"tag": "socks-inbound",
+	
+				// Protocol name of inbound proxy.
+				"protocol": "vmess",
+	
+				// Settings of the protocol. Varies based on protocol.
+				"settings": {
+					"auth": "noauth",
+					"udp": false,
+					"ip": "127.0.0.1"
+				},
+	
+				// Enable sniffing on TCP connection.
+				"sniffing": {
+					"enabled": true,
+					// Target domain will be overriden to the one carried by the connection, if the connection is HTTP or HTTPS.
+					"destOverride": ["http", "tls"]
+				}
+			}
+		],
+		// List of outbound proxy configurations.
+		"outbounds": [
+			{
+				// Protocol name of the outbound proxy.
+				"protocol": "freedom",
+	
+				// Settings of the protocol. Varies based on protocol.
+				"settings": {},
+	
+				// Tag of the outbound. May be used for routing.
+				"tag": "direct"
+			},
+			{
+				"protocol": "blackhole",
+				"settings": {},
+				"tag": "blocked"
+			}
+		],
+	
+		// Transport is for global transport settings. If you have multiple transports with same settings
+		// (say mKCP), you may put it here, instead of in each individual inbound/outbounds.
+		//"transport": {},
+	
+		// Routing controls how traffic from inbounds are sent to outbounds.
+		"routing": {
+			"domainStrategy": "IPOnDemand",
+			"rules": [
+				{
+					// Blocks access to private IPs. Remove this if you want to access your router.
+					"type": "field",
+					"ip": ["geoip:private"],
+					"outboundTag": "blocked"
+				},
+				{
+					// Blocks major ads.
+					"type": "field",
+					"domain": ["geosite:category-ads"],
+					"outboundTag": "blocked"
+				}
+			]
+		},
+	
+		// Dns settings for domain resolution.
+		"dns": {
+			// Static hosts, similar to hosts file.
+			"hosts": {
+				// Match v2fly.org to another domain on CloudFlare. This domain will be used when querying IPs for v2fly.org.
+				"domain:v2fly.org": "www.vicemc.net",
+	
+				// The following settings help to eliminate DNS poisoning in mainland China.
+				// It is safe to comment these out if this is not the case for you.
+				"domain:github.io": "pages.github.com",
+				"domain:wikipedia.org": "www.wikimedia.org",
+				"domain:shadowsocks.org": "electronicsrealm.com"
+			},
+			"servers": [
+				"1.1.1.1",
+				{
+					"address": "114.114.114.114",
+					"port": 53,
+					// List of domains that use this DNS first.
+					"domains": ["geosite:cn"]
+				},
+				"8.8.8.8",
+				"localhost"
+			]
+		},
+	
+		// Policy controls some internal behavior of how V2Ray handles connections.
+		// It may be on connection level by user levels in 'levels', or global settings in 'system.'
+		"policy": {
+			// Connection policys by user levels
+			"levels": {
+				"0": {
+					"uplinkOnly": 0,
+					"downlinkOnly": 0
+				}
+			},
+			"system": {
+				"statsInboundUplink": false,
+				"statsInboundDownlink": false,
+				"statsOutboundUplink": false,
+				"statsOutboundDownlink": false
+			}
+		},
+	
+		// Stats enables internal stats counter.
+		// This setting can be used together with Policy and Api.
+		//"stats":{},
+	
+		// Api enables gRPC APIs for external programs to communicate with V2Ray instance.
+		//"api": {
+		//"tag": "api",
+		//"services": [
+		//  "HandlerService",
+		//  "LoggerService",
+		//  "StatsService"
+		//]
+		//},
+	
+		// You may add other entries to the configuration, but they will not be recognized by V2Ray.
+		"other": {}
+	}
+6b3c75df8a65413ee7b6c8b82da48af5|file:///usr/local/etc/v2ray/config.json|19|5|V|json
+	    ]
+3f7d3e5049338298de2660b38a1868a0|file:///usr/local/etc/v2ray/config.json|1|1|V|json
+	{
+		"inbounds": [
+			{
+				"port": 10086, // 服务器监听端口
+				"protocol": "vmess",
+				"settings": {
+					"clients": [
+						{
+							"id": "1e94c32a-2669-4728-8834-1558f91f6be6"
+						}
+					]
+				}
+			}
+		],
+		"outbounds": [
+			{
+				"protocol": "freedom"
+			}
+		]
+	}
+56a95cc96487b05faa3b19f60ad722a3|file:///usr/local/etc/v2ray/config.json|71|31|V|json
+	root@nc7p03c6rsfehprha39eg:~# c
+57e53ac5dbaaf5e0f657628457c4ebf2|file:///usr/local/etc/v2ray/config.json|40|36|V|json
+	                        "address": "svip.c4t.xyz",
+32926f6c2eba28e293a6afa008a09f0a|file:///usr/local/etc/v2ray/config.json|41|33|v|json
+	16443
+608c0018328dcd425e5b14eb329a1cb6|file:///usr/local/etc/v2ray/config.json|53|1|V|json
+					"wsSettings": {
+						"path": "/vip"
+					},
+0485538ec16df47169f289ea4635f35d|file:///usr/local/etc/v2ray/config.json|52|1|V|json
+					"security": "tls",
+					"tlsSettings": {
+						"serverName": "svip.c4t.xyz",
+						"allowInsecure": true
+					}
+1dba3f55d2ad2d24025b7e1b02c4bc4c|file:///Users/bytedance/.kube/config|1|1|V|
+	apiVersion: v1
+	clusters:
+	- cluster:
+	    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXhOekF6TlRVd00xb1hEVE15TURFeE5UQTBNREF3TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS3FhCkQ5eXMzN1gzazhlbEhLQUhiOGJ0OHVJVDhaTUZiNEhrMC91bnJOUG0wVVkxQlp6MkM2TWpPM2tjOWYwaFMwOTIKUExuNHh3a1h3N1hiRk02S0piRDRkaXBmbkQ5a2pGOXBKWHk3ZDhnYlNNclJOa2loeEc4Z1MxdzQ0bTE0SkpnRAppZS8xNzI1QVV5YlFmUUp5SVhkdmx1MGJjVUo5M0IxcXJuRVVuekhUZGF5bjV2QTNXc25zM2I5dkU5OXdIM1UyCkQwQzB3b0ZKVitBcGV4RDhWQ1c5SG5NeUxvYmJkOG11bzdPMGRsdkZRaENwVGsrNkJmOHQzWHlHZlNOdkNDdm4KVHh6RjZ5UzBpZDJDeTltL1o5dW9WcVZLTjFXOFMwQmNTTmFhem55N0d3bjFWOTdpV3dzc2lhRUZOM2RZYnlsNQp2alAwMS9sZ2pwbkk3SWVma29jQ0F3RUFBYU5GTUVNd0RnWURWUjBQQVFIL0JBUURBZ0trTUJJR0ExVWRFd0VCCi93UUlNQVlCQWY4Q0FRQXdIUVlEVlIwT0JCWUVGQmxkYWV4Wkk2eHZseXNwakVuSDJ2Y3NYWjdBTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQk1OUnBKWDVtNzRobHViTXptREdJQThXbjV0RTllaFBhZktDaVI5cGEyRWxXaQo4QnZLRVZBQnRGSjRDMFhrWE9wRXBra0xVdkZpeitGYnNRT2tUdlpScG1rY2pSNEt4Q21nVmdKcENEdE1zWU5BClFqM2dxejc4MHFjOGcyQWt2N1o2c2w3dUpicWFxbzNGcXFkNkxzVGVHYjRDV0JJQnBYMktHWFljMWRFcy9md20KWVdQdHg0UVptdGhURUg4YkFHM2M4ZmNwNU1EVFZkUVF0UFFJQ1ArZU56ME9uRUJhbjY4MWxQaGdZajRTRjlDSgpweU5wVjhpdy9IeXFNSDVMSDZFS2t4Rnh0cnplTzhNazh0c1VNcHFIM3pKdVlRWXBTUGx1djNKTHg3MjVabWh0CjlKN01vMGF6ZlROWmdCcXFVWC93NElCZ3Q3dmlXOWZWdjVhMld6U2IKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    server: https://221.194.188.224:6443
+	  name: cc7ieilursfeg52comvvg
+	contexts:
+	- context:
+	    cluster: cc7ieilursfeg52comvvg
+	    user: "1006384"
+	  name: cc7ieilursfeg52comvvg@1006384
+	current-context: cc7ieilursfeg52comvvg@1006384
+	kind: Config
+	preferences: {}
+	users:
+	- name: "1006384"
+	  user:
+	    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4VENDQWRtZ0F3SUJBZ0lJQ3F2aGllYi8zT1l3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TWpBeE1UY3dNelUxTUROYUZ3MDBNakF4TVRJd05qSTJNak5hTUJJeApFREFPQmdOVkJBTVRCekV3TURZek9EUXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRREN6ME5PTDRPZDFBcnI1Mko2Ukg2V3RFb3I5MFVPeHg3L2JPM2YvR0JtQXRiTDJCN01EeHloZ1BPUllUbnkKaW9xL2lhMHR4c0JJbndwaDVaRVRvSGFXQjc0SHV6MXVMZ3RONGxreDBtd2J1OURQUm91RzI4cmMxRE1Kd20ySApqejR3K1dmZXJYWXNOYTNraitqZUN3MUkvWkhJbUZYY25mWDZmRHNtWjZpZkxwU3RFUStOYU1qOEltTnFoOWdJCkMyZjQ2aXhJUVdFTi9RUDJEQ1dFWGdJZEdzSS9SUXVOL3RyeStacHRUdElkYWh3QTBjZEZySFFXZ2RXSkFOZ2EKa3hsOTQ2Q091Tm1jaEUxWmM0RHVlZXZFQkw5M0dQeFhyeGFwenNRbWxRb2FJR3YwSXNtS2NTSWxCd2JKeEJYUgpRNlFwVDExK2IxclF1TFB0ZENSOFZHdzlBZ01CQUFHalNEQkdNQTRHQTFVZER3RUIvd1FFQXdJRm9EQVRCZ05WCkhTVUVEREFLQmdnckJnRUZCUWNEQWpBZkJnTlZIU01FR0RBV2dCUVpYV25zV1NPc2I1Y3JLWXhKeDlyM0xGMmUKd0RBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQUJmb3VETlBnSEZ6bHUyeVVaWUI0ZW1PQkZwbTBjTmxnOHV4VAp4RDRReUJxM1YwYUt4RGEwTmgwT3FrSno3WGRwdTdIM3BDUnZuWWZmRlEzQmNZUGFlcmZzQ3hDc3kyVGVRKzhBClJIZUpOSWptRDVvOGV1L29PbTF3a1pjQWFubkpuS0NvUXlZNmdHUHB5cWJSMDFCSFJrRFEzUjZ3dlUxZHlJMnoKWTZOZENiQW5STUR4RTFxeXJmQm4zcDNicWFVaUZGYWJSY0hxTU5rdmo4cWNKY0tjRFNaaXdXeHVXa3FVa3NIcApKOVg4YXBBUHM5WmxaYVJ6N2x3WlA0ZW0va1ZVWDJBa21BZjFkSlJkdHdMUHZaWHI1NHd0UWhTMDg4SGtHSy9lClk1ZFRmZk8wU0N6aDVzcVEzSGk1YWkrN2N1bUdTMHd1elNKR05jbXhweFBJUTFBQ2hRPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+	    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBd3M5RFRpK0RuZFFLNitkaWVrUitsclJLSy9kRkRzY2UvMnp0My94Z1pnTFd5OWdlCnpBOGNvWUR6a1dFNThvcUt2NG10TGNiQVNKOEtZZVdSRTZCMmxnZStCN3M5Ymk0TFRlSlpNZEpzRzd2UXowYUwKaHR2SzNOUXpDY0p0aDQ4K01QbG4zcTEyTERXdDVJL28zZ3NOU1AyUnlKaFYzSjMxK253N0ptZW9ueTZVclJFUApqV2pJL0NKamFvZllDQXRuK09vc1NFRmhEZjBEOWd3bGhGNENIUnJDUDBVTGpmN2E4dm1hYlU3U0hXb2NBTkhIClJheDBGb0hWaVFEWUdwTVpmZU9nanJqWm5JUk5XWE9BN25ucnhBUy9keGo4VjY4V3FjN0VKcFVLR2lCcjlDTEoKaW5FaUpRY0d5Y1FWMFVPa0tVOWRmbTlhMExpejdYUWtmRlJzUFFJREFRQUJBb0lCQVFDbWJOS2ZGTkJvSVNKRApicVVldHkwK0tqL0RWN2RUYktENnJXQjZuZXpzdVRndlpTN0tQWTdFR3BuNmRRbEFQME5SWnBqZ0pvOVdleWd2CmdpTnlsUDg2Sk5zZlY4S2ZRZzYrTnNUa1gxT2tUY3VSaUQ3aXN4cVhsV0VVMFZrcEdpS1RURDZFYWNRdStKemEKU21jeWFsYXJLSlZHdlgxOHdDWElIQ0djS2FwUWNjaWpkT1RkaTNpMC8wM05Sa0NZbmFSRUw2MTdML3hKbEMyNAp5UjE4TzhVQVdYZVpvWXVxSHA2WDdpR0FRY0tDQWpFeHBodmZPZWZyYjNVRG9PQSs2SjZUQjFmOEE1Q25kVFhWClp3ZXg4cHVoNkd0Y0NIejJERzFPWloxeGhwZUd4U2xSZUt1bDc2K2psNFlwRDVRNzJjOFREdS9yRzQ1dzRPaW8KL0lLK01KaXhBb0dCQU8xY0pjVlluUS85c1JEZ3NaclpmU2xxTk5DOVc3dEVnZlMvc0d5c2Jhd25IeEFMc1Juegp0cTVkYlJqblVLUVI1UWZ2eis1UWhoalRlMXl1SnUwTWZaRjg1QlU4c0JjdXBmd1BzRmxGWTU2ZEVxVW96UjNuCm5oODNDcnFGZ3pCdE1rU09nL2VHd2xqWXNLNkh2WS93M1Z6TjZ0RlpVdVBpZzBCS0ZRc1hSd09MQW9HQkFOSWIKc0hOZGM3MDhKdDd0VUY1ZFN6REc2YWlIWVBWdVpXME5VbGp0TDRWVW1qc2FmMkZhbGtTRGZtRTdOYi9aM0R0dApLLytHTzcyd3hCUWpWN3V2azk2SXBNYjc4bXkvS0VaZ0pSZEV2Vm9Ha3FTemtSY3llbzQ3d1dlV1Fxa1hqa0xOCkUyUzBJRHJPbE9NbGp4RkRzL0VCOXk0YnpkM3ZqQUp2V2JSNmZhaFhBb0dBSkF3bmpGWU4zRnpaNUVkTGtjblAKOFZjNDJDNjUzTEhsenFiQ0EyOFlaTm00SlBheG1kQmlnUTZkUC9mNVRrR05kK3dhdHdXeHA5bU9WWi81TjJ6NwpNUG8zcFdZSEZDNDRkUlJvNHRYZjhEbkltQjZmTUJoNThpR28xblRxWEpObzIvS001aTJvSEZna1ZRMDJZOExmCnkzVldZUjdnc00wNHc2MjhqbWVsbUVzQ2dZQitjOEcvdlFmU1pXaHpsTnBnNEw5SExRQWx1TXluQ2ZrckovQmUKcXVtRjBrUTh2QmJiN2R3d2dmOUczNDdhMTNEUHAwWHF0TXd4dnpoVGNtM3ovSmovUHJnRk5rOVNHYjVRbEw3ZQpBVFlBLzZHMFZJcEhMczlKMlRidWRDWE1oT3ZPMG9RUWdNUkJBR0hsVDQ2S2NuZlMzajc0MWkwUm5JRmtXY1hnCmREUTZZd0tCZ1FEV2M4UndaVkxnOGJuY0tCRnJiTFpTNGwvSVF5dC9reUZ3ZTZNZExoTTA4NzVDN3RIUFc2RDkKeERTNjFoSDhmeFQyblVZM2tIeFpaMjZFMzAzL1pYOXJ1QXdnMURJWGVFOEdpbEV2TDVNYXRsTU1SR2V3VGkyZQpMcDVXdUNxbklmQXRnUG43Z3JBbFRXWENPRHpqNENhZEJoR2pQaE1FR1hKYnZ6S2ZFUG9tQmc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+49c71f4b49e331b0085886b4ffa09226|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|110|1|V|markdown
+	  - orgs:
+	    - kubeflow
+	    excludedRepos:
+	    - kubeflow/community
+	    - kubeflow/examples
+	    - kubeflow/website
+	    labels:
+	    - lgtm
+	    - approved
+	    missingLabels:
+	    - do-not-merge
+	    - do-not-merge/blocked-paths
+97dc284cf580da5ebef4aa4b47c13dce|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|40|v|markdown
+	tide
+11b74ec9461f0db7de8e89fdf97df632|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|1|v|markdown
+	For more configuration informatioin of queries, please refer to [
+5e056c500a1c4b6a7110b50d807bade5|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|66|v|markdown
+	https
+bf215181b5140522137b3d4f6b73544a|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|66|v|markdown
+	github
+b76e98af9aaa680979bf5a65b2d5a105|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|66|v|markdown
+	kubernetes
+ceee7550810a0a1c2058c85f9be69991|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|66|v|markdown
+	/test-infra/blob/27c9a7f2784088c2db5ff133e8a7a1e2eab9ab3f/prow/config/prow-config-documented.yaml#:~:text=meet%20merge%20requirements.-,queries%3A,-%2D%20author%3A%20%27%20%27]()
+17fca68b9b98917b8ae9fed2c9313e5a|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|24|v|markdown
+	informatioin
+ee73d1517c42400ef2c8fbc628ac22bd|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|1|V|markdown
+	For a full list of properties ofqueries, please refer to [https://github.com/kubernetes/test-infra/blob/27c9a7f2784088c2db5ff133e8a7a1e2eab9ab3f/prow/config/prow-config-documented.yaml#L1208]()
+5da7eb4247add5dbd5776c9c0b38460a|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|34|v|markdown
+	queries
+ee26908bf9629eeb4b37dac350f4754a|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|60|v|markdown
+	blob
+76042e29e2bdf5ee81e98e0664a617e9|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|60|v|markdown
+	27c9a7f2784088c2db5ff133e8a7a1e2eab9ab3f
+f1bd772c47719ae3ecb3e1263ba9392d|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|71|v|markdown
+	prow
+2245023265ae4cf87d02c8b6ba991139|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|71|v|markdown
+	config
+642d0f88e514e97f75ec5bb6179d7232|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|154|59|v|markdown
+	ented.yaml#L1208]()
+80840261772ba863e31d746d0dbef7a8|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|147|1|V|markdown
+	And `github.com/kubeflow/community` and
+	`github.com/kubeflow/examples` repositories are configured seperately. The component starts periodically querying all PRs when they have `lgtm` and `approved` labels set
+	and do not have `do-not-merge`, `do-not-merge/hold`, `do-not-merge/work-in-progress`, `needs-ok-to-test` and `needs-rebase` labels set.
+86292495ba7f10b6819c0f081fb264b6|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|147|1|V|markdown
+	And `github.com/kubeflow/community` and
+	`github.com/kubeflow/examples` repositories are configured seperately. The component starts periodically querying all PRs when they have `lgtm` and `approved` labels set
+e2d473c7a5c075d23e44b6ba98563d53|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|145|1|v|markdown
+	**Explanation**: The component starts periodically querying all PRs in `github.com/kubflow` organization excluding `github.com/kubeflow/community` and `github.com/kubeflow/examples` repositories that have `lgtm` and `approved` labels set and do not have `do-not-merge` and `do-not-merge/blocked-paths` labels set
+7578626a03da0b0cc1ea400f3b3c9307|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|145|1|V|markdown
+	**Explanation**: The component starts periodically querying all PRs in `github.com/kubflow` organization excluding `github.com/kubeflow/community` and `github.com/kubeflow/examples` repositories that have `lgtm` and `approved` labels set and do not have `do-not-merge` and `do-not-merge/blocked-paths` labels set
+	and do not have `do-not-merge`, `do-not-merge/hold`, `do-not-merge/work-in-progress`, `needs-ok-to-test` and `needs-rebase` labels set.
+69f7867d1fd6a74b2b64b9dcd8ccd8d6|file:///Users/bytedance/GitHub/test-infra/.git/rebase-merge/git-rebase-todo|4|3|v|gitrebase
+	Rebase
+36432e961f8a05061a502b7e7bbab8aa|file:///Users/bytedance/GitHub/test-infra/.git/COMMIT_EDITMSG|4|1|V|gitcommit
+	# This is the commit message #2:
+	
+	Add more details about configuring tide.
+f3ca064aa6b509c6bb7fb67d4bd5d5e6|file:///Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md|47|1|V|markdown
+	* `excludedRepos`: List of ignored repositories.
