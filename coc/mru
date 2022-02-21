@@ -1,8 +1,13 @@
+/Users/bytedance/GitHub/6.828/.github/workflows/learn-github-actions.yml
+/Users/bytedance/GitHub/6.828/.gitignore
+/Users/bytedance/GitHub/6.828/6.828/README.md
+/Users/bytedance/.kube/config
+/Users/bytedance/bytedance-oss/repository/tools/sync-prow-images.sh
 /Users/bytedance/GitHub/test-infra-1/starter-s3.yaml
+/Users/bytedance/bytedance-oss/repository/tools/images.txt
+/Users/bytedance/temp/input
 /Users/bytedance/GitHub/test-infra/prow/cmd/tide/config.md
 /Users/bytedance/GitHub/test-infra-1/st
-/Users/bytedance/bytedance-oss/repository/tools/sync-prow-images.sh
-/Users/bytedance/.kube/config
 /usr/local/etc/v2ray/config.json
 /Users/bytedance/GitLab/byteopen/dashboard/CloudWeGo-1638502495544.json
 /Users/bytedance/GitHub/kubernetes/api/openapi-spec/swagger.json
@@ -18,7 +23,6 @@
 /Users/bytedance/GitHub/test-infra/pkg/flagutil/flagutil.go
 /Users/bytedance/GitHub/test-infra/prow/life_of_a_prow_job.md
 /Users/bytedance/GitHub/test-infra/prow/tide/tide.go
-/Users/bytedance/bytedance-oss/repository/tools/images.txt
 /Users/bytedance/GitHub/test-infra-1/README.md
 /Users/bytedance/GitHub/test-infra/prow/github/README.md
 /Users/bytedance/GitHub/test-infra/images/README.md
