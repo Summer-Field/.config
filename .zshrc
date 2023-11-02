@@ -189,6 +189,8 @@ alias net='open /Applications/NeteaseMusic.app'
 alias dnet='pkill NeteaseMusic'
 # cs144
 alias cs144="ssh cs144@192.168.64.2"
+# lazygit
+alias lg="lazygit"
 # gitignore
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
 
