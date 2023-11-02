@@ -23,6 +23,23 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet cla "Class" b
+class ${1} {
+private:
+
+public:
+	// constructors
+	${1}();
+	${1}(const ${1} &);
+	~${1}();
+	// overload operator methods
+	${1} & operator=(const ${1}&);
+	// overload operator friends
+	friend bool operator==(const ${1} &st, const ${1} &st2);
+	friend ostream & operator<<(ostream & os, const ${1} & st);
+	friend istream & operator>>(istream & is, ${1} & st);
+};
+endsnippet
 
 snippet cm "Comment Section" A
 /* ${1} */

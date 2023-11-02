@@ -23,65 +23,43 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
-snippet cm "Comment Section" A
-/* ${1} */
-endsnippet
-
-snippet do "Do Loop"
-do(${1}) {
-	${3}
-} while(${2});
-endsnippet
-
-snippet while "While Loop"
-while(${1}){
+snippet if "If Condition" b
+if [ ${1} ] then
 	${2}
-};
+fi
 endsnippet
 
-snippet while "For Loop"
-for(${1};${2};${3}){
+snippet ca "Case Condition" b
+case ${1} in
+	"${2}")
+	${3}
+	;;
+esac
+endsnippet
+
+snippet fn "Function" b
+function ${1}(){
+	${2}
+}
+endsnippet
+
+snippet wh "While Loop" b
+while [ ${1} ] 
+do
+	${2}
+done
+endsnippet
+
+snippet for "For Loop" b
+for ${1} in ${2}
+do
+	${3}
+done
+endsnippet
+
+snippet for "For Loop Number" b
+for ((${1}; ${2}; ${3}))
+do
 	${4}
-}
-endsnippet
-
-snippet printf "Format Print" A
-printf("${1}");
-endsnippet
-
-snippet main "Main Function"
-/* Header File */
-#include <stdio.h>
-#include <stdlib.h>
-
-/* Global Variables*/
-
-/* Entry Point */
-int main(int argc, char** argv){
-	printf("hello world!\n");
-
-	return 0;
-}
-
-/* Implementation */
-
-endsnippet
-
-snippet #ifndef "Header File"
-#ifndef ${1}
-#define ${1}
-
-/* Header File */
-#include <stdlib.h>
-
-/* Marcro */
-#define ${2}
-
-/* Entity */
-typedef struct ${3} {
-} ${4};
-
-/* Function Prototype */
-
-#endif
+done
 endsnippet
