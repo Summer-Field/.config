@@ -255,11 +255,17 @@ tags
 
 # unnecessary backup files
 clash/
-coc/
 wireshark/
 tmux/plugins/
 iterm2/
-coc/
+coc/extensions/
+coc/commands
+coc/explorer-actions
+coc/list_history.dat
+coc/lists
+coc/memos.json
+coc/mru
+coc/snippets-mru
 enchant/
 gh/
 configstore/
