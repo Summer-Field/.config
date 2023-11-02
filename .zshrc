@@ -1,8 +1,10 @@
+# DEFAULT_USER
+DEFAULT_USER="Field"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Fields/.oh-my-zsh"
+export ZSH="/Users/Field/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -30,7 +32,7 @@ ZSH_THEME="dracula"
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
- export UPDATE_ZSH_DAYS=30
+export UPDATE_ZSH_DAYS=30
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -71,13 +73,22 @@ ENABLE_CORRECTION="ture"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
-        zsh-autosuggestions 
+        zsh-autosuggestions
         catimg
         thefuck
-			docker
+				docker
         )
 
 source $ZSH/oh-my-zsh.sh
+# zsh-syntax-highlight 
+# mac intel
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#
+# mac m2 pro
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
@@ -107,23 +118,20 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohhmyzsh="mate ~/.oh-my-zsh"
 #
-# zsh-syntax-highlight 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-DEFAULT_USER="Fields"
 # alias ra="ranger"
 #source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
 #opt for rm: notify when rm
-alias rm="rm -i"
-# alias fresh="source /Users/Fields/.zshrc"
+# alias rm="rm -i"
+# alias fresh="source /Users/Field/.zshrc"
 alias ra="joshuto"
-alias s="neofetch;source /Users/Fields/.zshrc"
+alias s="neofetch;source /Users/Field/.zshrc"
 alias cow="cowsay"
 
 # colorls
-alias ls="colorls --dark"
-alias ll="colorls -ll --dark"
-alias la="colorls -la --dark"
-alias lc='colorls -lA --sd --dark'
+# alias ls="colorls --dark"
+# alias ll="colorls -ll --dark"
+# alias la="colorls -la --dark"
+# alias lc='colorls -lA --sd --dark'
 
 # use nvim as default instead of vim
 alias vim="nvim"
@@ -166,7 +174,7 @@ alias lark="open -a Lark"
 alias Lark="open -a Lark"
 alias dlark="pkill Lark"
 # tencent cloud server
-alias server="ssh -i /Users/Fields/.ssh/field field@124.222.95.180"
+alias server="ssh -i /Users/Field/.ssh/field field@124.222.95.180"
 alias server_root="ssh root@124.222.95.180"
 # # ranger
 # alias ra="python3 /usr/local/bin/ranger"
@@ -192,3 +200,6 @@ alias dnet='pkill NeteaseMusic'
 alias cs144="ssh -p 2222 cs144@localhost"
 # gitignore
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
