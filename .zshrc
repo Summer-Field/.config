@@ -112,6 +112,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 DEFAULT_USER="Fields"
 # alias ra="ranger"
 #source ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
+#opt for rm: notify when rm
+alias rm="rm -i"
 # alias fresh="source /Users/Fields/.zshrc"
 alias ra="joshuto"
 alias s="neofetch;source /Users/Fields/.zshrc"

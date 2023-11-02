@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *.swp
 .DS_Store
 view/
@@ -10,7 +9,6 @@ tmp/
 _machine_specific.vim
 .vim-bookmarks
 
-=======
 # Created by https://www.toptal.com/developers/gitignore/api/git,vim,python,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,vim,python,macos
 
@@ -259,16 +257,14 @@ tags
 clash/
 coc/
 wireshark/
-tmux/plugins
-ranger/__pycache__/
-ranger/plugins/
-nvim/plugged/
-nvim/tmp/
+tmux/plugins/
 iterm2/
 coc/
 enchant/
 gh/
-tmux/plugins/
 configstore/
 git/
->>>>>>> f500fb3 (My First Commit)
+github-copilot/
+nvim/
+ranger/
+joshuto/
