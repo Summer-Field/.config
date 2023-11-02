@@ -1,7 +1,7 @@
 # DEFAULT_USER
 DEFAULT_USER="Field"
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/Field/.oh-my-zsh"
@@ -124,14 +124,14 @@ fi
 # alias rm="rm -i"
 # alias fresh="source /Users/Field/.zshrc"
 alias ra="joshuto"
-alias s="neofetch;source /Users/Field/.zshrc"
+alias s="neofetch;source ${HOME}/.zshrc"
 alias cow="cowsay"
 
 # colorls
-# alias ls="colorls --dark"
-# alias ll="colorls -ll --dark"
-# alias la="colorls -la --dark"
-# alias lc='colorls -lA --sd --dark'
+alias ls="colorls --dark"
+alias ll="colorls -ll --dark"
+alias la="colorls -la --dark"
+alias lc='colorls -lA --sd --dark'
 
 # use nvim as default instead of vim
 alias vim="nvim"
@@ -152,7 +152,7 @@ alias kdf='kubectl delete -f'
 EDITOR="nvim"
 KUBE_EDITOR="nvim"
 # quick edit .zshrc
-alias ezr="vim ~/.zshrc"
+alias ezr="vim ${HOME}/.zshrc"
 # fzf's dragula theme
 FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 # typora
@@ -174,13 +174,11 @@ alias lark="open -a Lark"
 alias Lark="open -a Lark"
 alias dlark="pkill Lark"
 # tencent cloud server
-alias server="ssh -i /Users/Field/.ssh/field field@124.222.95.180"
+alias server="ssh -i ${HOME}/.ssh/field field@124.222.95.180"
 alias server_root="ssh root@124.222.95.180"
 # # ranger
 # alias ra="python3 /usr/local/bin/ranger"
 # alias ranger="python3 /usr/local/bin/ranger"
-# ruby ENV
-export PATH="/usr/local/Cellar/ruby/3.1.2/bin:$PATH"
 # python
 alias python="python3"
 # csapp_env
@@ -197,9 +195,14 @@ alias cat='ccat'
 alias net='open /Applications/NeteaseMusic.app'
 alias dnet='pkill NeteaseMusic'
 # cs144
-alias cs144="ssh -p 2222 cs144@localhost"
+alias cs144="ssh cs144@192.168.64.2"
 # gitignore
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# ARM silicon gem env set up
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
