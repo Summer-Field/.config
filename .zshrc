@@ -169,6 +169,8 @@ alias dlark="pkill Lark"
 # tencent cloud server
 alias server="ssh -i ${HOME}/.ssh/field field@124.222.95.180"
 alias server_root="ssh root@124.222.95.180"
+# remote lab server
+alias xqy="ssh xqy@6.tcp.vip.cpolar.cn -p 14271"
 # # ranger
 # alias ra="python3 /usr/local/bin/ranger"
 # alias ranger="python3 /usr/local/bin/ranger"
